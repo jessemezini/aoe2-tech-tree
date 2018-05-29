@@ -1,16 +1,15 @@
 import React from 'react';
+import styled from 'styled-components';
 
-const civsStyles = {
-  width: '360px',
-  height: '980px',
-  backgroundColor: '#e5e5e5',
-  marginTop: '15px',
-  marginLeft: '15px',
-  marginBottom: '15px'
-};
+const CivsContainer = styled.div`
+  width: 360px;
+  height: 980px;
+  background-color: #e5e5e5;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+`;
 
-const GameCivilizations = () => (
-  <div className="civs-container" style={civsStyles} />
-);
+const GameCivilizations = () => <CivsContainer />;
 
 export default GameCivilizations;
