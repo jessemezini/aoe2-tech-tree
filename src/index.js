@@ -12,6 +12,7 @@ injectGlobal`
   body {
     background-image: url(${bg});
     width: 5837px;
+    height: 1008px;
   }
 `;
 
