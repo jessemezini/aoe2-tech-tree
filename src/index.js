@@ -10,7 +10,9 @@ import bg from './bg.jpg';
 
 injectGlobal`
   body {
+    background-color: #ebcb9c;
     background-image: url(${bg});
+    background-repeat: repeat-x;
     width: 5837px;
     height: 1008px;
   }
