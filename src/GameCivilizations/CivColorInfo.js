@@ -1,38 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CivColor = styled.div`
+const CivColorWrapper = styled.div`
   text-transform: uppercase;
   font-size: 12px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+`;
 
-  div::before {
-    content: '';
+const CivColor = styled.div`
+  &::before {
+    content: '${props => (props.notAvailable ? 'X' : '')}';
     display: inline-block;
+    vertical-align: middle;
     width: 25px;
     height: 25px;
     border-radius: 3px;
-    border: 3px solid #636455;
-    background-color: #5492b0;
     margin-right: 5px;
-    vertical-align: middle;
+    background-color: ${props => props.bgColor};
+    font-size: 25px;
+    text-align: center;
+    padding: 1px;
+    color: red;
   }
 
-  div {
-    margin-bottom: 10px;
-    width: 130px;
-  }
+  margin-bottom: 10px;
+  width: 135px;
 `;
 
 const CivColorInfo = () => (
-  <CivColor>
-    <div>Units</div>
-    <div>Buildings</div>
-    <div>Technologies</div>
-    <div>Not Available</div>
-  </CivColor>
+  <CivColorWrapper>
+    <CivColor bgColor="#5492b0">Units</CivColor>
+    <CivColor bgColor="#d23700">Buildings</CivColor>
+    <CivColor bgColor="#557734">Technologies</CivColor>
+    <CivColor bgColor="none" notAvailable>
+      Not Available
+    </CivColor>
+  </CivColorWrapper>
 );
 
 export default CivColorInfo;
