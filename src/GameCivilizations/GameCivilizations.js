@@ -9,7 +9,6 @@ import CivColorInfo from './CivColorInfo';
 const CivsContainer = styled.header`
   width: 290px;
   height: 915px;
-  margin: 15px;
   background-color: #ebcb9c;
   border-style: solid;
   border-width: 50px 35px 25px 35px;
