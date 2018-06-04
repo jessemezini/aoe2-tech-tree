@@ -8,16 +8,14 @@ import registerServiceWorker from './registerServiceWorker';
 
 import bg from './bg.jpg';
 
-const fontUrl =
-  "url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,700')";
-
 injectGlobal`
-  @import ${fontUrl};
-
   body {
-    font-family: 'Frank Ruhl Libre', serif;
+    font-family: -apple-system, BlinkMacSystemFont,
+    “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”,
+    “Fira Sans”, “Droid Sans”, “Helvetica Neue”,
+    sans-serif;
     font-weight: 300;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #111111;
     background-color: #ebcb9c;
     background-image: url(${bg});
