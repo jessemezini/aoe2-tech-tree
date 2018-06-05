@@ -11,15 +11,17 @@ const AgeWrapper = styled.div`
 
   > div {
     text-align: center;
-    height: 231px;
-    margin-bottom: 15px;
-
-    border: 1px solid #ccc;
+    height: 216px;
+    margin-bottom: 40px;
 
     p {
       margin: 0;
       font-weight: bold;
     }
+  }
+
+  > div:last-child {
+    margin-bottom: 0;
   }
 `;
 
@@ -29,6 +31,7 @@ const Age = styled.div`
   width: 91px;
   height: ${props => props.height};
   background-position: ${props => props.bgPosition};
+  margin-top: 15px;
 `;
 
 const Ages = () => (
