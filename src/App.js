@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import GameCivilizations from './GameCivilizations/GameCivilizations';
 import GameTechnologies from './GameTechnologies/GameTechnologies';
 
-const AppContainer = styled.main`
+const AppContainer = styled.div`
   padding: 15px;
 
   display: flex;
