@@ -2,16 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Ages from './Ages';
+import GameTechs from './GameTechs';
 
-const GameTechs = styled.main`
+const GameTechsContainer = styled.main`
   display: flex;
   flex-direction: row;
 `;
 
 const GameTechnologies = () => (
-  <GameTechs>
+  <GameTechsContainer>
     <Ages />
-  </GameTechs>
+    <GameTechs />
+  </GameTechsContainer>
 );
 
 export default GameTechnologies;
