@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
+
+import techData from '../data/techs';
 
 const TechsWrapper = styled.div`
   display: flex;
@@ -36,77 +38,93 @@ const positionColumn5 = '520px'; // isLast="260"
 const positionColumn6 = '640px';
 const positionColumn7 = '780px';
 
-const GameTechs = () => (
-  <TechsWrapper>
-    <TechsColumn>
-      <TechItem positionColumn={positionColumn4} />
-      <TechItem positionColumn={positionColumnChildAge} />
-      <TechItem positionColumn={positionColumnChildAge2} />
+class GameTechs extends Component {
+  state = {
+    techs: {}
+  };
 
-      <TechItem positionColumn={positionColumn4} />
-      <TechItem positionColumn={positionColumnChildAge} />
-      <TechItem positionColumn={positionColumnChildAge2} />
+  componentWillMount() {
+    this.setState({ techs: techData });
+  }
 
-      <TechItem positionColumn={positionColumn3} />
-      <TechItem positionColumn={positionColumnChildAge2} />
-      <TechItem positionColumn={positionColumnChildAge2} />
+  render() {
+    return (
+      <TechsWrapper>
+        <TechsColumn>
+          <TechItem positionColumn={positionColumn4} />
+          <TechItem positionColumn={positionColumnChildAge} />
+          <TechItem positionColumn={positionColumnChildAge2} />
 
-      <TechItem positionColumn={positionColumn5} />
-      <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumn4} />
+          <TechItem positionColumn={positionColumnChildAge} />
+          <TechItem positionColumn={positionColumnChildAge2} />
 
-      <TechItem positionColumn={positionColumn5} />
-      <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumn3} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumnChildAge2} />
 
-      <TechItem positionColumn={positionColumn5} />
-      <TechItem
-        positionColumn={positionColumnChildAge2}
-        isLast="135px"
-        isLastOfTech
-      />
+          <TechItem positionColumn={positionColumn5} />
+          <TechItem positionColumn={positionColumnChildAge2} />
 
-      <TechItem positionColumn={positionColumn2} />
-      <TechItem positionColumn={positionColumnChildAge} />
-      <TechItem positionColumn={positionColumnChildAge2} />
-      <TechItem positionColumn={positionColumnChildAge2} />
-      <TechItem positionColumn={positionColumnChild} />
+          <TechItem positionColumn={positionColumn5} />
+          <TechItem positionColumn={positionColumnChildAge2} />
 
-      <TechItem positionColumn={positionColumn3} />
-      <TechItem positionColumn={positionColumnChildAge2} />
-      <TechItem positionColumn={positionColumnChildAge2} isLast="140px" />
+          <TechItem positionColumn={positionColumn5} />
+          <TechItem
+            positionColumn={positionColumnChildAge2}
+            isLast="140px"
+            isLastOfTech
+          />
 
-      <TechItem positionColumn={positionColumn1} />
-      <TechItem positionColumn={positionColumnChildAge2} />
-      <TechItem positionColumn={positionColumnChildAge2} />
-      <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumn2} />
+          <TechItem positionColumn={positionColumnChildAge} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumnChild} />
 
-      <TechItem positionColumn={positionColumn3} />
-      <TechItem positionColumn={positionColumnChildAge2} />
-      <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumn3} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumnChildAge2} isLast="140px" />
 
-      <TechItem positionColumn={positionColumn5} isLast="260px" isLastOfTech />
+          <TechItem positionColumn={positionColumn1} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumnChildAge2} />
 
-      <TechItem positionColumn={positionColumn4} />
-      <TechItem positionColumn={positionColumnChildAge} />
-      <TechItem positionColumn={positionColumnChildAge2} />
-      <TechItem positionColumn={positionColumnChildAge} />
+          <TechItem positionColumn={positionColumn3} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumnChildAge2} />
 
-      <TechItem positionColumn={positionColumn5} />
-      <TechItem positionColumn={positionColumnChildAge2} />
-      <TechItem positionColumn={positionColumnChildAge} />
+          <TechItem positionColumn={positionColumn5} isLastOfTech />
 
-      <TechItem positionColumn={positionColumn3} />
-      <TechItem positionColumn={positionColumnChild} />
-      <TechItem positionColumn={positionColumnChildAge} />
-      <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumn4} />
+          <TechItem positionColumn={positionColumnChildAge} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumnChildAge} />
 
-      <TechItem positionColumn={positionColumn5} />
-      <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumn5} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+          <TechItem positionColumn={positionColumnChildAge} />
 
-      <TechItem positionColumn={positionColumn5} isLast="260px" isLastOfTech />
+          <TechItem positionColumn={positionColumn3} />
+          <TechItem positionColumn={positionColumnChild} />
+          <TechItem positionColumn={positionColumnChildAge} />
+          <TechItem positionColumn={positionColumnChildAge2} />
 
-      <TechItem positionColumn={positionColumn7} isLast="140px" isLastOfTech />
-    </TechsColumn>
-  </TechsWrapper>
-);
+          <TechItem positionColumn={positionColumn5} />
+          <TechItem positionColumn={positionColumnChildAge2} />
+
+          <TechItem positionColumn={positionColumn5} isLastOfTech />
+
+          <TechItem
+            positionColumn={positionColumn7}
+            isLast="140px"
+            isLastOfTech
+          />
+        </TechsColumn>
+      </TechsWrapper>
+    );
+  }
+}
 
 export default GameTechs;
