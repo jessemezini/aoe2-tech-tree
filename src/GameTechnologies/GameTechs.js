@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-
-import techData from '../data/techs';
+import './spritesheet.css';
+import techSprite from './techs.png';
 
 const TechsWrapper = styled.div`
   display: flex;
@@ -15,43 +15,50 @@ const TechsColumn = styled.div`
 `;
 
 const TechItem = styled.div`
-  background: #333;
+  background-image: url('${techSprite}');
+  background-repeat: no-repeat;
+  display: block;
   width: 64px;
   height: 64px;
-  border: 1px solid #fff;
+  border: 1px solid transparent;
   margin-top: ${props => props.positionColumn};
+  margin-right: ${props => (props.isLastOfTech ? '24px' : '0')};
   margin-bottom: ${props => props.isLast};
   margin-left: 3px;
-  margin-right: ${props => (props.isLastOfTech ? '24px' : '0')};
   cursor: pointer;
+
+  &:hover {
+    border-color: #ffffff;
+  }
 `;
 
-const positionColumnChild = '57px';
-const positionColumnChildAge = '71px';
-const positionColumnChildAge2 = '194px'; // isLast="140px"
+// const positionColumnChild = '57px';
+// const positionColumnChildAge = '71px';
+// const positionColumnChildAge2 = '194px'; // isLast="140px"
 
-const positionColumn1 = '0';
-const positionColumn2 = '123px';
-const positionColumn3 = '260px';
-const positionColumn4 = '383px';
-const positionColumn5 = '520px'; // isLast="260"
-const positionColumn6 = '640px';
-const positionColumn7 = '780px';
+// const positionColumn1 = '0';
+// const positionColumn2 = '123px';
+// const positionColumn3 = '260px';
+// const positionColumn4 = '383px';
+// const positionColumn5 = '520px'; // isLast="260"
+// const positionColumn6 = '640px';
+// const positionColumn7 = '780px';
 
-class GameTechs extends Component {
-  state = {
-    techs: {}
-  };
-
-  componentWillMount() {
-    this.setState({ techs: techData });
-  }
-
-  render() {
-    return (
-      <TechsWrapper>
-        <TechsColumn>
-          <TechItem positionColumn={positionColumn4} />
+const GameTechs = props => (
+  <TechsWrapper>
+    <TechsColumn>
+      {props.techs.map(tech => {
+        return (
+          <TechItem
+            className={tech.name}
+            key={tech.name}
+            positionColumn={tech.positionColumn}
+            isLast={tech.isLast}
+            isLastOfTech={tech.isLastOfTech}
+          />
+        );
+      })}
+      {/* <TechItem positionColumn={positionColumn4} />
           <TechItem positionColumn={positionColumnChildAge} />
           <TechItem positionColumn={positionColumnChildAge2} />
 
@@ -120,11 +127,9 @@ class GameTechs extends Component {
             positionColumn={positionColumn7}
             isLast="140px"
             isLastOfTech
-          />
-        </TechsColumn>
-      </TechsWrapper>
-    );
-  }
-}
+          /> */}
+    </TechsColumn>
+  </TechsWrapper>
+);
 
 export default GameTechs;

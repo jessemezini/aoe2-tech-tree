@@ -9,10 +9,10 @@ const GameTechsContainer = styled.main`
   flex-direction: row;
 `;
 
-const GameTechnologies = () => (
+const GameTechnologies = props => (
   <GameTechsContainer>
     <Ages />
-    <GameTechs />
+    <GameTechs techs={props.techs} />
   </GameTechsContainer>
 );
 
