@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import wololoData from './data/wololo';
 import techData from './data/techs';
 
 import GameCivilizations from './GameCivilizations/GameCivilizations';
@@ -15,17 +16,18 @@ const AppContainer = styled.div`
 
 class App extends Component {
   state = {
+    wololo: [],
     techs: []
   };
 
   componentWillMount() {
-    this.setState({ techs: techData });
+    this.setState({ wololo: wololoData, techs: techData });
   }
 
   render() {
     return (
       <AppContainer>
-        <GameCivilizations />
+        <GameCivilizations wololo={this.state.wololo} />
         <GameTechnologies techs={this.state.techs} />
       </AppContainer>
     );

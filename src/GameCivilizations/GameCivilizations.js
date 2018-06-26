@@ -19,9 +19,9 @@ const CivsContainer = styled.header`
   flex-direction: column;
 `;
 
-const GameCivilizations = () => (
+const GameCivilizations = props => (
   <CivsContainer>
-    <CivSelect />
+    <CivSelect wololo={props.wololo} />
     <CivInfo />
     <CivColorInfo />
   </CivsContainer>

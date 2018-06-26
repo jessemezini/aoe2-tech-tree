@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const SelectContainer = styled.nav`
@@ -16,19 +16,27 @@ const SelectContainer = styled.nav`
   }
 `;
 
-const CivSelect = () => (
-  <SelectContainer>
-    <p>Game Civilizations</p>
-    <select>
-      <option value="Aztecs">Aztecs</option>
-      <option value="Britons">Britons</option>
-      <option value="Huns">Huns</option>
-      <option value="Teutons">Teutons</option>
-      <option value="Bizantines">Bizantines</option>
-      <option value="Celts">Celts</option>
-      <option value="Khamer">Khamer</option>
-    </select>
-  </SelectContainer>
-);
+class CivSelect extends Component {
+  handleChange = e => {
+    console.log(e.target.value);
+  };
+
+  render() {
+    return (
+      <SelectContainer>
+        <p>Game Civilizations</p>
+        <select defaultValue="Aztecs" onChange={this.handleChange}>
+          {this.props.wololo.map(civ => {
+            return (
+              <option key={civ.name} value={civ.name}>
+                {civ.name}
+              </option>
+            );
+          })}
+        </select>
+      </SelectContainer>
+    );
+  }
+}
 
 export default CivSelect;
