@@ -10,8 +10,7 @@ const civs = [
     uniqueUnit: 'Jaguar Warrior (anti-Infantry Infantry)',
     castleAgeTech: 'Atlatl (Skirmishers, Genitour +1 Attack, +1 Range)',
     imperialAgeTech: 'Garland Wars (Infantry +4 Attack)',
-    teamBonus: 'Relics generate +33% gold',
-    isSelected: true
+    teamBonus: 'Relics generate +33% gold'
   },
   {
     name: 'Berbers',
@@ -24,8 +23,7 @@ const civs = [
       'Camel Archer (Cavalry Archer with bonus against other Cavalry Archers) Genitour (mounted Skirmisher)',
     castleAgeTech: 'Kasbah (Team Castle work +25% faster)',
     imperialAgeTech: 'Maghrabi Camels (Camel troops regenerate 1 HP/4s)',
-    teamBonus: 'Genitour available in Archery Range',
-    isSelected: false
+    teamBonus: 'Genitour available in Archery Range'
   }
 ];
 

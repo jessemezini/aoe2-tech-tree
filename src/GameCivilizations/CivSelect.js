@@ -17,15 +17,14 @@ const SelectContainer = styled.nav`
 `;
 
 class CivSelect extends Component {
-  handleChange = e => {
-    console.log(e.target.value);
-  };
-
   render() {
     return (
       <SelectContainer>
         <p>Game Civilizations</p>
-        <select defaultValue="Aztecs" onChange={this.handleChange}>
+        <select
+          defaultValue="Berbers"
+          onChange={this.props.handleSelectedOption}
+        >
           {this.props.wololo.map(civ => {
             return (
               <option key={civ.name} value={civ.name}>

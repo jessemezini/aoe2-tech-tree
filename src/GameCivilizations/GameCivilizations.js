@@ -21,7 +21,10 @@ const CivsContainer = styled.header`
 
 const GameCivilizations = props => (
   <CivsContainer>
-    <CivSelect wololo={props.wololo} />
+    <CivSelect
+      wololo={props.wololo}
+      handleSelectedOption={props.handleSelectedOption}
+    />
     <CivInfo />
     <CivColorInfo />
   </CivsContainer>

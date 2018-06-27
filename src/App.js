@@ -24,10 +24,17 @@ class App extends Component {
     this.setState({ wololo: wololoData, techs: techData });
   }
 
+  handleSelectedOption = e => {
+    console.log(e.target.value);
+  };
+
   render() {
     return (
       <AppContainer>
-        <GameCivilizations wololo={this.state.wololo} />
+        <GameCivilizations
+          wololo={this.state.wololo}
+          handleSelectedOption={this.handleSelectedOption}
+        />
         <GameTechnologies techs={this.state.techs} />
       </AppContainer>
     );
