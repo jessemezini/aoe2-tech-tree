@@ -17,7 +17,8 @@ const AppContainer = styled.div`
 class App extends Component {
   state = {
     wololo: [],
-    techs: []
+    techs: [],
+    selectedCiv: 'Aztecs'
   };
 
   componentWillMount() {
@@ -25,7 +26,7 @@ class App extends Component {
   }
 
   handleSelectedOption = e => {
-    console.log(e.target.value);
+    this.setState({ selectedCiv: e.target.value });
   };
 
   render() {
@@ -33,6 +34,7 @@ class App extends Component {
       <AppContainer>
         <GameCivilizations
           wololo={this.state.wololo}
+          selectedCiv={this.state.selectedCiv}
           handleSelectedOption={this.handleSelectedOption}
         />
         <GameTechnologies techs={this.state.techs} />
