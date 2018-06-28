@@ -1,34 +1,35 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-const CivInfo = () => (
-  <article>
-    <ul>
-      <li>Villagers carry +5</li>
-      <li>
-        Military units - including Siege Weapons, Warships but not Monks - are
-        created 18% faster
-      </li>
-      <li>Monks +5 hit points for each Monastery technology</li>
-      <li>Start with +50 gold</li>
-    </ul>
+const CivInfo = props => (
+  <Fragment>
+    {props.wololo.filter(civ => civ.name === props.selectedCiv).map(civ => {
+      return (
+        <article key={civ.name}>
+          <ul>
+            {civ.bonus.map((bonus, i) => {
+              return <li key={i}>{bonus}</li>;
+            })}
+          </ul>
 
-    <p>
-      <strong>Unique Unit:</strong> Jaguar Warrior (anti-Infantry Infantry
-    </p>
+          <p>
+            <strong>Unique Unit:</strong> {civ.uniqueUnit}
+          </p>
 
-    <p>
-      <strong>Castle Age Tech: </strong>Atlatl (Skirmishers, Genitour +1 Attack,
-      +1 Range)
-    </p>
+          <p>
+            <strong>Castle Age Tech: </strong> {civ.castleAgeTech}
+          </p>
 
-    <p>
-      <strong>Imperial Age Tech: </strong> Garland Wars (Infantry +4 Attack)
-    </p>
+          <p>
+            <strong>Imperial Age Tech: </strong> {civ.imperialAgeTech}
+          </p>
 
-    <p>
-      <strong>Team Bonus: </strong> Relics generate +33% gold
-    </p>
-  </article>
+          <p>
+            <strong>Team Bonus: </strong> {civ.teamBonus}
+          </p>
+        </article>
+      );
+    })}
+  </Fragment>
 );
 
 export default CivInfo;

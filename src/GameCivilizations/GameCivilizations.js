@@ -26,7 +26,7 @@ const GameCivilizations = props => (
       selectedCiv={props.selectedCiv}
       handleSelectedOption={props.handleSelectedOption}
     />
-    <CivInfo />
+    <CivInfo wololo={props.wololo} selectedCiv={props.selectedCiv} />
     <CivColorInfo />
   </CivsContainer>
 );
