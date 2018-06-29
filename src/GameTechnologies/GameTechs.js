@@ -47,16 +47,40 @@ const TechItem = styled.div`
 const GameTechs = props => (
   <TechsWrapper>
     <TechsColumn>
-      {props.techs.map(tech => {
+      {/* {props.techs.map(tech => {
         return (
           <TechItem
-            className={tech.name}
             key={tech.name}
+            className={tech.name}
             positionColumn={tech.positionColumn}
             isLast={tech.isLast}
             isLastOfTech={tech.isLastOfTech}
           />
         );
+      })} */}
+      {props.techs.map(tech => {
+        return tech.dontBelongTo.map(isSelectedCiv => {
+          if (isSelectedCiv === props.selectedCiv) {
+            return (
+              <TechItem
+                key={tech.name}
+                className={`${tech.name} dontBelongTo`}
+                positionColumn={tech.positionColumn}
+                isLast={tech.isLast}
+                isLastOfTech={tech.isLastOfTech}
+              />
+            );
+          }
+          return (
+            <TechItem
+              key={tech.name}
+              className={tech.name}
+              positionColumn={tech.positionColumn}
+              isLast={tech.isLast}
+              isLastOfTech={tech.isLastOfTech}
+            />
+          );
+        });
       })}
       {/* <TechItem positionColumn={positionColumn4} />
           <TechItem positionColumn={positionColumnChildAge} />

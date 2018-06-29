@@ -37,7 +37,7 @@ class App extends Component {
           selectedCiv={this.state.selectedCiv}
           handleSelectedOption={this.handleSelectedOption}
         />
-        <GameTechnologies techs={this.state.techs} />
+        <GameTechnologies techs={this.state.techs} selectedCiv={this.state.selectedCiv}/>
       </AppContainer>
     );
   }

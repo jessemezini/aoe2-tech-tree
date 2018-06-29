@@ -12,7 +12,7 @@ const GameTechsContainer = styled.main`
 const GameTechnologies = props => (
   <GameTechsContainer>
     <Ages />
-    <GameTechs techs={props.techs} />
+    <GameTechs techs={props.techs} selectedCiv={props.selectedCiv} />
   </GameTechsContainer>
 );
 

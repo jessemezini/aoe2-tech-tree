@@ -13,14 +13,14 @@ const techData = [
     positionColumn: '383px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ''
+    dontBelongTo: ['Aztecs']
   },
   {
     name: 'crossbowman',
     positionColumn: '71px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ''
+    dontBelongTo: []
   },
   {
     name: 'arbalest',
@@ -34,14 +34,14 @@ const techData = [
     positionColumn: '383px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ''
+    dontBelongTo: []
   },
   {
     name: 'elite-skirmisher',
     positionColumn: '71px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ''
+    dontBelongTo: []
   },
   {
     name: 'imperial-skirmisher',
@@ -55,14 +55,14 @@ const techData = [
     positionColumn: '260px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ''
+    dontBelongTo: []
   },
   {
     name: 'cavalry-archer',
     positionColumn: '194px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ''
+    dontBelongTo: []
   },
   {
     name: 'heavy-cavalry-archer',
@@ -76,7 +76,7 @@ const techData = [
     positionColumn: '520px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ''
+    dontBelongTo: []
   },
   {
     name: 'hand-cannoneer',
@@ -90,7 +90,7 @@ const techData = [
     positionColumn: '520px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ''
+    dontBelongTo: []
   },
   {
     name: 'elite-genitour',
@@ -104,7 +104,7 @@ const techData = [
     positionColumn: '520px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ''
+    dontBelongTo: []
   },
   {
     name: 'parthian-tactics',
