@@ -1,3 +1,5 @@
+import 'core-js/fn/array/includes';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { injectGlobal } from 'styled-components';
