@@ -13,14 +13,14 @@ const techData = [
     positionColumn: '383px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ['Aztecs']
+    dontBelongTo: ['Aztecs', 'Berbers']
   },
   {
     name: 'crossbowman',
     positionColumn: '71px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: []
+    dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'arbalest',
