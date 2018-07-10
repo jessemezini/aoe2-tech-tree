@@ -7,9 +7,16 @@ import techData from './data/techs';
 import GameCivilizations from './GameCivilizations/GameCivilizations';
 import GameTechnologies from './GameTechnologies/GameTechnologies';
 
-const AppContainer = styled.div`
-  padding: 15px;
+import bg from './bg.jpg';
 
+const AppContainer = styled.div`
+  background-image: url(${bg});
+  background-repeat: repeat-x;
+  min-width: 5837px;
+  min-height: 1008px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   display: flex;
   flex-direction: row;
 `;

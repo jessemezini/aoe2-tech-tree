@@ -1,10 +1,3 @@
-// TODO: dontBelongTo compare with the selected name and if returns true
-// add a className to highlight the tech.
-// if (props.tech.dontBelongTo.map(civ => {
-//  civ === props.selectedCiv ? true : false
-// });
-//
-
 // FIXME: imperial-skirmisher
 
 const techData = [

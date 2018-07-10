@@ -8,9 +8,13 @@ import 'normalize.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-import bg from './bg.jpg';
-
 injectGlobal`
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+
   body {
     font-family: -apple-system, BlinkMacSystemFont,
     “Segoe UI”, “Roboto”, “Oxygen”, “Ubuntu”, “Cantarell”,
@@ -20,10 +24,6 @@ injectGlobal`
     line-height: 1.4;
     color: #111111;
     background-color: #ebcb9c;
-    background-image: url(${bg});
-    background-repeat: repeat-x;
-    width: 5837px;
-    height: 1008px;
   }
 
   strong {

@@ -6,6 +6,7 @@ import techSprite from './techs.png';
 const TechsWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  min-width: 5210px;
 `;
 
 const TechsColumn = styled.div`

@@ -13,6 +13,7 @@ const GameTechnologies = props => (
   <GameTechsContainer>
     <Ages />
     <GameTechs techs={props.techs} selectedCiv={props.selectedCiv} />
+    <Ages />
   </GameTechsContainer>
 );
 
