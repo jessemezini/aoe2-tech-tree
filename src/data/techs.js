@@ -1,4 +1,5 @@
 // FIXME: imperial-skirmisher
+// FIXME: uniqueUnits
 
 const techData = [
   {
@@ -8,12 +9,28 @@ const techData = [
     isLastOfTech: false,
     dontBelongTo: ['Aztecs', 'Berbers']
   },
+  // {
+  //   name: 'crossbowman',
+  //   positionColumn: '71px',
+  //   isLast: '0',
+  //   isLastOfTech: false,
+  //   dontBelongTo: ['Berbers', 'Franks', 'Persians']
+  // },
   {
-    name: 'crossbowman',
+    name: 'eagle-warrior',
     positionColumn: '71px',
     isLast: '0',
     isLastOfTech: false,
-    dontBelongTo: ['Berbers', 'Franks', 'Persians']
+    dontBelongTo: ['Berbers', 'Franks', 'Persians'],
+    uniqueUnitOf: 'Aztecs'
+  },
+  {
+    name: 'camel',
+    positionColumn: '71px',
+    isLast: '0',
+    isLastOfTech: false,
+    dontBelongTo: ['Celts', 'Franks', 'Persians'],
+    uniqueUnitOf: 'Berbers'
   },
   {
     name: 'arbalest',

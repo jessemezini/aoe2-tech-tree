@@ -49,18 +49,30 @@ const GameTechs = props => (
   <TechsWrapper>
     <TechsColumn>
       {props.techs.map(tech => {
-        const dontBelong = tech.dontBelongTo.includes(props.selectedCiv);
-        return (
-          <TechItem
-            key={tech.name}
-            className={`${tech.name} ${
-              dontBelong === true ? 'dontBelongTo' : ''
-            }`}
-            positionColumn={tech.positionColumn}
-            isLast={tech.isLast}
-            isLastOfTech={tech.isLastOfTech}
-          />
-        );
+        const dontBelong =
+          tech.dontBelongTo.includes(props.selectedCiv) === true
+            ? 'dontBelongTo'
+            : null;
+
+        const uniqueUnit =
+          tech.uniqueUnitOf === props.selectedCiv ||
+          tech.uniqueUnitOf === undefined;
+
+        console.log(tech.uniqueUnitOf);
+
+        if (uniqueUnit) {
+          return (
+            <TechItem
+              key={tech.name}
+              className={`${tech.name} ${dontBelong}`}
+              positionColumn={tech.positionColumn}
+              isLast={tech.isLast}
+              isLastOfTech={tech.isLastOfTech}
+            />
+          );
+        }
+
+        return null;
       })}
       {/* <TechItem positionColumn={positionColumn4} />
           <TechItem positionColumn={positionColumnChildAge} />
