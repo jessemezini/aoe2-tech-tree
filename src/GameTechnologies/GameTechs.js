@@ -4,15 +4,11 @@ import './spritesheet.css';
 import techSprite from './techs.png';
 
 const TechsWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
   min-width: 5210px;
-`;
-
-const TechsColumn = styled.div`
   height: 990px;
   display: flex;
   flex-flow: column wrap;
+  align-content: start;
 `;
 
 const TechItem = styled.div`
@@ -47,32 +43,31 @@ const TechItem = styled.div`
 
 const GameTechs = props => (
   <TechsWrapper>
-    <TechsColumn>
-      {props.techs.map(tech => {
-        const dontBelong =
-          tech.dontBelongTo.includes(props.selectedCiv) === true
-            ? 'dontBelongTo'
-            : null;
+    {props.techs.map(tech => {
+      const dontBelong =
+        tech.dontBelongTo.includes(props.selectedCiv) === true
+          ? 'dontBelongTo'
+          : null;
 
-        const uniqueUnit =
-          tech.uniqueUnitOf === props.selectedCiv ||
-          tech.uniqueUnitOf === undefined;
+      const uniqueUnit =
+        tech.uniqueUnitOf === props.selectedCiv ||
+        tech.uniqueUnitOf === undefined;
 
-        if (uniqueUnit) {
-          return (
-            <TechItem
-              key={tech.name}
-              className={`${tech.name} ${dontBelong}`}
-              positionColumn={tech.positionColumn}
-              isLast={tech.isLast}
-              isLastOfTech={tech.isLastOfTech}
-            />
-          );
-        }
+      if (uniqueUnit) {
+        return (
+          <TechItem
+            key={tech.name}
+            className={`${tech.name} ${dontBelong}`}
+            positionColumn={tech.positionColumn}
+            isLast={tech.isLast}
+            isLastOfTech={tech.isLastOfTech}
+          />
+        );
+      }
 
-        return null;
-      })}
-      {/* <TechItem positionColumn={positionColumn4} />
+      return null;
+    })}
+    {/* <TechItem positionColumn={positionColumn4} />
           <TechItem positionColumn={positionColumnChildAge} />
           <TechItem positionColumn={positionColumnChildAge2} />
 
@@ -142,7 +137,6 @@ const GameTechs = props => (
             isLast="140px"
             isLastOfTech
           /> */}
-    </TechsColumn>
   </TechsWrapper>
 );
 
