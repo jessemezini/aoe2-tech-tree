@@ -58,8 +58,6 @@ const GameTechs = props => (
           tech.uniqueUnitOf === props.selectedCiv ||
           tech.uniqueUnitOf === undefined;
 
-        console.log(tech.uniqueUnitOf);
-
         if (uniqueUnit) {
           return (
             <TechItem

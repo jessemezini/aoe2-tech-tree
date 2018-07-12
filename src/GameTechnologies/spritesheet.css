@@ -1,11 +1,36 @@
-.dontBelongTo::before,
-.dontBelongTo::after {
-  content: '';
+@font-face {
+  font-family: 'icomoon';
+  src: url('./fonts/icomoon.eot?sv6bk6');
+  src: url('./fonts/icomoon.eot?sv6bk6#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?sv6bk6') format('truetype'),
+    url('./fonts/icomoon.woff?sv6bk6') format('woff'),
+    url('./fonts/icomoon.svg?sv6bk6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.dontBelongTo {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  color: red;
+  font-size: 23px;
+  text-align: center;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dontBelongTo::before {
+  content: '\ea0f';
   display: block;
   width: 64px;
   height: 64px;
-  position: absolute;
-  background-color: #000000;
+  margin-top: 5px;
 }
 
 .arbalest {
