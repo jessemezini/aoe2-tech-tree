@@ -34,7 +34,7 @@ const techData = [
   },
   {
     name: 'arbalest',
-    positionColumn: '194px',
+    positionColumn: '196px',
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
@@ -55,71 +55,72 @@ const techData = [
   },
   {
     name: 'imperial-skirmisher',
-    positionColumn: '194px',
+    positionColumn: '196px',
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'archery-range',
-    positionColumn: '260px',
+    positionColumn: '258px',
     isLast: '0',
     isLastOfTech: false,
+    isAlignCenter: '33.5px',
     dontBelongTo: []
   },
   {
     name: 'cavalry-archer',
-    positionColumn: '194px',
+    positionColumn: '196px',
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'heavy-cavalry-archer',
-    positionColumn: '194px',
+    positionColumn: '196px',
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'slinger',
-    positionColumn: '520px',
+    positionColumn: '522px',
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'hand-cannoneer',
-    positionColumn: '194px',
+    positionColumn: '196px',
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'genitour',
-    positionColumn: '520px',
+    positionColumn: '522px',
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'elite-genitour',
-    positionColumn: '194px',
+    positionColumn: '196px',
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'thumb-ring',
-    positionColumn: '520px',
+    positionColumn: '522px',
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'parthian-tactics',
-    positionColumn: '194px',
-    isLast: '140px',
+    positionColumn: '196px',
+    isLast: '135px',
     isLastOfTech: true,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   }

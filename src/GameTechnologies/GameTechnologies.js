@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Ages from './Ages';
-import GameTechs from './GameTechs';
+import Techs from './Techs';
 
 const GameTechsContainer = styled.main`
   display: flex;
@@ -12,7 +12,7 @@ const GameTechsContainer = styled.main`
 const GameTechnologies = props => (
   <GameTechsContainer>
     <Ages />
-    <GameTechs techs={props.techs} selectedCiv={props.selectedCiv} />
+    <Techs techs={props.techs} selectedCiv={props.selectedCiv} />
     <Ages />
   </GameTechsContainer>
 );

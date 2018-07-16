@@ -17,12 +17,14 @@ const TechItem = styled.div`
   display: block;
   width: 64px;
   height: 64px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   margin-top: ${props => props.positionColumn};
   margin-right: ${props => (props.isLastOfTech ? '24px' : '0')};
   margin-bottom: ${props => props.isLast};
   margin-left: 3px;
   cursor: pointer;
+  position: relative;
+  left: ${props => props.isAlignCenter};
 
   &:hover {
     border-color: #ffffff;
@@ -31,17 +33,17 @@ const TechItem = styled.div`
 
 // const positionColumnChild = '57px';
 // const positionColumnChildAge = '71px';
-// const positionColumnChildAge2 = '194px'; // isLast="140px"
+// const positionColumnChildAge2 = '196px'; // isLast="135px"
 
 // const positionColumn1 = '0';
 // const positionColumn2 = '123px';
 // const positionColumn3 = '260px';
 // const positionColumn4 = '383px';
-// const positionColumn5 = '520px'; // isLast="260"
+// const positionColumn5 = '522px'; // isLast="255"
 // const positionColumn6 = '640px';
 // const positionColumn7 = '780px';
 
-const GameTechs = props => (
+const Techs = props => (
   <TechsWrapper>
     {props.techs.map(tech => {
       const dontBelong =
@@ -61,6 +63,7 @@ const GameTechs = props => (
             positionColumn={tech.positionColumn}
             isLast={tech.isLast}
             isLastOfTech={tech.isLastOfTech}
+            isAlignCenter={tech.isAlignCenter}
           />
         );
       }
@@ -140,4 +143,4 @@ const GameTechs = props => (
   </TechsWrapper>
 );
 
-export default GameTechs;
+export default Techs;
