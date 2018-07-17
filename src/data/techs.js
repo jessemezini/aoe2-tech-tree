@@ -7,6 +7,12 @@ const techData = [
     positionColumn: '383px',
     isLast: '0',
     isLastOfTech: false,
+    svgWidth: '64',
+    svgHeight: '56',
+    svgLinex1: '32',
+    svgLiney1: '0',
+    svgLinex2: '32',
+    svgLiney2: '100',
     dontBelongTo: ['Aztecs', 'Berbers']
   },
   // {
