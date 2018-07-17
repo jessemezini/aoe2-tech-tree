@@ -66,6 +66,7 @@ const techData = [
     isLast: '0',
     isLastOfTech: false,
     isAlignCenter: '33.5px',
+    isTechParent: true,
     dontBelongTo: []
   },
   {

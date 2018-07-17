@@ -64,12 +64,43 @@ const Techs = props => (
             isLast={tech.isLast}
             isLastOfTech={tech.isLastOfTech}
             isAlignCenter={tech.isAlignCenter}
-          />
+          >
+            <svg width="64" height="200" style={{ position: 'absolute', top: '-100px', left: 0, pointerEvents: 'none' }}>
+              <line
+                x1="32"
+                y1="66"
+                x2="32"
+                y2="100"
+                style={{ stroke: '#333', strokeWidth: 2 }}
+              />
+            </svg>
+            {tech.isTechParent && (
+              <svg
+                width="357"
+                height="3"
+                style={{
+                  position: 'absolute',
+                  top: '68px',
+                  left: '-145px',
+                  pointerEvents: 'none'
+                }}
+              >
+                <line
+                  x1="0"
+                  y1="0"
+                  x2="357"
+                  y2="0"
+                  style={{ stroke: '#333', strokeWidth: 3 }}
+                />
+              </svg>
+            )}
+          </TechItem>
         );
       }
 
       return null;
     })}
+
     {/* <TechItem positionColumn={positionColumn4} />
           <TechItem positionColumn={positionColumnChildAge} />
           <TechItem positionColumn={positionColumnChildAge2} />
