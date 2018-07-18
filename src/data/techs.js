@@ -1,30 +1,39 @@
 // FIXME: imperial-skirmisher
 // FIXME: uniqueUnits
 
+// Size of svgTechParentSize divided by 2 -33.5 (half tech width 32 + margin of 3/2 = 1.5 )
+
+// const positionColumnChild = '57px';
+const positionColumnChildAge = '71px';
+const positionColumnChildAge2 = '196px'; // isLast="135px"
+
+// const positionColumn1 = '0';
+// const positionColumn2 = '123px';
+const positionColumn3 = '258px';
+const positionColumn4 = '383px';
+const positionColumn5 = '522px'; // isLast="255"
+// const positionColumn6 = '640px';
+// const positionColumn7 = '780px';
+
 const techData = [
   {
     name: 'archer',
-    positionColumn: '383px',
+    positionColumn: positionColumn4,
     isLast: '0',
     isLastOfTech: false,
-    svgWidth: '64',
-    svgHeight: '56',
-    svgLinex1: '32',
-    svgLiney1: '0',
-    svgLinex2: '32',
-    svgLiney2: '100',
+    svgSize: '56',
     dontBelongTo: ['Aztecs', 'Berbers']
   },
   // {
   //   name: 'crossbowman',
-  //   positionColumn: '71px',
+  //   positionColumn: positionColumnChildAge,
   //   isLast: '0',
   //   isLastOfTech: false,
   //   dontBelongTo: ['Berbers', 'Franks', 'Persians']
   // },
   {
     name: 'eagle-warrior',
-    positionColumn: '71px',
+    positionColumn: positionColumnChildAge,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians'],
@@ -32,7 +41,7 @@ const techData = [
   },
   {
     name: 'camel',
-    positionColumn: '71px',
+    positionColumn: positionColumnChildAge,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Celts', 'Franks', 'Persians'],
@@ -40,93 +49,95 @@ const techData = [
   },
   {
     name: 'arbalest',
-    positionColumn: '196px',
+    positionColumn: positionColumnChildAge2,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'skirmisher',
-    positionColumn: '383px',
+    positionColumn: positionColumn4,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'elite-skirmisher',
-    positionColumn: '71px',
+    positionColumn: positionColumnChildAge,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'imperial-skirmisher',
-    positionColumn: '196px',
+    positionColumn: positionColumnChildAge2,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'archery-range',
-    positionColumn: '258px',
+    positionColumn: positionColumn3,
     isLast: '0',
     isLastOfTech: false,
     isAlignCenter: '33.5px',
     isTechParent: true,
+    svgSize: '100',
+    svgTechParentSize: '355',
     dontBelongTo: []
   },
   {
     name: 'cavalry-archer',
-    positionColumn: '196px',
+    positionColumn: positionColumnChildAge2,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'heavy-cavalry-archer',
-    positionColumn: '196px',
+    positionColumn: positionColumnChildAge2,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'slinger',
-    positionColumn: '522px',
+    positionColumn: positionColumn5,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'hand-cannoneer',
-    positionColumn: '196px',
+    positionColumn: positionColumnChildAge2,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'genitour',
-    positionColumn: '522px',
+    positionColumn: positionColumn5,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'elite-genitour',
-    positionColumn: '196px',
+    positionColumn: positionColumnChildAge2,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'thumb-ring',
-    positionColumn: '522px',
+    positionColumn: positionColumn5,
     isLast: '0',
     isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'parthian-tactics',
-    positionColumn: '196px',
+    positionColumn: positionColumnChildAge2,
     isLast: '135px',
     isLastOfTech: true,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']

@@ -19,7 +19,8 @@ const TechItem = styled.div`
   height: 64px;
   border: 2px solid transparent;
   margin-top: ${props => props.positionColumn};
-  margin-right: ${props => (props.isLastOfTech ? '24px' : '0')};
+  /* margin-right: ${props => (props.isLastOfTech ? '24px' : '0')}; */
+  ${props => props.isLastOfTech && 'margin-right: 24px;'}
   margin-bottom: ${props => props.isLast};
   margin-left: 3px;
   cursor: pointer;
@@ -40,30 +41,17 @@ const TechItem = styled.div`
 
 const SVGItem = styled.svg`
   position: absolute;
-  top: -56px;
+  top: -${props => props.height}px;
   left: 0;
   pointer-events: none;
-  /* border: 1px solid red; */
 `;
 
 const SVGItemOfParent = styled.svg`
   position: absolute;
   top: 68px;
-  left: -145px;
+  left: -145.5px;
   pointer-events: none;
 `;
-
-// const positionColumnChild = '57px';
-// const positionColumnChildAge = '71px';
-// const positionColumnChildAge2 = '196px'; // isLast="135px"
-
-// const positionColumn1 = '0';
-// const positionColumn2 = '123px';
-// const positionColumn3 = '260px';
-// const positionColumn4 = '383px';
-// const positionColumn5 = '522px'; // isLast="255"
-// const positionColumn6 = '640px';
-// const positionColumn7 = '780px';
 
 const Techs = props => (
   <TechsWrapper>
@@ -87,21 +75,21 @@ const Techs = props => (
             isLastOfTech={tech.isLastOfTech}
             isAlignCenter={tech.isAlignCenter}
           >
-            <SVGItem width={tech.svgWidth} height={tech.svgHeight}>
+            <SVGItem width="64" height={tech.svgSize}>
               <line
-                x1={tech.svgLinex1}
-                y1={tech.svgLiney1}
-                x2={tech.svgLinex2}
-                y2={tech.svgLiney2}
+                x1="32"
+                y1="0"
+                x2="32"
+                y2={tech.svgSize}
                 style={{ stroke: '#333', strokeWidth: 2 }}
               />
             </SVGItem>
             {tech.isTechParent && (
-              <SVGItemOfParent width="357" height="3">
+              <SVGItemOfParent width={tech.svgTechParentSize} height="3">
                 <line
                   x1="0"
                   y1="0"
-                  x2="357"
+                  x2={tech.svgTechParentSize}
                   y2="0"
                   style={{ stroke: '#333', strokeWidth: 3 }}
                 />
