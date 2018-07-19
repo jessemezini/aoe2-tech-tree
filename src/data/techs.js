@@ -1,5 +1,4 @@
-// FIXME: imperial-skirmisher
-// FIXME: uniqueUnits
+// FIXME: Yasama and Kataparuto
 
 // Size of svgTechParentSize divided by 2 -33.5 (half tech width 32 + margin of 3/2 = 1.5 )
 
