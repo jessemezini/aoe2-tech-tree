@@ -59,7 +59,7 @@ const Techs = props => (
       const dontBelong =
         tech.dontBelongTo.includes(props.selectedCiv) === true
           ? 'dontBelongTo'
-          : null;
+          : '';
 
       const uniqueUnit =
         tech.uniqueUnitOf === props.selectedCiv ||
