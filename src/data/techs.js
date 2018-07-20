@@ -1,12 +1,10 @@
-// FIXME: Yasama and Kataparuto
-
 // Size of svgTechParentSize divided by 2 -33.5 (half tech width 32 + margin of 3/2 = 1.5 )
 
-const positionColumnChild = '57px';
+const positionColumnChild = '53px';
 const positionColumnChildAge = '71px';
 const positionColumnChildAge2 = '192px'; // isLast="135px"
 
-const positionColumn1 = '0';
+const positionColumn1 = '2px';
 const positionColumn2 = '123px';
 const positionColumn3 = '262px';
 const positionColumn4 = '383px';
@@ -15,77 +13,61 @@ const positionColumn5 = '522px'; // isLast="255"
 // const positionColumn7 = '780px';
 
 const last135 = '135px';
+const last255 = '255px';
+const isLastOfTech = '24px';
 
 const svgSizeBelowParent = '52';
-const svgSize1 = '60';
+const svgSize1 = '56';
 
 const techData = [
   //#region Archery Range
   {
     name: 'archer',
     positionColumn: positionColumn4,
-    isLast: '0',
-    isLastOfTech: false,
     svgSize: svgSizeBelowParent,
     dontBelongTo: ['Aztecs', 'Berbers']
   },
+  {
+    name: 'crossbowman',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: ['Berbers', 'Franks', 'Persians']
+  },
   // {
-  //   name: 'crossbowman',
+  //   name: 'eagle-warrior',
   //   positionColumn: positionColumnChildAge,
-  //   isLast: '0',
-  //   isLastOfTech: false,
-  //   dontBelongTo: ['Berbers', 'Franks', 'Persians']
+  //   dontBelongTo: ['Berbers', 'Franks', 'Persians'],
+  //   uniqueUnitOf: 'Aztecs'
   // },
-  {
-    name: 'eagle-warrior',
-    positionColumn: positionColumnChildAge,
-    isLast: '0',
-    isLastOfTech: false,
-    dontBelongTo: ['Berbers', 'Franks', 'Persians'],
-    uniqueUnitOf: 'Aztecs'
-  },
-  {
-    name: 'camel',
-    positionColumn: positionColumnChildAge,
-    isLast: '0',
-    isLastOfTech: false,
-    dontBelongTo: ['Celts', 'Franks', 'Persians'],
-    uniqueUnitOf: 'Berbers'
-  },
+  // {
+  //   name: 'camel',
+  //   positionColumn: positionColumnChildAge,
+  //   dontBelongTo: ['Celts', 'Franks', 'Persians'],
+  //   uniqueUnitOf: 'Berbers'
+  // },
   {
     name: 'arbalest',
     positionColumn: positionColumnChildAge2,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'skirmisher',
     positionColumn: positionColumn4,
-    isLast: '0',
-    isLastOfTech: false,
     svgSize: svgSizeBelowParent,
     dontBelongTo: []
   },
   {
     name: 'elite-skirmisher',
     positionColumn: positionColumnChildAge,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'imperial-skirmisher',
     positionColumn: positionColumnChildAge2,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'archery-range',
     positionColumn: positionColumn3,
-    isLast: '0',
-    isLastOfTech: false,
     isAlignCenter: '33.5px',
     isTechParent: true,
     svgSize: '100',
@@ -95,57 +77,43 @@ const techData = [
   {
     name: 'cavalry-archer',
     positionColumn: positionColumnChildAge2,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'heavy-cavalry-archer',
     positionColumn: positionColumnChildAge2,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'slinger',
     positionColumn: positionColumn5,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'hand-cannoneer',
     positionColumn: positionColumnChildAge2,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'genitour',
     positionColumn: positionColumn5,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'elite-genitour',
     positionColumn: positionColumnChildAge2,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   {
     name: 'thumb-ring',
     positionColumn: positionColumn5,
-    isLast: '0',
-    isLastOfTech: false,
     dontBelongTo: []
   },
   {
     name: 'parthian-tactics',
     positionColumn: positionColumnChildAge2,
     isLast: '135px',
-    isLastOfTech: true,
+    isLastOfTech,
     dontBelongTo: ['Berbers', 'Franks', 'Persians']
   },
   //#endregion
@@ -153,32 +121,24 @@ const techData = [
   {
     name: 'militia',
     positionColumn: positionColumn2,
-    isLast: '0',
-    isLastOfTech: false,
     svgSize: svgSize1,
     dontBelongTo: []
   },
   {
     name: 'man-at-arms',
     positionColumn: positionColumnChildAge,
-    isLast: '0',
-    isLastOfTech: false,
     svgSize: svgSize1,
     dontBelongTo: []
   },
   {
     name: 'long-swordsman',
     positionColumn: positionColumnChildAge2,
-    isLast: '0',
-    isLastOfTech: false,
     svgSize: svgSize1,
     dontBelongTo: []
   },
   {
     name: 'two-handed-swordsman',
     positionColumn: positionColumnChildAge2,
-    isLast: '0',
-    isLastOfTech: false,
     svgSize: svgSize1,
     dontBelongTo: []
   },
@@ -191,7 +151,6 @@ const techData = [
   {
     name: 'spearman',
     positionColumn: positionColumn3,
-    isLastOfTech: false,
     dontBelongTo: []
   },
   {
@@ -209,9 +168,122 @@ const techData = [
     name: 'barracks',
     positionColumn: positionColumn1,
     dontBelongTo: []
+  },
+  {
+    name: 'eagle-scout',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: []
+  },
+  {
+    name: 'eagle-warrior',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: []
+  },
+  {
+    name: 'elite-eagle-warrior',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: []
+  },
+  {
+    name: 'tracking',
+    positionColumn: positionColumn3,
+    dontBelongTo: []
+  },
+  {
+    name: 'squires',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: []
+  },
+  {
+    name: 'condottiero',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: []
+  },
+  {
+    name: 'arson',
+    positionColumn: positionColumn5,
+    isLastOfTech,
+    dontBelongTo: []
+  },
+  //#endregion
+  //#region Stable
+  {
+    name: 'bloodlines',
+    positionColumn: positionColumn4,
+    dontBelongTo: []
+  },
+  {
+    name: 'camel',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: []
+  },
+  {
+    name: 'heavy-camel',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: []
+  },
+  {
+    name: 'knight',
+    positionColumn: positionColumn5,
+    dontBelongTo: []
+  },
+  {
+    name: 'cavalier',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: []
+  },
+  {
+    name: 'paladin',
+    positionColumn: positionColumnChild,
+    svgSize: svgSize1,
+    dontBelongTo: []
+  },
+  {
+    name: 'stable',
+    positionColumn: positionColumn3,
+    dontBelongTo: []
+  },
+  {
+    name: 'scout-cavalry',
+    positionColumn: positionColumnChild,
+    dontBelongTo: []
+  },
+  {
+    name: 'light-cavalry',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: []
+  },
+  {
+    name: 'hussar',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: []
+  },
+  {
+    name: 'battle-elephant',
+    positionColumn: positionColumn5,
+    dontBelongTo: []
+  },
+  {
+    name: 'elite-battle-elephant',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: []
+  },
+  {
+    name: 'husbandry',
+    positionColumn: positionColumn5,
+    isLast: last255,
+    isLastOfTech,
+    dontBelongTo: []
+  },
+  //#endregion
+  //#region Dock
+  {
+    name: 'fishing-ship',
+    positionColumn: positionColumn2,
+    dontBelongTo: []
   }
   //#endregion
-  //#region
+  //#region Towers and Walls
 
   //#endregion
 ];

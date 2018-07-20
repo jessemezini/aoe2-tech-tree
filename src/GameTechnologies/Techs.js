@@ -19,8 +19,7 @@ const TechItem = styled.div`
   height: 64px;
   border: 2px solid transparent;
   margin-top: ${props => props.positionColumn};
-  /* margin-right: ${props => (props.isLastOfTech ? '24px' : '0')}; */
-  ${props => props.isLastOfTech && 'margin-right: 24px;'}
+  margin-right: ${props => props.isLastOfTech};
   margin-bottom: ${props => props.isLast};
   margin-left: 3px;
   cursor: pointer;
@@ -101,77 +100,6 @@ const Techs = props => (
 
       return null;
     })}
-
-    {/* <TechItem positionColumn={positionColumn4} />
-          <TechItem positionColumn={positionColumnChildAge} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-
-          <TechItem positionColumn={positionColumn4} />
-          <TechItem positionColumn={positionColumnChildAge} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-
-          <TechItem positionColumn={positionColumn3} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-
-          <TechItem positionColumn={positionColumn5} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-
-          <TechItem positionColumn={positionColumn5} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-
-          <TechItem positionColumn={positionColumn5} />
-          <TechItem
-            positionColumn={positionColumnChildAge2}
-            isLast="140px"
-            isLastOfTech
-          />
-
-          <TechItem positionColumn={positionColumn2} />
-          <TechItem positionColumn={positionColumnChildAge} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-          <TechItem positionColumn={positionColumnChild} />
-
-          <TechItem positionColumn={positionColumn3} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-          <TechItem positionColumn={positionColumnChildAge2} isLast="140px" />
-
-          <TechItem positionColumn={positionColumn1} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-
-          <TechItem positionColumn={positionColumn3} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-
-          <TechItem positionColumn={positionColumn5} isLastOfTech />
-
-          <TechItem positionColumn={positionColumn4} />
-          <TechItem positionColumn={positionColumnChildAge} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-          <TechItem positionColumn={positionColumnChildAge} />
-
-          <TechItem positionColumn={positionColumn5} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-          <TechItem positionColumn={positionColumnChildAge} />
-
-          <TechItem positionColumn={positionColumn3} />
-          <TechItem positionColumn={positionColumnChild} />
-          <TechItem positionColumn={positionColumnChildAge} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-
-          <TechItem positionColumn={positionColumn5} />
-          <TechItem positionColumn={positionColumnChildAge2} />
-
-          <TechItem positionColumn={positionColumn5} isLastOfTech />
-
-          <TechItem
-            positionColumn={positionColumn7}
-            isLast="140px"
-            isLastOfTech
-          /> */}
   </TechsWrapper>
 );
 
