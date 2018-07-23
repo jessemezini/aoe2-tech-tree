@@ -14,7 +14,9 @@ const positionColumn7 = '782px';
 
 const last135 = '135px';
 const last255 = '255px';
+const last385 = '385px';
 const last650 = '650px';
+const last900 = '900px';
 const isLastOfTech = '24px';
 const isAlignCenter = '33.5px';
 
@@ -34,18 +36,6 @@ const techData = [
     positionColumn: positionColumnChildAge,
     dontBelongTo: ['Berbers', 'Franks', 'Persians'],
   },
-  // {
-  //   name: 'eagle-warrior',
-  //   positionColumn: positionColumnChildAge,
-  //   dontBelongTo: ['Berbers', 'Franks', 'Persians'],
-  //   uniqueUnitOf: 'Aztecs'
-  // },
-  // {
-  //   name: 'camel',
-  //   positionColumn: positionColumnChildAge,
-  //   dontBelongTo: ['Celts', 'Franks', 'Persians'],
-  //   uniqueUnitOf: 'Berbers'
-  // },
   {
     name: 'arbalest',
     positionColumn: positionColumnChildAge2,
@@ -515,12 +505,27 @@ const techData = [
     name: 'aztecs-jaguar-warrior',
     positionColumn: positionColumn6,
     dontBelongTo: [],
+    uniqueUnitOf: 'Aztecs',
   },
   {
     name: 'aztecs-elite-jaguar-warrior',
     positionColumn: positionColumnChildAge,
     dontBelongTo: [],
+    uniqueUnitOf: 'Aztecs',
   },
+  {
+    name: 'berbers-camel-archer',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+    uniqueUnitOf: 'Berbers',
+  },
+  {
+    name: 'berbers-elite-camel-archer',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+    uniqueUnitOf: 'Berbers',
+  },
+  //
   {
     name: 'petard',
     positionColumn: positionColumn6,
@@ -531,16 +536,32 @@ const techData = [
     positionColumn: positionColumnChildAge,
     dontBelongTo: [],
   },
+  //
   {
     name: 'aztecs-atlatl',
     positionColumn: positionColumn6,
     dontBelongTo: [],
+    uniqueUnitOf: 'Aztecs',
   },
   {
     name: 'aztecs-garland-wars',
     positionColumn: positionColumnChildAge,
     dontBelongTo: [],
+    uniqueUnitOf: 'Aztecs',
   },
+  {
+    name: 'berbers-kasbah',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+    uniqueUnitOf: 'Berbers',
+  },
+  {
+    name: 'berbers-maghrabi-camel',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+    uniqueUnitOf: 'Berbers',
+  },
+  //
   {
     name: 'castle',
     positionColumn: positionColumn5,
@@ -565,6 +586,75 @@ const techData = [
   {
     name: 'spies-treason',
     positionColumn: positionColumn7,
+    isLast: last135,
+    isLastOfTech,
+    dontBelongTo: [],
+  },
+  //#endregion
+  //#region House & Town Center
+  {
+    name: 'house',
+    positionColumn: positionColumn1,
+    isLast: last900,
+    isLastOfTech,
+    dontBelongTo: [],
+  },
+  {
+    name: 'villager',
+    positionColumn: positionColumn2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'town-watch',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'town-patrol',
+    positionColumn: positionColumnChildAge2,
+    isLast: last385,
+    dontBelongTo: [],
+  },
+  {
+    name: 'town-center',
+    positionColumn: positionColumn1,
+    dontBelongTo: [],
+  },
+  {
+    name: 'feudal-age',
+    positionColumn: positionColumnChild,
+    dontBelongTo: [],
+  },
+  {
+    name: 'castle-age',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'imperial-age',
+    positionColumn: positionColumnChildAge2,
+    isLast: last385,
+    dontBelongTo: [],
+  },
+  {
+    name: 'loom',
+    positionColumn: positionColumn2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'wheelbarrow',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'hand-cart',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'town-center-building',
+    positionColumn: positionColumn5,
+    isLastOfTech,
     dontBelongTo: [],
   },
   //#endregion
