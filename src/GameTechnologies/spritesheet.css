@@ -28,1760 +28,1175 @@
 .dontBelongTo::before {
   content: '\ea0f';
   display: block;
-  width: 64px;
-  height: 64px;
+
   margin-top: 3px;
   opacity: 0.7;
 }
 
 .arbalest {
-  width: 64px;
-  height: 64px;
   background-position: -1px -1px;
 }
 
 .archer {
-  width: 64px;
-  height: 64px;
   background-position: -67px -1px;
 }
 
 .archery-range {
-  width: 64px;
-  height: 64px;
   background-position: -133px -1px;
 }
 
 .architecture {
-  width: 64px;
-  height: 64px;
   background-position: -199px -1px;
 }
 
 .arrowslits {
-  width: 64px;
-  height: 64px;
   background-position: -265px -1px;
 }
 
 .arson {
-  width: 64px;
-  height: 64px;
   background-position: -331px -1px;
 }
 
 .atonement {
-  width: 64px;
-  height: 64px;
   background-position: -397px -1px;
 }
 
 .aztecs-atlatl {
-  width: 64px;
-  height: 64px;
   background-position: -463px -1px;
 }
 
 .aztecs-elite-jaguar-warrior {
-  width: 64px;
-  height: 64px;
   background-position: -529px -1px;
 }
 
 .aztecs-garland-wars {
-  width: 64px;
-  height: 64px;
   background-position: -595px -1px;
 }
 
 .aztecs-jaguar-warrior {
-  width: 64px;
-  height: 64px;
   background-position: -661px -1px;
 }
 
 .ballistics {
-  width: 64px;
-  height: 64px;
   background-position: -727px -1px;
 }
 
 .banking {
-  width: 64px;
-  height: 64px;
   background-position: -793px -1px;
 }
 
 .barracks {
-  width: 64px;
-  height: 64px;
   background-position: -859px -1px;
 }
 
 .battering-ram {
-  width: 64px;
-  height: 64px;
   background-position: -925px -1px;
 }
 
 .battle-elephant {
-  width: 64px;
-  height: 64px;
   background-position: -991px -1px;
 }
 
 .berbers-camel-archer {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -1px;
 }
 
 .berbers-elite-camel-archer {
-  width: 64px;
-  height: 64px;
   background-position: -1px -67px;
 }
 
 .berbers-kasbah {
-  width: 64px;
-  height: 64px;
   background-position: -67px -67px;
 }
 
 .berbers-maghrabi-camel {
-  width: 64px;
-  height: 64px;
   background-position: -133px -67px;
 }
 
 .blacksmith {
-  width: 64px;
-  height: 64px;
   background-position: -199px -67px;
 }
 
 .blast-furnace {
-  width: 64px;
-  height: 64px;
   background-position: -265px -67px;
 }
 
 .block-printing {
-  width: 64px;
-  height: 64px;
   background-position: -331px -67px;
 }
 
 .bloodlines {
-  width: 64px;
-  height: 64px;
   background-position: -397px -67px;
 }
 
 .bodkin-arrow {
-  width: 64px;
-  height: 64px;
   background-position: -463px -67px;
 }
 
 .bombard-cannon {
-  width: 64px;
-  height: 64px;
   background-position: -529px -67px;
 }
 
 .bombard-tower {
-  width: 64px;
-  height: 64px;
   background-position: -595px -67px;
 }
 
 .bombard-tower-building {
-  width: 64px;
-  height: 64px;
   background-position: -661px -67px;
 }
 
 .bow-saw {
-  width: 64px;
-  height: 64px;
   background-position: -727px -67px;
 }
 
 .bracer {
-  width: 64px;
-  height: 64px;
   background-position: -793px -67px;
 }
 
 .britons-elite-longbowman {
-  width: 64px;
-  height: 64px;
   background-position: -859px -67px;
 }
 
 .britons-longbowman {
-  width: 64px;
-  height: 64px;
   background-position: -925px -67px;
 }
 
 .britons-warwolf {
-  width: 64px;
-  height: 64px;
   background-position: -991px -67px;
 }
 
 .britons-yeomen {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -67px;
 }
 
 .burmese-arambai {
-  width: 64px;
-  height: 64px;
   background-position: -1px -133px;
 }
 
 .burmese-elite-arambai {
-  width: 64px;
-  height: 64px;
   background-position: -67px -133px;
 }
 
 .burmese-howdah {
-  width: 64px;
-  height: 64px;
   background-position: -133px -133px;
 }
 
 .burmese-manipur-cavalry {
-  width: 64px;
-  height: 64px;
   background-position: -199px -133px;
 }
 
 .byzantines-cataphract {
-  width: 64px;
-  height: 64px;
   background-position: -265px -133px;
 }
 
 .byzantines-elite-cataphract {
-  width: 64px;
-  height: 64px;
   background-position: -331px -133px;
 }
 
 .byzantines-greek-fire {
-  width: 64px;
-  height: 64px;
   background-position: -397px -133px;
 }
 
 .byzantines-logistica {
-  width: 64px;
-  height: 64px;
   background-position: -463px -133px;
 }
 
 .camel {
-  width: 64px;
-  height: 64px;
   background-position: -529px -133px;
 }
 
 .cannon-galleon {
-  width: 64px;
-  height: 64px;
   background-position: -595px -133px;
 }
 
 .capped-ram {
-  width: 64px;
-  height: 64px;
   background-position: -661px -133px;
 }
 
 .caravan {
-  width: 64px;
-  height: 64px;
   background-position: -727px -133px;
 }
 
 .careening {
-  width: 64px;
-  height: 64px;
   background-position: -793px -133px;
 }
 
 .cartography {
-  width: 64px;
-  height: 64px;
   background-position: -859px -133px;
 }
 
 .castle {
-  width: 64px;
-  height: 64px;
   background-position: -925px -133px;
 }
 
 .castle-age {
-  width: 64px;
-  height: 64px;
   background-position: -991px -133px;
 }
 
 .cavalier {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -133px;
 }
 
 .cavalry-archer {
-  width: 64px;
-  height: 64px;
   background-position: -1px -199px;
 }
 
 .celts-elite-woad-raider {
-  width: 64px;
-  height: 64px;
   background-position: -67px -199px;
 }
 
 .celts-furor-celtica {
-  width: 64px;
-  height: 64px;
   background-position: -133px -199px;
 }
 
 .celts-stronghold {
-  width: 64px;
-  height: 64px;
   background-position: -199px -199px;
 }
 
 .celts-woad-raider {
-  width: 64px;
-  height: 64px;
   background-position: -265px -199px;
 }
 
 .chain-barding-armor {
-  width: 64px;
-  height: 64px;
   background-position: -331px -199px;
 }
 
 .chain-mail-armor {
-  width: 64px;
-  height: 64px;
   background-position: -397px -199px;
 }
 
 .champion {
-  width: 64px;
-  height: 64px;
   background-position: -463px -199px;
 }
 
 .chemistry {
-  width: 64px;
-  height: 64px;
   background-position: -529px -199px;
 }
 
 .chinese-chu-ko-nu {
-  width: 64px;
-  height: 64px;
   background-position: -595px -199px;
 }
 
 .chinese-elite-chu-ko-nu {
-  width: 64px;
-  height: 64px;
   background-position: -661px -199px;
 }
 
 .chinese-great-wall {
-  width: 64px;
-  height: 64px;
   background-position: -727px -199px;
 }
 
 .chinese-rocketry {
-  width: 64px;
-  height: 64px;
   background-position: -793px -199px;
 }
 
 .coinage {
-  width: 64px;
-  height: 64px;
   background-position: -859px -199px;
 }
 
 .condottiero {
-  width: 64px;
-  height: 64px;
   background-position: -925px -199px;
 }
 
 .conscription {
-  width: 64px;
-  height: 64px;
   background-position: -991px -199px;
 }
 
 .crop-rotation {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -199px;
 }
 
 .crossbowman {
-  width: 64px;
-  height: 64px;
   background-position: -1px -265px;
 }
 
 .demolition-raft {
-  width: 64px;
-  height: 64px;
   background-position: -67px -265px;
 }
 
 .demolition-ship {
-  width: 64px;
-  height: 64px;
   background-position: -133px -265px;
 }
 
 .dock {
-  width: 64px;
-  height: 64px;
   background-position: -199px -265px;
 }
 
 .double-bit-axe {
-  width: 64px;
-  height: 64px;
   background-position: -265px -265px;
 }
 
 .dry-dock {
-  width: 64px;
-  height: 64px;
   background-position: -331px -265px;
 }
 
 .eagle-scout {
-  width: 64px;
-  height: 64px;
   background-position: -397px -265px;
 }
 
 .eagle-warrior {
-  width: 64px;
-  height: 64px;
   background-position: -463px -265px;
 }
 
 .elite-battle-elephant {
-  width: 64px;
-  height: 64px;
   background-position: -529px -265px;
 }
 
 .elite-cannon-galleon {
-  width: 64px;
-  height: 64px;
   background-position: -595px -265px;
 }
 
 .elite-eagle-warrior {
-  width: 64px;
-  height: 64px;
   background-position: -661px -265px;
 }
 
 .elite-genitour {
-  width: 64px;
-  height: 64px;
   background-position: -727px -265px;
 }
 
 .elite-skirmisher {
-  width: 64px;
-  height: 64px;
   background-position: -793px -265px;
 }
 
 .ethiopians-elite-shotel-warrior {
-  width: 64px;
-  height: 64px;
   background-position: -859px -265px;
 }
 
 .ethiopians-royal-heirs {
-  width: 64px;
-  height: 64px;
   background-position: -925px -265px;
 }
 
 .ethiopians-shotel-warrior {
-  width: 64px;
-  height: 64px;
   background-position: -991px -265px;
 }
 
 .ethiopians-torsion-engine {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -265px;
 }
 
 .faith {
-  width: 64px;
-  height: 64px;
   background-position: -1px -331px;
 }
 
 .farm {
-  width: 64px;
-  height: 64px;
   background-position: -67px -331px;
 }
 
 .fast-fire-ship {
-  width: 64px;
-  height: 64px;
   background-position: -133px -331px;
 }
 
 .fervor {
-  width: 64px;
-  height: 64px;
   background-position: -199px -331px;
 }
 
 .feudal-age {
-  width: 64px;
-  height: 64px;
   background-position: -265px -331px;
 }
 
 .fire-galley {
-  width: 64px;
-  height: 64px;
   background-position: -331px -331px;
 }
 
 .fire-ship {
-  width: 64px;
-  height: 64px;
   background-position: -397px -331px;
 }
 
 .fish-trap {
-  width: 64px;
-  height: 64px;
   background-position: -463px -331px;
 }
 
 .fishing-ship {
-  width: 64px;
-  height: 64px;
   background-position: -529px -331px;
 }
 
 .fletching {
-  width: 64px;
-  height: 64px;
   background-position: -595px -331px;
 }
 
 .forging {
-  width: 64px;
-  height: 64px;
   background-position: -661px -331px;
 }
 
 .fortified-wall {
-  width: 64px;
-  height: 64px;
   background-position: -727px -331px;
 }
 
 .fortified-wall-building {
-  width: 64px;
-  height: 64px;
   background-position: -793px -331px;
 }
 
 .franks-bearded-axe {
-  width: 64px;
-  height: 64px;
   background-position: -859px -331px;
 }
 
 .franks-chivalry {
-  width: 64px;
-  height: 64px;
   background-position: -925px -331px;
 }
 
 .franks-elite-throwing-axeman {
-  width: 64px;
-  height: 64px;
   background-position: -991px -331px;
 }
 
 .franks-throwing-axeman {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -331px;
 }
 
 .galleon {
-  width: 64px;
-  height: 64px;
   background-position: -1px -397px;
 }
 
 .galley {
-  width: 64px;
-  height: 64px;
   background-position: -67px -397px;
 }
 
 .gate {
-  width: 64px;
-  height: 64px;
   background-position: -133px -397px;
 }
 
 .genitour {
-  width: 64px;
-  height: 64px;
   background-position: -199px -397px;
 }
 
 .gillnets {
-  width: 64px;
-  height: 64px;
   background-position: -265px -397px;
 }
 
 .gold-mining {
-  width: 64px;
-  height: 64px;
   background-position: -331px -397px;
 }
 
 .gold-shaft-mining {
-  width: 64px;
-  height: 64px;
   background-position: -397px -397px;
 }
 
 .goths-anarchy {
-  width: 64px;
-  height: 64px;
   background-position: -463px -397px;
 }
 
 .goths-elite-huskarl {
-  width: 64px;
-  height: 64px;
   background-position: -529px -397px;
 }
 
 .goths-huskarl {
-  width: 64px;
-  height: 64px;
   background-position: -595px -397px;
 }
 
 .goths-perfusion {
-  width: 64px;
-  height: 64px;
   background-position: -661px -397px;
 }
 
 .guard-tower {
-  width: 64px;
-  height: 64px;
   background-position: -727px -397px;
 }
 
 .guard-tower-building {
-  width: 64px;
-  height: 64px;
   background-position: -793px -397px;
 }
 
 .guilds {
-  width: 64px;
-  height: 64px;
   background-position: -859px -397px;
 }
 
 .halberdier {
-  width: 64px;
-  height: 64px;
   background-position: -925px -397px;
 }
 
 .hand-cannoneer {
-  width: 64px;
-  height: 64px;
   background-position: -991px -397px;
 }
 
 .hand-cart {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -397px;
 }
 
 .heated-shot {
-  width: 64px;
-  height: 64px;
   background-position: -1px -463px;
 }
 
 .heavy-camel {
-  width: 64px;
-  height: 64px;
   background-position: -67px -463px;
 }
 
 .heavy-cavalry-archer {
-  width: 64px;
-  height: 64px;
   background-position: -133px -463px;
 }
 
 .heavy-demo-ship {
-  width: 64px;
-  height: 64px;
   background-position: -199px -463px;
 }
 
 .heavy-plow {
-  width: 64px;
-  height: 64px;
   background-position: -265px -463px;
 }
 
 .heavy-scorpion {
-  width: 64px;
-  height: 64px;
   background-position: -331px -463px;
 }
 
 .herbal-medicine {
-  width: 64px;
-  height: 64px;
   background-position: -397px -463px;
 }
 
 .heresy {
-  width: 64px;
-  height: 64px;
   background-position: -463px -463px;
 }
 
 .hoardings {
-  width: 64px;
-  height: 64px;
   background-position: -529px -463px;
 }
 
 .horse-collar {
-  width: 64px;
-  height: 64px;
   background-position: -595px -463px;
 }
 
 .house {
-  width: 64px;
-  height: 64px;
   background-position: -661px -463px;
 }
 
 .huns-atheism {
-  width: 64px;
-  height: 64px;
   background-position: -727px -463px;
 }
 
 .huns-elite-tarkan {
-  width: 64px;
-  height: 64px;
   background-position: -793px -463px;
 }
 
 .huns-marauders {
-  width: 64px;
-  height: 64px;
   background-position: -859px -463px;
 }
 
 .huns-tarkan {
-  width: 64px;
-  height: 64px;
   background-position: -925px -463px;
 }
 
 .husbandry {
-  width: 64px;
-  height: 64px;
   background-position: -991px -463px;
 }
 
 .hussar {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -463px;
 }
 
 .illumination {
-  width: 64px;
-  height: 64px;
   background-position: -1px -529px;
 }
 
 .imperial-age {
-  width: 64px;
-  height: 64px;
   background-position: -67px -529px;
 }
 
 .imperial-camel {
-  width: 64px;
-  height: 64px;
   background-position: -133px -529px;
 }
 
 .imperial-skirmisher {
-  width: 64px;
-  height: 64px;
   background-position: -199px -529px;
 }
 
 .incas-andean-sling {
-  width: 64px;
-  height: 64px;
   background-position: -265px -529px;
 }
 
 .incas-couriers {
-  width: 64px;
-  height: 64px;
   background-position: -331px -529px;
 }
 
 .incas-elite-kamayuk {
-  width: 64px;
-  height: 64px;
   background-position: -397px -529px;
 }
 
 .incas-kamayuk {
-  width: 64px;
-  height: 64px;
   background-position: -463px -529px;
 }
 
 .indians-elephant-archer {
-  width: 64px;
-  height: 64px;
   background-position: -529px -529px;
 }
 
 .indians-elite-elephant-archer {
-  width: 64px;
-  height: 64px;
   background-position: -595px -529px;
 }
 
 .indians-shatagni {
-  width: 64px;
-  height: 64px;
   background-position: -661px -529px;
 }
 
 .indians-sultans {
-  width: 64px;
-  height: 64px;
   background-position: -727px -529px;
 }
 
 .iron-casting {
-  width: 64px;
-  height: 64px;
   background-position: -793px -529px;
 }
 
 .italians-elite-genoese-crossbowman {
-  width: 64px;
-  height: 64px;
   background-position: -859px -529px;
 }
 
 .italians-genoese-crossbowman {
-  width: 64px;
-  height: 64px;
   background-position: -925px -529px;
 }
 
 .italians-pavise {
-  width: 64px;
-  height: 64px;
   background-position: -991px -529px;
 }
 
 .italians-silk-road {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -529px;
 }
 
 .japanese-elite-samurai {
-  width: 64px;
-  height: 64px;
   background-position: -1px -595px;
 }
 
 .japanese-kataparuto {
-  width: 64px;
-  height: 64px;
   background-position: -67px -595px;
 }
 
 .japanese-samurai {
-  width: 64px;
-  height: 64px;
   background-position: -133px -595px;
 }
 
 .japanese-yasama {
-  width: 64px;
-  height: 64px;
   background-position: -199px -595px;
 }
 
 .keep {
-  width: 64px;
-  height: 64px;
   background-position: -265px -595px;
 }
 
 .keep-building {
-  width: 64px;
-  height: 64px;
   background-position: -331px -595px;
 }
 
 .khamer-ballista-elephant {
-  width: 64px;
-  height: 64px;
   background-position: -397px -595px;
 }
 
 .khamer-double-crossbow {
-  width: 64px;
-  height: 64px;
   background-position: -463px -595px;
 }
 
 .khamer-elite-ballista-elephant {
-  width: 64px;
-  height: 64px;
   background-position: -529px -595px;
 }
 
 .khamer-tusk-swords {
-  width: 64px;
-  height: 64px;
   background-position: -595px -595px;
 }
 
 .knight {
-  width: 64px;
-  height: 64px;
   background-position: -661px -595px;
 }
 
 .koreans-elite-war-wagon {
-  width: 64px;
-  height: 64px;
   background-position: -727px -595px;
 }
 
 .koreans-panokseon {
-  width: 64px;
-  height: 64px;
   background-position: -793px -595px;
 }
 
 .koreans-shinkichon {
-  width: 64px;
-  height: 64px;
   background-position: -859px -595px;
 }
 
 .koreans-war-wagon {
-  width: 64px;
-  height: 64px;
   background-position: -925px -595px;
 }
 
 .leather-archer-armor {
-  width: 64px;
-  height: 64px;
   background-position: -991px -595px;
 }
 
 .light-cavalry {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -595px;
 }
 
 .long-swordsman {
-  width: 64px;
-  height: 64px;
   background-position: -1px -661px;
 }
 
 .loom {
-  width: 64px;
-  height: 64px;
   background-position: -67px -661px;
 }
 
 .lumber-camp {
-  width: 64px;
-  height: 64px;
   background-position: -133px -661px;
 }
 
 .magyars-elite-magyar-huszar {
-  width: 64px;
-  height: 64px;
   background-position: -199px -661px;
 }
 
 .magyars-magyar-huszar {
-  width: 64px;
-  height: 64px;
   background-position: -265px -661px;
 }
 
 .magyars-mercenaries {
-  width: 64px;
-  height: 64px;
   background-position: -331px -661px;
 }
 
 .magyars-recurve-bow {
-  width: 64px;
-  height: 64px;
   background-position: -397px -661px;
 }
 
 .malay-elite-karambit-warrior {
-  width: 64px;
-  height: 64px;
   background-position: -463px -661px;
 }
 
 .malay-forced-levy {
-  width: 64px;
-  height: 64px;
   background-position: -529px -661px;
 }
 
 .malay-karambit-warrior {
-  width: 64px;
-  height: 64px;
   background-position: -595px -661px;
 }
 
 .malay-thalassocracy {
-  width: 64px;
-  height: 64px;
   background-position: -661px -661px;
 }
 
 .malians-elite-gbeto {
-  width: 64px;
-  height: 64px;
   background-position: -727px -661px;
 }
 
 .malians-farimba {
-  width: 64px;
-  height: 64px;
   background-position: -793px -661px;
 }
 
 .malians-gbeto {
-  width: 64px;
-  height: 64px;
   background-position: -859px -661px;
 }
 
 .malians-tigui {
-  width: 64px;
-  height: 64px;
   background-position: -925px -661px;
 }
 
 .man-at-arms {
-  width: 64px;
-  height: 64px;
   background-position: -991px -661px;
 }
 
 .mangonel {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -661px;
 }
 
 .market {
-  width: 64px;
-  height: 64px;
   background-position: -1px -727px;
 }
 
 .masonry {
-  width: 64px;
-  height: 64px;
   background-position: -67px -727px;
 }
 
 .mayans-el-dorado {
-  width: 64px;
-  height: 64px;
   background-position: -133px -727px;
 }
 
 .mayans-elite-plumed-archer {
-  width: 64px;
-  height: 64px;
   background-position: -199px -727px;
 }
 
 .mayans-obsidian-arrows {
-  width: 64px;
-  height: 64px;
   background-position: -265px -727px;
 }
 
 .mayans-plumed-archer {
-  width: 64px;
-  height: 64px;
   background-position: -331px -727px;
 }
 
 .militia {
-  width: 64px;
-  height: 64px;
   background-position: -397px -727px;
 }
 
 .mill {
-  width: 64px;
-  height: 64px;
   background-position: -463px -727px;
 }
 
 .mining-camp {
-  width: 64px;
-  height: 64px;
   background-position: -529px -727px;
 }
 
 .monastery {
-  width: 64px;
-  height: 64px;
   background-position: -595px -727px;
 }
 
 .mongols-drill {
-  width: 64px;
-  height: 64px;
   background-position: -661px -727px;
 }
 
 .mongols-elite-mangudai {
-  width: 64px;
-  height: 64px;
   background-position: -727px -727px;
 }
 
 .mongols-mangudai {
-  width: 64px;
-  height: 64px;
   background-position: -793px -727px;
 }
 
 .mongols-nomads {
-  width: 64px;
-  height: 64px;
   background-position: -859px -727px;
 }
 
 .monk {
-  width: 64px;
-  height: 64px;
   background-position: -925px -727px;
 }
 
 .murder-holes {
-  width: 64px;
-  height: 64px;
   background-position: -991px -727px;
 }
 
 .onager {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -727px;
 }
 
 .outpost {
-  width: 64px;
-  height: 64px;
   background-position: -1px -793px;
 }
 
 .padded-archer-armor {
-  width: 64px;
-  height: 64px;
   background-position: -67px -793px;
 }
 
 .paladin {
-  width: 64px;
-  height: 64px;
   background-position: -133px -793px;
 }
 
 .palisade-gate {
-  width: 64px;
-  height: 64px;
   background-position: -199px -793px;
 }
 
 .palisade-wall {
-  width: 64px;
-  height: 64px;
   background-position: -265px -793px;
 }
 
 .parthian-tactics {
-  width: 64px;
-  height: 64px;
   background-position: -331px -793px;
 }
 
 .persians-boiling-oil {
-  width: 64px;
-  height: 64px;
   background-position: -397px -793px;
 }
 
 .persians-elite-war-elephant {
-  width: 64px;
-  height: 64px;
   background-position: -463px -793px;
 }
 
 .persians-mahouts {
-  width: 64px;
-  height: 64px;
   background-position: -529px -793px;
 }
 
 .persians-war-elephant {
-  width: 64px;
-  height: 64px;
   background-position: -595px -793px;
 }
 
 .petard {
-  width: 64px;
-  height: 64px;
   background-position: -661px -793px;
 }
 
 .pikeman {
-  width: 64px;
-  height: 64px;
   background-position: -727px -793px;
 }
 
 .plate-barding-armor {
-  width: 64px;
-  height: 64px;
   background-position: -793px -793px;
 }
 
 .plate-mail-armor {
-  width: 64px;
-  height: 64px;
   background-position: -859px -793px;
 }
 
 .portugueses-elite-organ-gun {
-  width: 64px;
-  height: 64px;
   background-position: -925px -793px;
 }
 
 .portugueses-organ-gun {
-  width: 64px;
-  height: 64px;
   background-position: -991px -793px;
 }
 
 .portugueses-petard {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -793px;
 }
 
 .portugueses-trebuchet {
-  width: 64px;
-  height: 64px;
   background-position: -1px -859px;
 }
 
 .redemption {
-  width: 64px;
-  height: 64px;
   background-position: -67px -859px;
 }
 
 .ring-archer-armor {
-  width: 64px;
-  height: 64px;
   background-position: -133px -859px;
 }
 
 .sancitity {
-  width: 64px;
-  height: 64px;
   background-position: -199px -859px;
 }
 
 .sappers {
-  width: 64px;
-  height: 64px;
   background-position: -265px -859px;
 }
 
 .saracens-elite-mameluke {
-  width: 64px;
-  height: 64px;
   background-position: -331px -859px;
 }
 
 .saracens-madrasah {
-  width: 64px;
-  height: 64px;
   background-position: -397px -859px;
 }
 
 .saracens-mameluke {
-  width: 64px;
-  height: 64px;
   background-position: -463px -859px;
 }
 
 .saracens-zealotry {
-  width: 64px;
-  height: 64px;
   background-position: -529px -859px;
 }
 
 .scale-barding-armor {
-  width: 64px;
-  height: 64px;
   background-position: -595px -859px;
 }
 
 .scale-mail-armor {
-  width: 64px;
-  height: 64px;
   background-position: -661px -859px;
 }
 
 .scorpion {
-  width: 64px;
-  height: 64px;
   background-position: -727px -859px;
 }
 
 .scout-cavalry {
-  width: 64px;
-  height: 64px;
   background-position: -793px -859px;
 }
 
 .shipwright {
-  width: 64px;
-  height: 64px;
   background-position: -859px -859px;
 }
 
 .siege-enginners {
-  width: 64px;
-  height: 64px;
   background-position: -925px -859px;
 }
 
 .siege-onager {
-  width: 64px;
-  height: 64px;
   background-position: -991px -859px;
 }
 
 .siege-ram {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -859px;
 }
 
 .siege-tower {
-  width: 64px;
-  height: 64px;
   background-position: -1px -925px;
 }
 
 .siege-workshop {
-  width: 64px;
-  height: 64px;
   background-position: -67px -925px;
 }
 
 .skirmisher {
-  width: 64px;
-  height: 64px;
   background-position: -133px -925px;
 }
 
 .slavs-boyar {
-  width: 64px;
-  height: 64px;
   background-position: -199px -925px;
 }
 
 .slavs-druzhina {
-  width: 64px;
-  height: 64px;
   background-position: -265px -925px;
 }
 
 .slavs-elite-boyar {
-  width: 64px;
-  height: 64px;
   background-position: -331px -925px;
 }
 
 .slavs-orthodoxy {
-  width: 64px;
-  height: 64px;
   background-position: -397px -925px;
 }
 
 .slinger {
-  width: 64px;
-  height: 64px;
   background-position: -463px -925px;
 }
 
 .spanish-conquistador {
-  width: 64px;
-  height: 64px;
   background-position: -529px -925px;
 }
 
 .spanish-elite-conquistador {
-  width: 64px;
-  height: 64px;
   background-position: -595px -925px;
 }
 
 .spanish-inquisition {
-  width: 64px;
-  height: 64px;
   background-position: -661px -925px;
 }
 
 .spanish-supremacy {
-  width: 64px;
-  height: 64px;
   background-position: -727px -925px;
 }
 
 .spearman {
-  width: 64px;
-  height: 64px;
   background-position: -793px -925px;
 }
 
 .spies-treason {
-  width: 64px;
-  height: 64px;
   background-position: -859px -925px;
 }
 
 .squires {
-  width: 64px;
-  height: 64px;
   background-position: -925px -925px;
 }
 
 .stable {
-  width: 64px;
-  height: 64px;
   background-position: -991px -925px;
 }
 
 .stone-mining {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -925px;
 }
 
 .stone-shaft-mining {
-  width: 64px;
-  height: 64px;
   background-position: -1px -991px;
 }
 
 .stone-wall {
-  width: 64px;
-  height: 64px;
   background-position: -67px -991px;
 }
 
 .teutons-crenellations {
-  width: 64px;
-  height: 64px;
   background-position: -133px -991px;
 }
 
 .teutons-elite-teutonic-knight {
-  width: 64px;
-  height: 64px;
   background-position: -199px -991px;
 }
 
 .teutons-ironclad {
-  width: 64px;
-  height: 64px;
   background-position: -265px -991px;
 }
 
 .teutons-teutonic-knight {
-  width: 64px;
-  height: 64px;
   background-position: -331px -991px;
 }
 
 .theocracy {
-  width: 64px;
-  height: 64px;
   background-position: -397px -991px;
 }
 
 .thumb-ring {
-  width: 64px;
-  height: 64px;
   background-position: -463px -991px;
 }
 
 .town-center {
-  width: 64px;
-  height: 64px;
   background-position: -529px -991px;
 }
 
 .town-patrol {
-  width: 64px;
-  height: 64px;
   background-position: -595px -991px;
 }
 
 .town-watch {
-  width: 64px;
-  height: 64px;
   background-position: -661px -991px;
 }
 
 .tracking {
-  width: 64px;
-  height: 64px;
   background-position: -727px -991px;
 }
 
 .trade-cart {
-  width: 64px;
-  height: 64px;
   background-position: -793px -991px;
 }
 
 .trade-cog {
-  width: 64px;
-  height: 64px;
   background-position: -859px -991px;
 }
 
 .transport-ship {
-  width: 64px;
-  height: 64px;
   background-position: -925px -991px;
 }
 
 .treadmill-crane {
-  width: 64px;
-  height: 64px;
   background-position: -991px -991px;
 }
 
 .trebuchet {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -991px;
 }
 
 .turk-artillery {
-  width: 64px;
-  height: 64px;
   background-position: -1px -1057px;
 }
 
 .turk-elite-janissary {
-  width: 64px;
-  height: 64px;
   background-position: -67px -1057px;
 }
 
 .turk-janissary {
-  width: 64px;
-  height: 64px;
   background-position: -133px -1057px;
 }
 
 .turk-sipahi {
-  width: 64px;
-  height: 64px;
   background-position: -199px -1057px;
 }
 
 .two-handed-swordsman {
-  width: 64px;
-  height: 64px;
   background-position: -265px -1057px;
 }
 
 .two-man-saw {
-  width: 64px;
-  height: 64px;
   background-position: -331px -1057px;
 }
 
 .university {
-  width: 64px;
-  height: 64px;
   background-position: -397px -1057px;
 }
 
 .vietnamese-chatras {
-  width: 64px;
-  height: 64px;
   background-position: -463px -1057px;
 }
 
 .vietnamese-elite-rattan-archer {
-  width: 64px;
-  height: 64px;
   background-position: -529px -1057px;
 }
 
 .vietnamese-paper-money {
-  width: 64px;
-  height: 64px;
   background-position: -595px -1057px;
 }
 
 .vietnamese-rattan-archer {
-  width: 64px;
-  height: 64px;
   background-position: -661px -1057px;
 }
 
 .vikings-berserk {
-  width: 64px;
-  height: 64px;
   background-position: -727px -1057px;
 }
 
 .vikings-berserkergang {
-  width: 64px;
-  height: 64px;
   background-position: -793px -1057px;
 }
 
 .vikings-chieftains {
-  width: 64px;
-  height: 64px;
   background-position: -859px -1057px;
 }
 
 .vikings-elite-berserk {
-  width: 64px;
-  height: 64px;
   background-position: -925px -1057px;
 }
 
 .villager {
-  width: 64px;
-  height: 64px;
   background-position: -991px -1057px;
 }
 
 .war-galley {
-  width: 64px;
-  height: 64px;
   background-position: -1057px -1057px;
 }
 
 .watch-tower {
-  width: 64px;
-  height: 64px;
   background-position: -1123px -1px;
 }
 
 .wheelbarrow {
-  width: 64px;
-  height: 64px;
   background-position: -1123px -67px;
 }
 
 .wonder {
-  width: 64px;
-  height: 64px;
   background-position: -1123px -133px;
 }

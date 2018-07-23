@@ -83,7 +83,7 @@ const Techs = props => (
                 style={{ stroke: '#333', strokeWidth: 2 }}
               />
             </SVGItem>
-            {tech.isTechParent && (
+            {tech.svgTechParentSize && (
               <SVGItemOfParent width={tech.svgTechParentSize} height="3">
                 <line
                   x1="0"
