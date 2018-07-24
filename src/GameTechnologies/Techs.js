@@ -5,10 +5,8 @@ import techSprite from './techs.png';
 
 const TechsWrapper = styled.div`
   min-width: 5210px;
-  height: 990px;
   display: flex;
   flex-flow: column wrap;
-  align-content: start;
 `;
 
 const TechItem = styled.div`

@@ -5,8 +5,11 @@ import Ages from './Ages';
 import Techs from './Techs';
 
 const GameTechsContainer = styled.main`
+  min-width: 5560px;
+  height: 990px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 `;
 
 const GameTechnologies = props => (

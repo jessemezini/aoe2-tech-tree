@@ -2,19 +2,20 @@
 
 const positionColumnChild = '53px';
 const positionColumnChildAge = '71px';
-const positionColumnChildAge2 = '192px'; // isLast="135px"
+const positionColumnChildAge2 = '192px';
 
 const positionColumn1 = '2px';
 const positionColumn2 = '123px';
 const positionColumn3 = '262px';
 const positionColumn4 = '383px';
-const positionColumn5 = '522px'; // isLast="255"
+const positionColumn5 = '522px';
 const positionColumn6 = '642px';
 const positionColumn7 = '782px';
 
 const last135 = '135px';
 const last255 = '255px';
 const last385 = '385px';
+const last530 = '530px';
 const last650 = '650px';
 const last900 = '900px';
 const isLastOfTech = '24px';
@@ -655,6 +656,341 @@ const techData = [
     name: 'town-center-building',
     positionColumn: positionColumn5,
     isLastOfTech,
+    dontBelongTo: [],
+  },
+  //#endregion
+  //#region Siege Workshop
+  {
+    name: 'mangonel',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+  },
+  {
+    name: 'onager',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'siege-onager',
+    positionColumn: positionColumnChild,
+    svgSize: svgSize1,
+    dontBelongTo: [],
+  },
+  {
+    name: 'siege-workshop',
+    positionColumn: positionColumn5,
+    isAlignCenter,
+    dontBelongTo: [],
+  },
+  {
+    name: 'battering-ram',
+    positionColumn: positionColumnChild,
+    dontBelongTo: [],
+  },
+  {
+    name: 'capped-ram',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'siege-ram',
+    positionColumn: positionColumnChild,
+    svgSize: svgSize1,
+    dontBelongTo: [],
+  },
+  {
+    name: 'scorpion',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+  },
+  {
+    name: 'heavy-scorpion',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'siege-tower',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+  },
+  {
+    name: 'bombard-cannon',
+    positionColumn: positionColumnChildAge,
+    isLastOfTech,
+    dontBelongTo: [],
+  },
+  //#endregion
+  //#region Blacksmith
+  {
+    name: 'padded-archer-armor',
+    positionColumn: positionColumn4,
+    dontBelongTo: [],
+  },
+  {
+    name: 'leather-archer-armor',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'ring-archer-armor',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'fletching',
+    positionColumn: positionColumn4,
+    dontBelongTo: [],
+  },
+  {
+    name: 'bodkin-arrow',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'bracer',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'blacksmith',
+    positionColumn: positionColumn3,
+    dontBelongTo: [],
+  },
+  {
+    name: 'forging',
+    positionColumn: positionColumnChild,
+    dontBelongTo: [],
+  },
+  {
+    name: 'iron-casting',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'blast-furnace',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'scale-barding-armor',
+    positionColumn: positionColumn4,
+    dontBelongTo: [],
+  },
+  {
+    name: 'chain-barding-armor',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'plate-barding-armor',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'scale-mail-armor',
+    positionColumn: positionColumn4,
+    dontBelongTo: [],
+  },
+  {
+    name: 'chain-mail-armor',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'plate-mail-armor',
+    positionColumn: positionColumnChildAge2,
+    isLastOfTech,
+    dontBelongTo: [],
+  },
+  //#endregion
+  //#region University
+  {
+    name: 'masonry',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+  },
+  {
+    name: 'architecture',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'fortified-wall',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+  },
+  {
+    name: 'chemistry',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'bombard-tower',
+    positionColumn: positionColumnChild,
+    svgSize: svgSize1,
+    dontBelongTo: [],
+  },
+  {
+    name: 'ballistics',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+  },
+  {
+    name: 'siege-engineers',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'university',
+    positionColumn: positionColumn5,
+    dontBelongTo: [],
+  },
+  {
+    name: 'guard-tower',
+    positionColumn: positionColumnChild,
+    dontBelongTo: [],
+  },
+  {
+    name: 'keep',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'heated-shot',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+  },
+  {
+    name: 'arrowslits',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'murder-holes',
+    positionColumn: positionColumn6,
+    dontBelongTo: [],
+  },
+  {
+    name: 'treadmill-crane',
+    positionColumn: positionColumn6,
+    isLast: last255,
+    isLastOfTech,
+    dontBelongTo: [],
+  },
+  //#endregion
+  //#region Mining Camp & Lumber Camp
+  {
+    name: 'mining-camp',
+    positionColumn: positionColumn1,
+    isAlignCenter,
+    dontBelongTo: [],
+  },
+  {
+    name: 'stone-mining',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'stone-shaft-mining',
+    positionColumn: positionColumnChildAge2,
+    isLast: last385,
+    dontBelongTo: [],
+  },
+  {
+    name: 'gold-mining',
+    positionColumn: positionColumn3,
+    dontBelongTo: [],
+  },
+  {
+    name: 'gold-shaft-mining',
+    positionColumn: positionColumnChildAge2,
+    isLast: last385,
+    isLastOfTech,
+    dontBelongTo: [],
+  },
+  {
+    name: 'lumber-camp',
+    positionColumn: positionColumn1,
+    dontBelongTo: [],
+  },
+  {
+    name: 'double-bit-axe',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'bow-saw',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'two-man-saw',
+    positionColumn: positionColumnChildAge2,
+    isLastOfTech,
+    dontBelongTo: [],
+  },
+  //#endregion
+  //#region Mill
+  {
+    name: 'cartography',
+    positionColumn: positionColumn4,
+    dontBelongTo: [],
+  },
+  {
+    name: 'caravan',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'guilds',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'market',
+    positionColumn: positionColumn3,
+    dontBelongTo: [],
+  },
+  {
+    name: 'coinage',
+    positionColumn: positionColumnChild,
+    dontBelongTo: [],
+  },
+  {
+    name: 'banking',
+    positionColumn: positionColumnChildAge,
+    dontBelongTo: [],
+  },
+  {
+    name: 'trade-cart',
+    positionColumn: positionColumn4,
+    isLast: last530,
+    isLastOfTech,
+    dontBelongTo: [],
+  },
+  {
+    name: 'mill',
+    positionColumn: positionColumn1,
+    dontBelongTo: [],
+  },
+  {
+    name: 'horse-collar',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'heavy-plow',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'crop-rotation',
+    positionColumn: positionColumnChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'farm',
+    positionColumn: positionColumn2,
     dontBelongTo: [],
   },
   //#endregion

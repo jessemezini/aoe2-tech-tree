@@ -15,6 +15,7 @@ const AgeWrapper = styled.div`
     margin-bottom: 40px;
 
     p {
+      font-size: 14px;
       margin: 0;
       font-weight: bold;
     }
