@@ -989,7 +989,7 @@
   background-position: -1px -925px;
 }
 
-.siege-enginners {
+.siege-engineers {
   background-position: -67px -925px;
 }
 
@@ -1102,6 +1102,10 @@
 }
 
 .town-center {
+  background-position: -793px -991px;
+}
+
+.town-center-building {
   background-position: -793px -991px;
 }
 
