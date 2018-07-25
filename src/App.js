@@ -28,7 +28,7 @@ class App extends Component {
     selectedCiv: 'Aztecs',
   };
 
-  componentWillMount() {
+  componentDidMount() {
     this.setState({ wololo: wololoData, techs: techData });
   }
 
