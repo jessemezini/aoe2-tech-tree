@@ -21,65 +21,74 @@ const last900 = '900px';
 const isLastOfTech = '24px';
 const isAlignCenter = '33.5px';
 
-const svgSizeBelowParent = '52';
-const svgSize1 = '56';
+const svgSizeChildBelowParent = '52';
+const svgSizeChildAge2BelowParent = '191';
+const svgSizeChild = '56';
+const svgSizeChildAge = '74';
+const svgSizeChildAge2 = '195';
 
 const techData = [
   //#region Archery Range
   {
     name: 'archer',
     positionColumn: positionColumn4,
-    svgSize: svgSizeBelowParent,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: ['Aztecs', 'Berbers'],
   },
   {
     name: 'crossbowman',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: ['Berbers', 'Franks', 'Persians'],
   },
   {
     name: 'arbalest',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: ['Berbers', 'Franks', 'Persians'],
   },
   {
     name: 'skirmisher',
     positionColumn: positionColumn4,
-    svgSize: svgSizeBelowParent,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'elite-skirmisher',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'imperial-skirmisher',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: ['Berbers', 'Franks', 'Persians'],
   },
   {
     name: 'archery-range',
     positionColumn: positionColumn3,
     isAlignCenter,
-
-    svgSize: '100',
+    svgSize: svgSizeChildAge2BelowParent,
     svgTechParentSize: '355',
     dontBelongTo: [],
   },
   {
     name: 'cavalry-archer',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'heavy-cavalry-archer',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: ['Berbers', 'Franks', 'Persians'],
   },
   {
     name: 'slinger',
     positionColumn: positionColumn5,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
@@ -90,16 +99,19 @@ const techData = [
   {
     name: 'genitour',
     positionColumn: positionColumn5,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'elite-genitour',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: ['Berbers', 'Franks', 'Persians'],
   },
   {
     name: 'thumb-ring',
     positionColumn: positionColumn5,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
@@ -114,46 +126,49 @@ const techData = [
   {
     name: 'militia',
     positionColumn: positionColumn2,
-    svgSize: svgSizeBelowParent,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'man-at-arms',
     positionColumn: positionColumnChildAge,
-    svgSize: svgSize1,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'long-swordsman',
     positionColumn: positionColumnChildAge2,
-    svgSize: svgSize1,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'two-handed-swordsman',
     positionColumn: positionColumnChildAge2,
-    svgSize: svgSize1,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'champion',
     positionColumn: positionColumnChild,
-    svgSize: svgSize1,
+    svgSize: svgSizeChild,
     dontBelongTo: [],
   },
   {
     name: 'spearman',
     positionColumn: positionColumn3,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'pikeman',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'halberdier',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     isLast: last135,
     dontBelongTo: [],
   },
@@ -166,21 +181,25 @@ const techData = [
   {
     name: 'eagle-scout',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'eagle-warrior',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'elite-eagle-warrior',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'tracking',
     positionColumn: positionColumn3,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
@@ -196,6 +215,7 @@ const techData = [
   {
     name: 'arson',
     positionColumn: positionColumn5,
+    svgSize: '452',
     isLastOfTech,
     dontBelongTo: [],
   },
@@ -204,67 +224,80 @@ const techData = [
   {
     name: 'bloodlines',
     positionColumn: positionColumn4,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'camel',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'heavy-camel',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'knight',
     positionColumn: positionColumn5,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'cavalier',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'paladin',
     positionColumn: positionColumnChild,
-    svgSize: svgSize1,
+    svgSize: svgSizeChild,
     dontBelongTo: [],
   },
   {
     name: 'stable',
     positionColumn: positionColumn3,
+    svgSize: svgSizeChildAge2BelowParent,
+    svgTechParentSize: '280',
     dontBelongTo: [],
   },
   {
     name: 'scout-cavalry',
     positionColumn: positionColumnChild,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'light-cavalry',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'hussar',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'battle-elephant',
     positionColumn: positionColumn5,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'elite-battle-elephant',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'husbandry',
     positionColumn: positionColumn5,
+    svgSize: svgSizeChildAge2BelowParent,
     isLast: last255,
     isLastOfTech,
     dontBelongTo: [],
@@ -371,7 +404,7 @@ const techData = [
   {
     name: 'elite-cannon-galleon',
     positionColumn: positionColumnChild,
-    svgSize: svgSize1,
+    svgSize: svgSizeChild,
     dontBelongTo: [],
   },
   {
@@ -1412,7 +1445,7 @@ const techData = [
   {
     name: 'siege-onager',
     positionColumn: positionColumnChild,
-    svgSize: svgSize1,
+    svgSize: svgSizeChild,
     dontBelongTo: [],
   },
   {
@@ -1434,7 +1467,7 @@ const techData = [
   {
     name: 'siege-ram',
     positionColumn: positionColumnChild,
-    svgSize: svgSize1,
+    svgSize: svgSizeChild,
     dontBelongTo: [],
   },
   {
@@ -1566,7 +1599,7 @@ const techData = [
   {
     name: 'bombard-tower',
     positionColumn: positionColumnChild,
-    svgSize: svgSize1,
+    svgSize: svgSizeChild,
     dontBelongTo: [],
   },
   {

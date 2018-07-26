@@ -47,7 +47,7 @@ const SVGItem = styled.svg`
 const SVGItemOfParent = styled.svg`
   position: absolute;
   top: 68px;
-  left: -145.5px;
+  left: -${props => props.width / 2 - 33.5}px;
   pointer-events: none;
 `;
 
