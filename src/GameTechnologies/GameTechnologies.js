@@ -5,7 +5,7 @@ import Ages from './Ages';
 import Techs from './Techs';
 
 const GameTechsContainer = styled.main`
-  min-width: 5560px;
+  min-width: 5700px;
   height: 990px;
   display: flex;
   flex-direction: row;

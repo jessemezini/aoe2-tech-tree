@@ -4,9 +4,10 @@ import './spritesheet.css';
 import techSprite from './techs.png';
 
 const TechsWrapper = styled.div`
-  min-width: 5210px;
+  min-width: 5350px;
   display: flex;
   flex-flow: column wrap;
+  align-content: flex-start;
 `;
 
 const TechItem = styled.div`

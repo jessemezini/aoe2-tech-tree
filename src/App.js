@@ -12,7 +12,7 @@ import bg from './bg.jpg';
 const AppContainer = styled.div`
   background-image: url(${bg});
   background-repeat: repeat-x;
-  min-width: 5910px;
+  min-width: 6050px;
   min-height: 1008px;
   padding-top: 15px;
   padding-right: 15px;
