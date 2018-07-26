@@ -1228,3 +1228,12 @@
 .wonder {
   background-position: -1123px -529px;
 }
+
+.empty {
+  background-position: -1123px -595px;
+  cursor: default;
+}
+
+.empty:hover {
+  border-color: transparent;
+}

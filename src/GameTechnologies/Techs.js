@@ -7,7 +7,7 @@ const TechsWrapper = styled.div`
   min-width: 5350px;
   display: flex;
   flex-flow: column wrap;
-  align-content: flex-start;
+  align-content: center;
 `;
 
 const TechItem = styled.div`

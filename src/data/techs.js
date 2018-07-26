@@ -376,12 +376,17 @@ const techData = [
   },
   {
     name: 'shipwright',
-    positionColumn: positionColumn7,// '452px',
+    positionColumn: positionColumn7,
+    dontBelongTo: [],
+  },
+  {
+    name: 'empty',
+    positionColumn: positionColumn3,
     dontBelongTo: [],
   },
   {
     name: 'koreans-turtle-ship',
-    positionColumn: positionColumn5,
+    positionColumn: positionColumnChildAge2,
     dontBelongTo: [],
     uniqueUnitOf: 'Koreans',
   },
@@ -393,7 +398,7 @@ const techData = [
   },
   {
     name: 'portugueses-caravel',
-    positionColumn: positionColumn5,
+    positionColumn: positionColumnChildAge2,
     dontBelongTo: [],
     uniqueUnitOf: 'Portugueses',
   },
@@ -405,7 +410,7 @@ const techData = [
   },
   {
     name: 'vikings-longboat',
-    positionColumn: positionColumn5,
+    positionColumn: positionColumnChildAge2,
     dontBelongTo: [],
     uniqueUnitOf: 'Vikings',
   },
