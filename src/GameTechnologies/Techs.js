@@ -30,13 +30,6 @@ const TechItem = styled.div`
   }
 `;
 
-// const SVG = styled.svg`
-//   position: absolute;
-//   top: -100px;
-//   left: 0;
-//   pointer-events: none;
-// `;
-
 const SVGItem = styled.svg`
   position: absolute;
   top: -${props => props.height}px;
@@ -47,7 +40,7 @@ const SVGItem = styled.svg`
 const SVGItemOfParent = styled.svg`
   position: absolute;
   top: 68px;
-  left: -${props => props.width / 2 - 33.5}px;
+  left: -${props => props.width / 2 - 32}px;
   pointer-events: none;
 `;
 

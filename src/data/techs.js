@@ -19,7 +19,7 @@ const last530 = '530px';
 const last650 = '650px';
 const last900 = '900px';
 const isLastOfTech = '24px';
-const isAlignCenter = '33.5px';
+const isAlignCenter = '35.5px';
 
 const svgSizeChildBelowParent = '52';
 const svgSizeChildAge2BelowParent = '191';
@@ -70,7 +70,7 @@ const techData = [
     positionColumn: positionColumn3,
     isAlignCenter,
     svgSize: svgSizeChildAge2BelowParent,
-    svgTechParentSize: '355',
+    svgTechParentSize: '357',
     dontBelongTo: [],
   },
   {
@@ -175,7 +175,7 @@ const techData = [
   {
     name: 'barracks',
     positionColumn: positionColumn1,
-    svgTechParentSize: '555',
+    svgTechParentSize: '828',
     dontBelongTo: [],
   },
   {
@@ -261,7 +261,7 @@ const techData = [
     name: 'stable',
     positionColumn: positionColumn3,
     svgSize: svgSizeChildAge2BelowParent,
-    svgTechParentSize: '280',
+    svgTechParentSize: '286',
     dontBelongTo: [],
   },
   {
@@ -315,26 +315,31 @@ const techData = [
   {
     name: 'fishing-ship',
     positionColumn: positionColumn2,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'trade-cog',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'careening',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'dry-dock',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'transport-ship',
     positionColumn: positionColumn2,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -345,11 +350,31 @@ const techData = [
   {
     name: 'fire-ship',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'fast-fire-ship',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'galley',
+    positionColumn: positionColumn3,
+    svgSize: svgSizeChildAge2BelowParent,
+    dontBelongTo: [],
+  },
+  {
+    name: 'war-galley',
+    positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
+    dontBelongTo: [],
+  },
+  {
+    name: 'galleon',
+    positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     isLast: last135,
     dontBelongTo: [],
   },
@@ -357,43 +382,31 @@ const techData = [
     name: 'dock',
     positionColumn: positionColumn1,
     isAlignCenter,
-
-    svgTechParentSize: '355',
-    dontBelongTo: [],
-  },
-  {
-    name: 'galley',
-    positionColumn: positionColumnChildAge2,
-    dontBelongTo: [],
-  },
-  {
-    name: 'war-galley',
-    positionColumn: positionColumnChildAge2,
-    dontBelongTo: [],
-  },
-  {
-    name: 'galleon',
-    positionColumn: positionColumnChildAge2,
+    svgTechParentSize: '499.5',
     dontBelongTo: [],
   },
   {
     name: 'demolition-raft',
-    positionColumn: positionColumn3,
+    positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'demolition-ship',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'heavy-demo-ship',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'gillnets',
     positionColumn: positionColumn5,
+    svgSize: '452',
     dontBelongTo: [],
   },
   {
@@ -410,6 +423,7 @@ const techData = [
   {
     name: 'shipwright',
     positionColumn: positionColumn7,
+    svgSize: '711',
     dontBelongTo: [],
   },
   {
@@ -420,42 +434,49 @@ const techData = [
   {
     name: 'koreans-turtle-ship',
     positionColumn: positionColumnChildAge2,
+    svgSize: '452',
     dontBelongTo: [],
     uniqueUnitOf: 'Koreans',
   },
   {
     name: 'koreans-elite-turtle-ship',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
     uniqueUnitOf: 'Koreans',
   },
   {
     name: 'portugueses-caravel',
     positionColumn: positionColumnChildAge2,
+    svgSize: '452',
     dontBelongTo: [],
     uniqueUnitOf: 'Portugueses',
   },
   {
     name: 'portugueses-elite-caravel',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
     uniqueUnitOf: 'Portugueses',
   },
   {
     name: 'vikings-longboat',
     positionColumn: positionColumnChildAge2,
+    svgSize: '452',
     dontBelongTo: [],
     uniqueUnitOf: 'Vikings',
   },
   {
     name: 'vikings-elite-longboat',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
     uniqueUnitOf: 'Vikings',
   },
   {
     name: 'fish-trap',
     positionColumn: positionColumn3,
+    svgSize: svgSizeChildAge2BelowParent,
     isLastOfTech,
     isLast: last650,
     dontBelongTo: [],
@@ -475,11 +496,13 @@ const techData = [
   {
     name: 'guard-tower-building',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'keep-building',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
@@ -519,6 +542,7 @@ const techData = [
   {
     name: 'redemption',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -529,6 +553,7 @@ const techData = [
   {
     name: 'fervor',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -539,6 +564,7 @@ const techData = [
   {
     name: 'sancitity',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -549,13 +575,13 @@ const techData = [
   {
     name: 'monastery',
     positionColumn: positionColumn5,
-
-    svgTechParentSize: '355',
+    svgTechParentSize: '425',
     dontBelongTo: [],
   },
   {
     name: 'atonement',
     positionColumn: positionColumnChild,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -566,16 +592,19 @@ const techData = [
   {
     name: 'monk',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'herbal-medicine',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'heresy',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     isLastOfTech,
     dontBelongTo: [],
   },
@@ -584,378 +613,441 @@ const techData = [
   {
     name: 'aztecs-jaguar-warrior',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Aztecs',
   },
   {
     name: 'aztecs-elite-jaguar-warrior',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Aztecs',
   },
   {
     name: 'berbers-camel-archer',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Berbers',
   },
   {
     name: 'berbers-elite-camel-archer',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Berbers',
   },
   {
     name: 'britons-longbowman',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Britons',
   },
   {
     name: 'britons-elite-longbowman',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Britons',
   },
   {
     name: 'burmese-arambai',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Burmese',
   },
   {
     name: 'burmese-elite-arambai',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Burmese',
   },
   {
     name: 'byzantines-cataphract',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Byzantines',
   },
   {
     name: 'byzantines-elite-cataphract',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Byzantines',
   },
   {
     name: 'celts-woad-raider',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Celts',
   },
   {
     name: 'celts-elite-woad-raider',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Celts',
   },
   {
     name: 'chinese-chu-ko-nu',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Chinese',
   },
   {
     name: 'chinese-elite-chu-ko-nu',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Chinese',
   },
   {
     name: 'ethiopians-shotel-warrior',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Ethiopians',
   },
   {
     name: 'ethiopians-elite-shotel-warrior',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Ethiopians',
   },
   {
     name: 'franks-throwing-axeman',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Franks',
   },
   {
     name: 'franks-elite-throwing-axeman',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Franks',
   },
   {
     name: 'goths-huskarl',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Goths',
   },
   {
     name: 'goths-elite-huskarl',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Goths',
   },
   {
     name: 'huns-tarkan',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Huns',
   },
   {
     name: 'huns-elite-tarkan',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Huns',
   },
   {
     name: 'incas-kamayuk',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Incas',
   },
   {
     name: 'incas-elite-kamayuk',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Incas',
   },
   {
     name: 'indians-elephant-archer',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Indians',
   },
   {
     name: 'indians-elite-elephant-archer',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Indians',
   },
   {
     name: 'italians-genoese-crossbowman',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Italians',
   },
   {
     name: 'italians-elite-genoese-crossbowman',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Italians',
   },
   {
     name: 'japanese-samurai',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Japanese',
   },
   {
     name: 'japanese-elite-samurai',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Japanese',
   },
   {
     name: 'khamer-ballista-elephant',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Khamer',
   },
   {
     name: 'khamer-elite-ballista-elephant',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Khamer',
   },
   {
     name: 'koreans-war-wagon',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Koreans',
   },
   {
     name: 'koreans-elite-war-wagon',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Koreans',
   },
   {
     name: 'magyars-magyar-huszar',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Magyars',
   },
   {
     name: 'magyars-elite-magyar-huszar',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Magyars',
   },
   {
     name: 'malay-karambit-warrior',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Malay',
   },
   {
     name: 'malay-elite-karambit-warrior',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Malay',
   },
   {
     name: 'malians-gbeto',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Malians',
   },
   {
     name: 'malians-elite-gbeto',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Malians',
   },
   {
     name: 'mayans-plumed-archer',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Mayans',
   },
   {
     name: 'mayans-elite-plumed-archer',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Mayans',
   },
   {
     name: 'mongols-mangudai',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Mongols',
   },
   {
     name: 'mongols-elite-mangudai',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Mongols',
   },
   {
     name: 'persians-war-elephant',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Persians',
   },
   {
     name: 'persians-elite-war-elephant',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Persians',
   },
   {
     name: 'portugueses-organ-gun',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Portugueses',
   },
   {
     name: 'portugueses-elite-organ-gun',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Portugueses',
   },
   {
     name: 'saracens-mameluke',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Saracens',
   },
   {
     name: 'saracens-elite-mameluke',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Saracens',
   },
   {
     name: 'slavs-boyar',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Slavs',
   },
   {
     name: 'slavs-elite-boyar',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Slavs',
   },
   {
     name: 'spanish-conquistador',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Spanish',
   },
   {
     name: 'spanish-elite-conquistador',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Spanish',
   },
   {
     name: 'teutons-teutonic-knight',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Teutons',
   },
   {
     name: 'teutons-elite-teutonic-knight',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Teutons',
   },
   {
     name: 'turk-janissary',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Turk',
   },
   {
     name: 'turk-elite-janissary',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Turk',
   },
   {
     name: 'vietnamese-rattan-archer',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Vietnamese',
   },
   {
     name: 'vietnamese-elite-rattan-archer',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Vietnamese',
   },
   {
     name: 'vikings-berserk',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Vikings',
   },
   {
     name: 'vikings-elite-berserk',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
     uniqueUnitOf: 'Vikings',
   },
   {
     name: 'petard',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -966,6 +1058,7 @@ const techData = [
   {
     name: 'aztecs-atlatl',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Aztecs',
   },
@@ -978,6 +1071,7 @@ const techData = [
   {
     name: 'berbers-kasbah',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Berbers',
   },
@@ -990,6 +1084,7 @@ const techData = [
   {
     name: 'britons-yeomen',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Britons',
   },
@@ -1002,6 +1097,7 @@ const techData = [
   {
     name: 'burmese-howdah',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Burmese',
   },
@@ -1014,6 +1110,7 @@ const techData = [
   {
     name: 'byzantines-greek-fire',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Byzantines',
   },
@@ -1026,6 +1123,7 @@ const techData = [
   {
     name: 'celts-stronghold',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Celts',
   },
@@ -1038,6 +1136,7 @@ const techData = [
   {
     name: 'chinese-great-wall',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Chinese',
   },
@@ -1050,6 +1149,7 @@ const techData = [
   {
     name: 'ethiopians-royal-heirs',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Ethiopians',
   },
@@ -1062,6 +1162,7 @@ const techData = [
   {
     name: 'franks-chivalry',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Franks',
   },
@@ -1074,6 +1175,7 @@ const techData = [
   {
     name: 'goths-anarchy',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Goths',
   },
@@ -1086,6 +1188,7 @@ const techData = [
   {
     name: 'huns-marauders',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Huns',
   },
@@ -1098,6 +1201,7 @@ const techData = [
   {
     name: 'incas-andean-sling',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Incas',
   },
@@ -1110,6 +1214,7 @@ const techData = [
   {
     name: 'indians-sultans',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Indians',
   },
@@ -1122,6 +1227,7 @@ const techData = [
   {
     name: 'italians-pavise',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Italians',
   },
@@ -1134,6 +1240,7 @@ const techData = [
   {
     name: 'japanese-yasama',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Japanese',
   },
@@ -1146,6 +1253,7 @@ const techData = [
   {
     name: 'khamer-tusk-swords',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Khamer',
   },
@@ -1158,6 +1266,7 @@ const techData = [
   {
     name: 'koreans-panokseon',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Koreans',
   },
@@ -1170,6 +1279,7 @@ const techData = [
   {
     name: 'magyars-mercenaries',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Magyars',
   },
@@ -1182,6 +1292,7 @@ const techData = [
   {
     name: 'malay-thalassocracy',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Malay',
   },
@@ -1194,6 +1305,7 @@ const techData = [
   {
     name: 'malians-tigui',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Malians',
   },
@@ -1206,6 +1318,7 @@ const techData = [
   {
     name: 'mayans-obsidian-arrows',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Mayans',
   },
@@ -1218,6 +1331,7 @@ const techData = [
   {
     name: 'mongols-nomads',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Mongols',
   },
@@ -1230,6 +1344,7 @@ const techData = [
   {
     name: 'persians-boiling-oil',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Persians',
   },
@@ -1242,6 +1357,7 @@ const techData = [
   {
     name: 'portugueses-carrack',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Portugueses',
   },
@@ -1254,6 +1370,7 @@ const techData = [
   {
     name: 'saracens-madrasah',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Saracens',
   },
@@ -1266,6 +1383,7 @@ const techData = [
   {
     name: 'slavs-orthodoxy',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Slavs',
   },
@@ -1278,6 +1396,7 @@ const techData = [
   {
     name: 'spanish-inquisition',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Spanish',
   },
@@ -1290,6 +1409,7 @@ const techData = [
   {
     name: 'teutons-ironclad',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Teutons',
   },
@@ -1302,6 +1422,7 @@ const techData = [
   {
     name: 'turk-sipahi',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Turk',
   },
@@ -1314,6 +1435,7 @@ const techData = [
   {
     name: 'vietnamese-chatras',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Vietnamese',
   },
@@ -1326,6 +1448,7 @@ const techData = [
   {
     name: 'vikings-chieftains',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
     uniqueUnitOf: 'Vikings',
   },
@@ -1338,27 +1461,31 @@ const techData = [
   {
     name: 'castle',
     positionColumn: positionColumn5,
-    svgTechParentSize: '355',
+    svgTechParentSize: '427',
     dontBelongTo: [],
   },
   {
     name: 'hoardings',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'sappers',
     positionColumn: positionColumn7,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'conscription',
     positionColumn: positionColumn7,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'spies-treason',
     positionColumn: positionColumn7,
+    svgSize: svgSizeChildAge2BelowParent,
     isLast: last135,
     isLastOfTech,
     dontBelongTo: [],
@@ -1375,6 +1502,7 @@ const techData = [
   {
     name: 'villager',
     positionColumn: positionColumn2,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -1385,33 +1513,39 @@ const techData = [
   {
     name: 'town-patrol',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2BelowParent,
     isLast: last385,
     dontBelongTo: [],
   },
   {
     name: 'town-center',
     positionColumn: positionColumn1,
+    svgTechParentSize: '144.5',
     dontBelongTo: [],
   },
   {
     name: 'feudal-age',
     positionColumn: positionColumnChild,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'castle-age',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'imperial-age',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     isLast: last385,
     dontBelongTo: [],
   },
   {
     name: 'loom',
     positionColumn: positionColumn2,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -1422,6 +1556,7 @@ const techData = [
   {
     name: 'hand-cart',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
@@ -1435,11 +1570,13 @@ const techData = [
   {
     name: 'mangonel',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'onager',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
@@ -1451,17 +1588,21 @@ const techData = [
   {
     name: 'siege-workshop',
     positionColumn: positionColumn5,
+    svgSize: svgSizeChildAge2BelowParent,
+    svgTechParentSize: '213',
     isAlignCenter,
     dontBelongTo: [],
   },
   {
     name: 'battering-ram',
     positionColumn: positionColumnChild,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'capped-ram',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
@@ -1473,16 +1614,19 @@ const techData = [
   {
     name: 'scorpion',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'heavy-scorpion',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'siege-tower',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -1496,81 +1640,97 @@ const techData = [
   {
     name: 'padded-archer-armor',
     positionColumn: positionColumn4,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'leather-archer-armor',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'ring-archer-armor',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'fletching',
     positionColumn: positionColumn4,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'bodkin-arrow',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'bracer',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'blacksmith',
     positionColumn: positionColumn3,
+    svgTechParentSize: '400',
     dontBelongTo: [],
   },
   {
     name: 'forging',
     positionColumn: positionColumnChild,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'iron-casting',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'blast-furnace',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'scale-barding-armor',
     positionColumn: positionColumn4,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'chain-barding-armor',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'plate-barding-armor',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'scale-mail-armor',
     positionColumn: positionColumn4,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'chain-mail-armor',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'plate-mail-armor',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     isLastOfTech,
     dontBelongTo: [],
   },
@@ -1579,16 +1739,19 @@ const techData = [
   {
     name: 'masonry',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'architecture',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'fortified-wall',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -1605,6 +1768,7 @@ const techData = [
   {
     name: 'ballistics',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -1615,21 +1779,25 @@ const techData = [
   {
     name: 'university',
     positionColumn: positionColumn5,
+    svgTechParentSize: '428',
     dontBelongTo: [],
   },
   {
     name: 'guard-tower',
     positionColumn: positionColumnChild,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'keep',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'heated-shot',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
@@ -1640,11 +1808,13 @@ const techData = [
   {
     name: 'murder-holes',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'treadmill-crane',
     positionColumn: positionColumn6,
+    svgSize: svgSizeChildBelowParent,
     isLast: last255,
     isLastOfTech,
     dontBelongTo: [],
@@ -1654,28 +1824,33 @@ const techData = [
   {
     name: 'mining-camp',
     positionColumn: positionColumn1,
+    svgTechParentSize: '72.5',
     isAlignCenter,
     dontBelongTo: [],
   },
   {
     name: 'stone-mining',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'stone-shaft-mining',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     isLast: last385,
     dontBelongTo: [],
   },
   {
     name: 'gold-mining',
     positionColumn: positionColumn3,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'gold-shaft-mining',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     isLast: last385,
     isLastOfTech,
     dontBelongTo: [],
@@ -1688,16 +1863,19 @@ const techData = [
   {
     name: 'double-bit-axe',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'bow-saw',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'two-man-saw',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     isLastOfTech,
     dontBelongTo: [],
   },
@@ -1706,11 +1884,13 @@ const techData = [
   {
     name: 'cartography',
     positionColumn: positionColumn4,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'caravan',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
@@ -1721,21 +1901,25 @@ const techData = [
   {
     name: 'market',
     positionColumn: positionColumn3,
+    svgTechParentSize: '144.5',
     dontBelongTo: [],
   },
   {
     name: 'coinage',
     positionColumn: positionColumnChild,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   {
     name: 'banking',
     positionColumn: positionColumnChildAge,
+    svgSize: svgSizeChildAge,
     dontBelongTo: [],
   },
   {
     name: 'trade-cart',
     positionColumn: positionColumn4,
+    svgSize: svgSizeChildBelowParent,
     isLast: last530,
     isLastOfTech,
     dontBelongTo: [],
@@ -1743,26 +1927,31 @@ const techData = [
   {
     name: 'mill',
     positionColumn: positionColumn1,
+    svgTechParentSize: '100',
     dontBelongTo: [],
   },
   {
     name: 'horse-collar',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2BelowParent,
     dontBelongTo: [],
   },
   {
     name: 'heavy-plow',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'crop-rotation',
     positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
     dontBelongTo: [],
   },
   {
     name: 'farm',
     positionColumn: positionColumn2,
+    svgSize: svgSizeChildBelowParent,
     dontBelongTo: [],
   },
   //#endregion
