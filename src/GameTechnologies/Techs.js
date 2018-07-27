@@ -57,10 +57,13 @@ const SVGItemOfParent = styled.svg`
 const Techs = props => (
   <TechsWrapper>
     {props.techs.map(tech => {
-      const dontBelong =
-        tech.dontBelongTo.includes(props.selectedCiv) === true
-          ? 'dontBelongTo'
-          : '';
+      let dontBelong = '';
+      if (tech.dontBelongTo !== undefined) {
+        dontBelong =
+          tech.dontBelongTo.includes(props.selectedCiv) === true
+            ? 'dontBelongTo'
+            : '';
+      }
 
       const uniqueUnit =
         tech.uniqueUnitOf === props.selectedCiv ||
@@ -77,21 +80,15 @@ const Techs = props => (
             isAlignCenter={tech.isAlignCenter}
           >
             <SVGItem width="64" height={tech.svgSize}>
-              <line
-                x1="32"
-                y1="0"
-                x2="32"
-                y2={tech.svgSize}
-              />
+              <line x1="32" y1="0" x2="32" y2={tech.svgSize} />
             </SVGItem>
             {tech.svgTechParentSize && (
-              <SVGItemOfParent width={tech.svgTechParentSize} height="3" svgParentPosition={tech.svgParentPosition}>
-                <line
-                  x1="0"
-                  y1="0"
-                  x2={tech.svgTechParentSize}
-                  y2="0"
-                />
+              <SVGItemOfParent
+                width={tech.svgTechParentSize}
+                height="3"
+                svgParentPosition={tech.svgParentPosition}
+              >
+                <line x1="0" y1="0" x2={tech.svgTechParentSize} y2="0" />
               </SVGItemOfParent>
             )}
           </TechItem>
