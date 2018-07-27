@@ -35,13 +35,23 @@ const SVGItem = styled.svg`
   top: -${props => props.height}px;
   left: 0;
   pointer-events: none;
+
+  line {
+    stroke: #333;
+    stroke-width: 2;
+  }
 `;
 
 const SVGItemOfParent = styled.svg`
   position: absolute;
   top: 68px;
-  left: -${props => props.width / 2 - 32}px;
+  left: ${props => props.svgParentPosition};
   pointer-events: none;
+
+  line {
+    stroke: #333;
+    stroke-width: 3;
+  }
 `;
 
 const Techs = props => (
@@ -72,17 +82,15 @@ const Techs = props => (
                 y1="0"
                 x2="32"
                 y2={tech.svgSize}
-                style={{ stroke: '#333', strokeWidth: 2 }}
               />
             </SVGItem>
             {tech.svgTechParentSize && (
-              <SVGItemOfParent width={tech.svgTechParentSize} height="3">
+              <SVGItemOfParent width={tech.svgTechParentSize} height="3" svgParentPosition={tech.svgParentPosition}>
                 <line
                   x1="0"
                   y1="0"
                   x2={tech.svgTechParentSize}
                   y2="0"
-                  style={{ stroke: '#333', strokeWidth: 3 }}
                 />
               </SVGItemOfParent>
             )}

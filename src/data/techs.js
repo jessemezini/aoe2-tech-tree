@@ -71,6 +71,7 @@ const techData = [
     isAlignCenter,
     svgSize: svgSizeChildAge2BelowParent,
     svgTechParentSize: '357',
+    svgParentPosition: '-146.5px',
     dontBelongTo: [],
   },
   {
@@ -175,7 +176,8 @@ const techData = [
   {
     name: 'barracks',
     positionColumn: positionColumn1,
-    svgTechParentSize: '828',
+    svgTechParentSize: '795',
+    svgParentPosition: '-383px',
     dontBelongTo: [],
   },
   {
@@ -262,6 +264,7 @@ const techData = [
     positionColumn: positionColumn3,
     svgSize: svgSizeChildAge2BelowParent,
     svgTechParentSize: '286',
+    svgParentPosition: '-111px',
     dontBelongTo: [],
   },
   {
@@ -383,6 +386,7 @@ const techData = [
     positionColumn: positionColumn1,
     isAlignCenter,
     svgTechParentSize: '499.5',
+    svgParentPosition: '-217.75px',
     dontBelongTo: [],
   },
   {
@@ -576,6 +580,7 @@ const techData = [
     name: 'monastery',
     positionColumn: positionColumn5,
     svgTechParentSize: '425',
+    svgParentPosition: '-180.5px',
     dontBelongTo: [],
   },
   {
@@ -1462,6 +1467,7 @@ const techData = [
     name: 'castle',
     positionColumn: positionColumn5,
     svgTechParentSize: '427',
+    svgParentPosition: '-181.5px',
     dontBelongTo: [],
   },
   {
@@ -1521,6 +1527,7 @@ const techData = [
     name: 'town-center',
     positionColumn: positionColumn1,
     svgTechParentSize: '144.5',
+    svgParentPosition: '-40.25px',
     dontBelongTo: [],
   },
   {
@@ -1590,6 +1597,7 @@ const techData = [
     positionColumn: positionColumn5,
     svgSize: svgSizeChildAge2BelowParent,
     svgTechParentSize: '213',
+    svgParentPosition: '-74.5px',
     isAlignCenter,
     dontBelongTo: [],
   },
@@ -1676,7 +1684,8 @@ const techData = [
   {
     name: 'blacksmith',
     positionColumn: positionColumn3,
-    svgTechParentSize: '400',
+    svgTechParentSize: '487',
+    svgParentPosition: '-312px',
     dontBelongTo: [],
   },
   {
@@ -1780,6 +1789,7 @@ const techData = [
     name: 'university',
     positionColumn: positionColumn5,
     svgTechParentSize: '428',
+    svgParentPosition: '-182px',
     dontBelongTo: [],
   },
   {
@@ -1825,6 +1835,7 @@ const techData = [
     name: 'mining-camp',
     positionColumn: positionColumn1,
     svgTechParentSize: '72.5',
+    svgParentPosition: '-4.25px',
     isAlignCenter,
     dontBelongTo: [],
   },
@@ -1901,7 +1912,9 @@ const techData = [
   {
     name: 'market',
     positionColumn: positionColumn3,
+    svgSize: svgSizeChildAge2BelowParent,
     svgTechParentSize: '144.5',
+    svgParentPosition: '-40.25px',
     dontBelongTo: [],
   },
   {
@@ -1927,7 +1940,8 @@ const techData = [
   {
     name: 'mill',
     positionColumn: positionColumn1,
-    svgTechParentSize: '100',
+    svgTechParentSize: '239',
+    svgParentPosition: '-135px',
     dontBelongTo: [],
   },
   {
