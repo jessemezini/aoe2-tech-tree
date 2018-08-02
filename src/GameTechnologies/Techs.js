@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ReactTooltip from 'react-tooltip';
 import './spritesheet.css';
 import techSprite from './techs.png';
 
@@ -71,6 +72,7 @@ const Techs = props => (
 
       if (uniqueUnit) {
         return (
+          <div>
           <TechItem
             key={tech.name}
             className={`${tech.name} ${dontBelong}`}
@@ -78,6 +80,8 @@ const Techs = props => (
             isLast={tech.isLast}
             isLastOfTech={tech.isLastOfTech}
             isAlignCenter={tech.isAlignCenter}
+            data-tip
+            data-for={tech.name}
           >
             <SVGItem width="64" height={tech.svgSize}>
               <line x1="32" y1="0" x2="32" y2={tech.svgSize} />
@@ -92,6 +96,10 @@ const Techs = props => (
               </SVGItemOfParent>
             )}
           </TechItem>
+          <ReactTooltip id={tech.name}>
+            <p>{tech.name}</p>
+          </ReactTooltip>
+          </div>
         );
       }
 
