@@ -33,31 +33,62 @@ const techData = [
     name: 'archer',
     positionColumn: positionColumn4,
     svgSize: svgSizeChildBelowParent,
-    dontBelongTo: ['Aztecs', 'Berbers'],
+    desc: [
+      'Create <strong>Archer</strong>',
+      '(Cost: 25 Wood, 45 Gold)',
+      'Creation time 35s (Briton ally 29.2s); Basic Archer, strong against slow units.',
+      'Hit Pts: 30; Attack 4 (+3 vs. Spear-line, Saracen ally: +2 vs. Buildings); Reload time: 2 (Thumb Ring 1.7); Melee/Pierce Armor: 0/0; Range: 4; Accuracy: 80% (TR 100%).',
+      'Class: Archers; Attack delay: 0.35s; Speed: 0.96; Line of sight: 6 (Magyar ally 8)',
+    ],
   },
   {
     name: 'crossbowman',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-    dontBelongTo: ['Berbers', 'Franks', 'Persians'],
+    dontBelongTo: ['Spanish'],
+    desc: [
+      'Create <strong>Crossbowman</strong>',
+      '(Cost: 25 Wood, 45 Gold)',
+      'Creation time 27s (Briton ally 22.5s); Basic Archer, strong against slow units.',
+      'Hit Pts: 35; Attack 5 (+3 vs. Spear-line, Saracen ally: +2 vs. Buildings); Reload time: 2 (Thumb Ring 1.7); Melee/Pierce Armor: 0/0; Range: 5; Accuracy: 85% (TR 100%).',
+      'Class: Archers; Attack delay: 0.35s; Speed: 0.96; Line of sight: 7 (Magyar ally 9)',
+    ],
   },
   {
     name: 'arbalest',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-    dontBelongTo: ['Berbers', 'Franks', 'Persians'],
+    dontBelongTo: [
+      'Burmese',
+      'Celts',
+      'Franks',
+      'Goths',
+      'Huns',
+      'Indians',
+      'Khamer',
+      'Persians',
+      'Slavs',
+      'Spanish',
+      'Teutons',
+      'Turks',
+    ],
+    desc: [
+      'Create <strong>Arbalest</strong>',
+      '(Cost: 25 Wood, 45 Gold)',
+      'Creation time 27s (Briton ally 22.5s); Basic Archer, strong against slow units.',
+      'Hit Pts: 40; Attack 6 (+3 vs. Spear-line, Saracen ally: +2 vs. Buildings); Reload time: 2 (Thumb Ring 1.7); Melee/Pierce Armor: 0/0; Range: 5; Accuracy: 90% (TR 100%).',
+      'Class: Archers; Attack delay: 0.35s; Speed: 0.96; Line of sight: 7 (Magyar ally 9)',
+    ],
   },
   {
     name: 'skirmisher',
     positionColumn: positionColumn4,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'elite-skirmisher',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'imperial-skirmisher',
@@ -72,13 +103,18 @@ const techData = [
     svgSize: svgSizeChildAge2BelowParent,
     svgTechParentSize: '357',
     svgParentPosition: '-146.5px',
-
+    desc: [
+      'Build <strong>Archery Range</strong>',
+      '(Cost: 175 Wood)',
+      'Construction time 50s; Used to create and improve Archers.',
+      'Upgrades: production speed (Castle); Line of sight (Town Center); hit points, Armor (University); more resistant to Monks (Monastery)',
+      'Hit Pts: 1500; Armor: 1; Pierce Armor: 8; Garrison: 10; Line of sight: 6 (Town Watch/Patrol +4 each)',
+    ],
   },
   {
     name: 'cavalry-archer',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'heavy-cavalry-archer',
@@ -90,7 +126,6 @@ const techData = [
     name: 'slinger',
     positionColumn: positionColumn5,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'hand-cannoneer',
@@ -101,7 +136,6 @@ const techData = [
     name: 'genitour',
     positionColumn: positionColumn5,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'elite-genitour',
@@ -113,7 +147,22 @@ const techData = [
     name: 'thumb-ring',
     positionColumn: positionColumn5,
     svgSize: svgSizeChildAge2BelowParent,
-
+    dontBelongTo: [
+      'Aztecs',
+      'Britons',
+      'Burmese',
+      'Celts',
+      'Franks',
+      'Goths',
+      'Khamer',
+      'Slavs',
+      'Teutons',
+    ],
+    desc: [
+      'Research <strong>Thumb Ring</strong>',
+      '(Cost: 300 Food, 250 Wood)',
+      'Research time 45s (Briton ally 35.5s) Archers and Cavalry Archers (not Gunpowder units) fire with 100% accuracy against non-moving targets. Cavalry Archers, War Wagons fire 11% faster, Archer-line, Mangudai, Camel Archers, Elephant Archers, Plumed Archers 18% faster, Chu Ko Nu 20% faster',
+    ],
   },
   {
     name: 'parthian-tactics',
@@ -128,98 +177,82 @@ const techData = [
     name: 'militia',
     positionColumn: positionColumn2,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'man-at-arms',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'long-swordsman',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'two-handed-swordsman',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'champion',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChild,
-
   },
   {
     name: 'spearman',
     positionColumn: positionColumn3,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'pikeman',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'halberdier',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
     isLast: last135,
-
   },
   {
     name: 'barracks',
     positionColumn: positionColumn1,
     svgTechParentSize: '795',
     svgParentPosition: '-383px',
-
   },
   {
     name: 'eagle-scout',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'eagle-warrior',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'elite-eagle-warrior',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'tracking',
     positionColumn: positionColumn3,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'squires',
     positionColumn: positionColumnChildAge2,
-
   },
   {
     name: 'condottiero',
     positionColumn: positionColumnChildAge2,
-
   },
   {
     name: 'arson',
     positionColumn: positionColumn5,
     svgSize: '452',
     isLastOfTech,
-
   },
   //#endregion
   //#region Stable
@@ -227,37 +260,31 @@ const techData = [
     name: 'bloodlines',
     positionColumn: positionColumn4,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'camel',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'heavy-camel',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'knight',
     positionColumn: positionColumn5,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'cavalier',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'paladin',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChild,
-
   },
   {
     name: 'stable',
@@ -265,37 +292,31 @@ const techData = [
     svgSize: svgSizeChildAge2BelowParent,
     svgTechParentSize: '286',
     svgParentPosition: '-111px',
-
   },
   {
     name: 'scout-cavalry',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'light-cavalry',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'hussar',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'battle-elephant',
     positionColumn: positionColumn5,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'elite-battle-elephant',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'husbandry',
@@ -303,7 +324,6 @@ const techData = [
     svgSize: svgSizeChildAge2BelowParent,
     isLast: last255,
     isLastOfTech,
-
   },
   //#endregion
   //#region Wonder
@@ -311,7 +331,6 @@ const techData = [
     name: 'wonder',
     positionColumn: positionColumn7,
     isLastOfTech,
-
   },
   //#endregion
   //#region Dock
@@ -319,67 +338,56 @@ const techData = [
     name: 'fishing-ship',
     positionColumn: positionColumn2,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'trade-cog',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'careening',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'dry-dock',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'transport-ship',
     positionColumn: positionColumn2,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'fire-galley',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'fire-ship',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'fast-fire-ship',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'galley',
     positionColumn: positionColumn3,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'war-galley',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'galleon',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
     isLast: last135,
-
   },
   {
     name: 'dock',
@@ -387,53 +395,44 @@ const techData = [
     isAlignCenter,
     svgTechParentSize: '499.5',
     svgParentPosition: '-217.75px',
-
   },
   {
     name: 'demolition-raft',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'demolition-ship',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'heavy-demo-ship',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'gillnets',
     positionColumn: positionColumn5,
     svgSize: '452',
-
   },
   {
     name: 'cannon-galleon',
     positionColumn: positionColumnChildAge2,
-
   },
   {
     name: 'elite-cannon-galleon',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChild,
-
   },
   {
     name: 'shipwright',
     positionColumn: positionColumn7,
     svgSize: '711',
-
   },
   {
     name: 'empty',
     positionColumn: positionColumn3,
-
   },
   {
     name: 'koreans-turtle-ship',
@@ -483,63 +482,52 @@ const techData = [
     svgSize: svgSizeChildAge2BelowParent,
     isLastOfTech,
     isLast: last650,
-
   },
   //#endregion
   //#region Towers and Walls
   {
     name: 'outpost',
     positionColumn: positionColumn1,
-
   },
   {
     name: 'watch-tower',
     positionColumn: positionColumnChildAge2,
-
   },
   {
     name: 'guard-tower-building',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'keep-building',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'bombard-tower-building',
     positionColumn: positionColumnChild,
     svgSize: '0',
-
   },
   {
     name: 'palisade-wall',
     positionColumn: positionColumn1,
-
   },
   {
     name: 'palisade-gate',
     positionColumn: positionColumnChild,
-
   },
   {
     name: 'gate',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'stone-wall',
     positionColumn: positionColumnChild,
-
   },
   {
     name: 'fortified-wall-building',
     positionColumn: positionColumnChildAge,
     isLastOfTech,
-
   },
   //#endregion
   //#region Monastery
@@ -547,71 +535,59 @@ const techData = [
     name: 'redemption',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'block-printing',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'fervor',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'illumination',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'sancitity',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'faith',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'monastery',
     positionColumn: positionColumn5,
     svgTechParentSize: '425',
     svgParentPosition: '-180.5px',
-
   },
   {
     name: 'atonement',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'theocracy',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'monk',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'herbal-medicine',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'heresy',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
     isLastOfTech,
-
   },
   //#endregion
   //#region Castle
@@ -1053,12 +1029,10 @@ const techData = [
     name: 'petard',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'trebuchet',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'aztecs-atlatl',
@@ -1468,25 +1442,21 @@ const techData = [
     positionColumn: positionColumn5,
     svgTechParentSize: '427',
     svgParentPosition: '-181.5px',
-
   },
   {
     name: 'hoardings',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'sappers',
     positionColumn: positionColumn7,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'conscription',
     positionColumn: positionColumn7,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'spies-treason',
@@ -1494,7 +1464,6 @@ const techData = [
     svgSize: svgSizeChildAge2BelowParent,
     isLast: last135,
     isLastOfTech,
-
   },
   //#endregion
   //#region House & Town Center
@@ -1503,74 +1472,62 @@ const techData = [
     positionColumn: positionColumn1,
     isLast: last900,
     isLastOfTech,
-
   },
   {
     name: 'villager',
     positionColumn: positionColumn2,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'town-watch',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'town-patrol',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2BelowParent,
     isLast: last385,
-
   },
   {
     name: 'town-center',
     positionColumn: positionColumn1,
     svgTechParentSize: '144.5',
     svgParentPosition: '-40.25px',
-
   },
   {
     name: 'feudal-age',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'castle-age',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'imperial-age',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
     isLast: last385,
-
   },
   {
     name: 'loom',
     positionColumn: positionColumn2,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'wheelbarrow',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'hand-cart',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'town-center-building',
     positionColumn: positionColumn5,
     isLastOfTech,
-
   },
   //#endregion
   //#region Siege Workshop
@@ -1578,19 +1535,16 @@ const techData = [
     name: 'mangonel',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'onager',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'siege-onager',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChild,
-
   },
   {
     name: 'siege-workshop',
@@ -1599,49 +1553,41 @@ const techData = [
     svgTechParentSize: '213',
     svgParentPosition: '-74.5px',
     isAlignCenter,
-
   },
   {
     name: 'battering-ram',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'capped-ram',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'siege-ram',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChild,
-
   },
   {
     name: 'scorpion',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'heavy-scorpion',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'siege-tower',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'bombard-cannon',
     positionColumn: positionColumnChildAge,
     isLastOfTech,
-
   },
   //#endregion
   //#region Blacksmith
@@ -1649,99 +1595,83 @@ const techData = [
     name: 'padded-archer-armor',
     positionColumn: positionColumn4,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'leather-archer-armor',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'ring-archer-armor',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'fletching',
     positionColumn: positionColumn4,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'bodkin-arrow',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'bracer',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'blacksmith',
     positionColumn: positionColumn3,
     svgTechParentSize: '487',
     svgParentPosition: '-312px',
-
   },
   {
     name: 'forging',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'iron-casting',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'blast-furnace',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'scale-barding-armor',
     positionColumn: positionColumn4,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'chain-barding-armor',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'plate-barding-armor',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'scale-mail-armor',
     positionColumn: positionColumn4,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'chain-mail-armor',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'plate-mail-armor',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
     isLastOfTech,
-
   },
   //#endregion
   //#region University
@@ -1749,77 +1679,64 @@ const techData = [
     name: 'masonry',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'architecture',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'fortified-wall',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'chemistry',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'bombard-tower',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChild,
-
   },
   {
     name: 'ballistics',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'siege-engineers',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'university',
     positionColumn: positionColumn5,
     svgTechParentSize: '428',
     svgParentPosition: '-182px',
-
   },
   {
     name: 'guard-tower',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'keep',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'heated-shot',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'arrowslits',
     positionColumn: positionColumnChildAge,
-
   },
   {
     name: 'murder-holes',
     positionColumn: positionColumn6,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'treadmill-crane',
@@ -1827,7 +1744,6 @@ const techData = [
     svgSize: svgSizeChildBelowParent,
     isLast: last255,
     isLastOfTech,
-
   },
   //#endregion
   //#region Mining Camp & Lumber Camp
@@ -1837,26 +1753,22 @@ const techData = [
     svgTechParentSize: '72.5',
     svgParentPosition: '-4.25px',
     isAlignCenter,
-
   },
   {
     name: 'stone-mining',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'stone-shaft-mining',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
     isLast: last385,
-
   },
   {
     name: 'gold-mining',
     positionColumn: positionColumn3,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'gold-shaft-mining',
@@ -1864,31 +1776,26 @@ const techData = [
     svgSize: svgSizeChildAge2,
     isLast: last385,
     isLastOfTech,
-
   },
   {
     name: 'lumber-camp',
     positionColumn: positionColumn1,
-
   },
   {
     name: 'double-bit-axe',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'bow-saw',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'two-man-saw',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
     isLastOfTech,
-
   },
   //#endregion
   //#region Mill
@@ -1896,18 +1803,15 @@ const techData = [
     name: 'cartography',
     positionColumn: positionColumn4,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'caravan',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'guilds',
     positionColumn: positionColumnChildAge2,
-
   },
   {
     name: 'market',
@@ -1915,19 +1819,16 @@ const techData = [
     svgSize: svgSizeChildAge2BelowParent,
     svgTechParentSize: '144.5',
     svgParentPosition: '-40.25px',
-
   },
   {
     name: 'coinage',
     positionColumn: positionColumnChild,
     svgSize: svgSizeChildBelowParent,
-
   },
   {
     name: 'banking',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-
   },
   {
     name: 'trade-cart',
@@ -1935,38 +1836,32 @@ const techData = [
     svgSize: svgSizeChildBelowParent,
     isLast: last530,
     isLastOfTech,
-
   },
   {
     name: 'mill',
     positionColumn: positionColumn1,
     svgTechParentSize: '239',
     svgParentPosition: '-135px',
-
   },
   {
     name: 'horse-collar',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2BelowParent,
-
   },
   {
     name: 'heavy-plow',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'crop-rotation',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
-
   },
   {
     name: 'farm',
     positionColumn: positionColumn2,
     svgSize: svgSizeChildBelowParent,
-
   },
   //#endregion
 ];
