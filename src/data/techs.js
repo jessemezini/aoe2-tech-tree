@@ -34,7 +34,7 @@ const techData = [
     positionColumn: positionColumn4,
     svgSize: svgSizeChildBelowParent,
     desc: [
-      'Create <strong>Archer</strong>',
+      'Create Archer',
       '(Cost: 25 Wood, 45 Gold)',
       'Creation time 35s (Briton ally 29.2s); Basic Archer, strong against slow units.',
       'Hit Pts: 30; Attack 4 (+3 vs. Spear-line, Saracen ally: +2 vs. Buildings); Reload time: 2 (Thumb Ring 1.7); Melee/Pierce Armor: 0/0; Range: 4; Accuracy: 80% (TR 100%).',
@@ -47,7 +47,7 @@ const techData = [
     svgSize: svgSizeChildAge,
     dontBelongTo: ['Spanish'],
     desc: [
-      'Create <strong>Crossbowman</strong>',
+      'Create Crossbowman',
       '(Cost: 25 Wood, 45 Gold)',
       'Creation time 27s (Briton ally 22.5s); Basic Archer, strong against slow units.',
       'Hit Pts: 35; Attack 5 (+3 vs. Spear-line, Saracen ally: +2 vs. Buildings); Reload time: 2 (Thumb Ring 1.7); Melee/Pierce Armor: 0/0; Range: 5; Accuracy: 85% (TR 100%).',
@@ -73,7 +73,7 @@ const techData = [
       'Turks',
     ],
     desc: [
-      'Create <strong>Arbalest</strong>',
+      'Create Arbalest',
       '(Cost: 25 Wood, 45 Gold)',
       'Creation time 27s (Briton ally 22.5s); Basic Archer, strong against slow units.',
       'Hit Pts: 40; Attack 6 (+3 vs. Spear-line, Saracen ally: +2 vs. Buildings); Reload time: 2 (Thumb Ring 1.7); Melee/Pierce Armor: 0/0; Range: 5; Accuracy: 90% (TR 100%).',
@@ -104,7 +104,7 @@ const techData = [
     svgTechParentSize: '357',
     svgParentPosition: '-146.5px',
     desc: [
-      'Build <strong>Archery Range</strong>',
+      'Build Archery Range',
       '(Cost: 175 Wood)',
       'Construction time 50s; Used to create and improve Archers.',
       'Upgrades: production speed (Castle); Line of sight (Town Center); hit points, Armor (University); more resistant to Monks (Monastery)',
@@ -159,7 +159,7 @@ const techData = [
       'Teutons',
     ],
     desc: [
-      'Research <strong>Thumb Ring</strong>',
+      'Research Thumb Ring',
       '(Cost: 300 Food, 250 Wood)',
       'Research time 45s (Briton ally 35.5s) Archers and Cavalry Archers (not Gunpowder units) fire with 100% accuracy against non-moving targets. Cavalry Archers, War Wagons fire 11% faster, Archer-line, Mangudai, Camel Archers, Elephant Archers, Plumed Archers 18% faster, Chu Ko Nu 20% faster',
     ],

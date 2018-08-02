@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import ReactTooltip from 'react-tooltip';
 import './spritesheet.css';
 import techSprite from './techs.png';
 
+//#region Styles
 const TechsWrapper = styled.div`
   min-width: 5350px;
   display: flex;
@@ -55,6 +56,28 @@ const SVGItemOfParent = styled.svg`
   }
 `;
 
+const StyledReactTooltip = styled(ReactTooltip)`
+  width: 300px;
+
+  &.show {
+    opacity: 1;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
+
+  li:first-child {
+    font-weight: bold;
+  }
+`;
+//#endregion
+
 const Techs = props => (
   <TechsWrapper>
     {props.techs.map(tech => {
@@ -72,34 +95,46 @@ const Techs = props => (
 
       if (uniqueUnit) {
         return (
-          <div>
-          <TechItem
-            key={tech.name}
-            className={`${tech.name} ${dontBelong}`}
-            positionColumn={tech.positionColumn}
-            isLast={tech.isLast}
-            isLastOfTech={tech.isLastOfTech}
-            isAlignCenter={tech.isAlignCenter}
-            data-tip
-            data-for={tech.name}
-          >
-            <SVGItem width="64" height={tech.svgSize}>
-              <line x1="32" y1="0" x2="32" y2={tech.svgSize} />
-            </SVGItem>
-            {tech.svgTechParentSize && (
-              <SVGItemOfParent
-                width={tech.svgTechParentSize}
-                height="3"
-                svgParentPosition={tech.svgParentPosition}
-              >
-                <line x1="0" y1="0" x2={tech.svgTechParentSize} y2="0" />
-              </SVGItemOfParent>
-            )}
-          </TechItem>
-          <ReactTooltip id={tech.name}>
-            <p>{tech.name}</p>
-          </ReactTooltip>
-          </div>
+          <Fragment key={tech.name}>
+            <TechItem
+              key={tech.name}
+              className={`${tech.name} ${dontBelong}`}
+              positionColumn={tech.positionColumn}
+              isLast={tech.isLast}
+              isLastOfTech={tech.isLastOfTech}
+              isAlignCenter={tech.isAlignCenter}
+              data-tip
+              data-for={tech.name}
+              data-place="right"
+            >
+              <SVGItem width="64" height={tech.svgSize}>
+                <line x1="32" y1="0" x2="32" y2={tech.svgSize} />
+              </SVGItem>
+              {tech.svgTechParentSize && (
+                <SVGItemOfParent
+                  width={tech.svgTechParentSize}
+                  height="3"
+                  svgParentPosition={tech.svgParentPosition}
+                >
+                  <line x1="0" y1="0" x2={tech.svgTechParentSize} y2="0" />
+                </SVGItemOfParent>
+              )}
+            </TechItem>
+            <StyledReactTooltip
+              key={`${tech.name}-tooltip`}
+              id={tech.name}
+              type="light"
+              effect="solid"
+            >
+              <ul>
+                {tech.desc !== undefined
+                  ? tech.desc.map((civDesc, i) => {
+                      return <li key={i}>{civDesc}</li>;
+                    })
+                  : tech.name}
+              </ul>
+            </StyledReactTooltip>
+          </Fragment>
         );
       }
 
