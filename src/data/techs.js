@@ -44,19 +44,26 @@ const techData = [
     name: 'crossbowman',
     positionColumn: positionColumnChildAge,
     svgSize: svgSizeChildAge,
-    dontBelongTo: ['Spanish'],
     desc: [
       'Create Crossbowman',
       '(Cost: 25 Wood, 45 Gold)',
       'Creation time 27s (Briton ally 22.5s); Basic Archer, strong against slow units.',
       'Hit Pts: 35; Attack 5 (+3 vs. Spear-line, Saracen ally: +2 vs. Buildings); Reload time: 2 (Thumb Ring 1.7); Melee/Pierce Armor: 0/0; Range: 5; Accuracy: 85% (TR 100%); Class: Archers; Attack delay: 0.35s; Speed: 0.96; Line of sight: 7 (Magyar ally 9)',
     ],
+    dontBelongTo: ['Spanish'],
   },
   {
     name: 'arbalest',
     positionColumn: positionColumnChildAge2,
     svgSize: svgSizeChildAge2,
+    desc: [
+      'Create Arbalest',
+      '(Cost: 25 Wood, 45 Gold)',
+      'Creation time 27s (Briton ally 22.5s); Basic Archer, strong against slow units.',
+      'Hit Pts: 40; Attack 6 (+3 vs. Spear-line, Saracen ally: +2 vs. Buildings); Reload time: 2 (Thumb Ring 1.7); Melee/Pierce Armor: 0/0; Range: 5; Accuracy: 90% (TR 100%); Class: Archers; Attack delay: 0.35s; Speed: 0.96; Line of sight: 7 (Magyar ally 9)',
+    ],
     dontBelongTo: [
+      'Berbers',
       'Burmese',
       'Celts',
       'Franks',
@@ -69,12 +76,6 @@ const techData = [
       'Spanish',
       'Teutons',
       'Turks',
-    ],
-    desc: [
-      'Create Arbalest',
-      '(Cost: 25 Wood, 45 Gold)',
-      'Creation time 27s (Briton ally 22.5s); Basic Archer, strong against slow units.',
-      'Hit Pts: 40; Attack 6 (+3 vs. Spear-line, Saracen ally: +2 vs. Buildings); Reload time: 2 (Thumb Ring 1.7); Melee/Pierce Armor: 0/0; Range: 5; Accuracy: 90% (TR 100%); Class: Archers; Attack delay: 0.35s; Speed: 0.96; Line of sight: 7 (Magyar ally 9)',
     ],
   },
   {
@@ -98,6 +99,9 @@ const techData = [
       'Creation time 22s (Briton ally 18.3s); Good against Archers, Spearmen; weak vs. other units.',
       'Hit Pts: 35; Attack 3 (+3 vs. Spear-line, +4 vs. Archers (+2 extra vs. Cavalry Archers)); Reload time: 3; Melee/Pierce Armor: 0/4; Range: 5 (min: 1); Accuracy: 90% (TR 100%); Class: Archers; Attack delay: 0.35s; Speed: 0.96; Line of sight: 7.',
     ],
+    dontBelongTo: [
+      'Turks'
+    ],
   },
   {
     name: 'imperial-skirmisher',
@@ -109,6 +113,9 @@ const techData = [
       '(25 Food, 35 Wood)',
       'Creation time 22s (Briton ally 18.3s); Vietnamese mercenary unit, available when teamed with a Vietnamese player. Good against Archers, Spearmen; weak vs. other units.',
       'Hit Pts: 35; Attack 4 (+5 vs. Archers, +3 extra vs. Cavalry Archers, +3 vs. Spear-line); Reload time: 3; Melee/Pierce Armor: 0/5; Range: 5 (min: 1); Accuracy: 95% (TR 100%); Class: Archers; Attack delay: 0.35s; Speed: 0.96; Line of sight: 7.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vikings'
     ],
   },
   {
@@ -136,6 +143,9 @@ const techData = [
       'Creation time 34s (Briton ally 28.3s); Fast, with ranged attack. Ideal for hit-and-run.',
       'Hit Pts: 50; Attack: 6 (+2 vs. Spear-line [+6 Parthian Tactics]); Reload time: 2 (TR 1.8); Melee/Pierce Armor: 0/0; Range: 4; Accuracy: 50%; Classes: Cavalry, Archers, Cavalry Archers; Attack delay: 0.7s; Speed: 1.4 (1.54); Line of sight: 5.',
     ],
+    dontBelongTo: [
+      'Aztecs','Incas','Mayans'
+    ],
   },
   {
     name: 'heavy-cavalry-archer',
@@ -148,6 +158,9 @@ const techData = [
       'Creation time 27s (Briton ally 22.5s); Fast, with ranged attack. Ideal for hit-and-run.',
       'Hit Pts: 60; Attack: 7 (+2 vs. Spear-line [+6 Parthian Tactics]); Reload time: 2 (TR 1.8); Melee/Pierce Armor: 1/0; Range: 4; Accuracy: 50% (TR 100%); Classes: Cavalry, Archers, Cavalry Archers; Attack delay: 0.7s; Speed: 1.4 (1.54); Line of sight: 6.',
     ],
+    dontBelongTo: [
+      'Aztecs','Incas','Italians','Malay','Mayans','Portuguese','Teutons','Vikings'
+    ],
   },
   {
     name: 'slinger',
@@ -158,6 +171,9 @@ const techData = [
       '(30 Food, 40 Gold)',
       'Creation time 25s (Briton ally 20.8s); Inca unique unit. Archer with strong attack bonus vs. Infantry.',
       'Hit Pts: 40; Attack: 5 (+10 vs. Infantry, +1 extra vs. Spear-line, +2 vs. Rams); Reload time: 2; Melee/Pierce Armor: 0/0 (UT 1/2); Range: 5 (min: 1)(UT: 0); Accuracy: 90% (TR 100%); Classes: Archers, Unique Units; Speed: 0.96; Attack delay: 0.35s; Line of sight: 7 (Magyar ally 9).',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -171,6 +187,9 @@ const techData = [
       'Hit Pts: 35; Attack: 17 (+10 vs. Infantry, +1 extra vs. Spear-line, +2 vs. Rams); Reload time: 3.45; Melee/Pierce Armor: 1/0; Range: 7 Accuracy: 50%, not affected by Ballistics, TR, range/attack upgrades; Classes: Archers, Gunpowder; Speed: 0.96; Attack delay: 0.35s; Line of sight: 9.',
       'Requires: Chemistry (University).',
     ],
+    dontBelongTo: [
+      'Aztecs','Britons','Burmese','Celts','Chinese','Ethiopians','Huns','Incas','Magyars','Malay','Mayans','Mongols','Slavs','Vietnamese','Vikings'
+    ],
   },
   {
     name: 'genitour',
@@ -181,6 +200,9 @@ const techData = [
       '(50 Food, 35 Wood)',
       'Creation time 25s (Briton ally 20.8s); Mounted Skirmisher, available when teamed with a Berber player. Not affected by Parthian Tactics.',
       'Hit Pts: 50; Attack: 3 (+4 vs. Archers); Reload time: 3; Melee/Pierce Armor: 0/3 (+1 against anti-Cavalry Archer dmg); Range: 3 (min: 1); Accuracy: 90% (TR 100%); Classes: Archers, Cavalry, Cavalry Archers, Unique Units; Attack delay: 0.7s; Speed: 1.35 (1.49); Line of sight: 5.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -194,11 +216,19 @@ const techData = [
       'Creation time 23s (Briton ally 19.2s); Mounted Skirmisher, available when teamed with a Berber player.',
       'Hit Pts: 55; Attack: 4 (+5 vs. Archers, +2 extra vs. Cavalry Archers); Reload time: 3; Melee/Pierce Armor: 0/4 (+1 against anti-Cavalry Archer dmg); Range: 4 (min: 1); Accuracy: 90% (TR 100%); Classes: Archers, Cavalry, Cavalry Archers, Unique Units; Attack delay: 0.7s; Speed: 1.35 (1.49); Line of sight: 5.',
     ],
+    dontBelongTo: [
+      'Aztecs','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
+    ],
   },
   {
     name: 'thumb-ring',
     positionColumn: positionColumn5,
     svgSize: svgSizeChildAge2BelowParent,
+    desc: [
+      'Research Thumb Ring',
+      '(Cost: 300 Food, 250 Wood)',
+      'Research time 45s (Briton ally 35.5s) Archers and Cavalry Archers (not Gunpowder units) fire with 100% accuracy against non-moving targets. Cavalry Archers, War Wagons fire 11% faster, Archer-line, Mangudai, Camel Archers, Elephant Archers, Plumed Archers 18% faster, Chu Ko Nu 20% faster',
+    ],
     dontBelongTo: [
       'Aztecs',
       'Britons',
@@ -210,11 +240,6 @@ const techData = [
       'Slavs',
       'Teutons',
     ],
-    desc: [
-      'Research Thumb Ring',
-      '(Cost: 300 Food, 250 Wood)',
-      'Research time 45s (Briton ally 35.5s) Archers and Cavalry Archers (not Gunpowder units) fire with 100% accuracy against non-moving targets. Cavalry Archers, War Wagons fire 11% faster, Archer-line, Mangudai, Camel Archers, Elephant Archers, Plumed Archers 18% faster, Chu Ko Nu 20% faster',
-    ],
   },
   {
     name: 'parthian-tactics',
@@ -225,7 +250,10 @@ const techData = [
     desc: [
       'Research Parthian Tactics',
       '(200 Food, 250 Gold)',
-      'Research time 1:05 (Briton ally 54s)Mangudai, Cavalry Archer, Elephant Archers have +1 Melee Armor/+2 Pierce Armor; Cavalry Archers have +4, Mangudai and Elephant Archers +2 Attack vs. Spear-line.',
+      'Research time 1:05 (Briton ally 54s) Mangudai, Cavalry Archer, Elephant Archers have +1 Melee Armor/+2 Pierce Armor; Cavalry Archers have +4, Mangudai and Elephant Archers +2 Attack vs. Spear-line.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Incas','Italians','Koreans','Malay','Malians','Mayans','Portuguese','Slavs','Spanish','Teutons','Vietnamese','Vikings'
     ],
   },
   //#endregion
@@ -239,7 +267,7 @@ const techData = [
       '(60 Food, 20 Gold)',
       'Creation time 21s (Goth ally 16.8s); Basic Infantry, cheap to create. Man-at-Arms upgrade 100F, 40G (Barracks).',
       'Hit Pts: 40; Attack: 4; Reload time: 2; Melee/Pierce Armor: 0/1; Range: 0; Class: Infantry; Speed: 0.9 (0.99); Line of sight: 4 (6).',
-    ],
+    ]
   },
   {
     name: 'man-at-arms',
@@ -261,7 +289,7 @@ const techData = [
       '(60 Food, 20 Gold)',
       'Creation time 21s (Goth ally 16.8s); Basic Infantry, cheap to create. Two-Handed Swordsman upgrade 300F, 100G (Barracks).',
       'Hit Pts: 60; Attack: 9 (+6 vs. Eagles, +3 (+5) vs. Buildings); Reload time: 2; Melee/Pierce Armor: 0/1; Range: 0; Class: Infantry; Speed: 0.9 (0.99); Line of sight: 4 (6).',
-    ],
+    ]
   },
   {
     name: 'two-handed-swordsman',
@@ -273,6 +301,9 @@ const techData = [
       'Creation time 21s (Goth ally 17.5s); Basic Infantry, cheap to create. Champion upgrade 750F, 300G (Barracks).',
       'Hit Pts: 60; Attack: 12 (+8 vs. Eagles, +4 (+6) vs. Buildings); Reload time: 2; Melee/Pierce Armor: 0/1; Range: 0; Class: Infantry; Speed: 0.9 (0.99); Line of sight: 5 (7).',
     ],
+    dontBelongTo: [
+      'Persians'
+    ],
   },
   {
     name: 'champion',
@@ -283,6 +314,9 @@ const techData = [
       '(60 Food, 20 Gold)',
       'Creation time 21s (Goth ally 16.8s); Basic Infantry, cheap to create.',
       'Hit Pts: 70; Attack: 13 (+8 vs. Eagles, +4 (+6) vs. Buildings); Reload time: 2; Melee/Pierce Armor: 1/1; Range: 0; Class: Infantry; Speed: 0.9 (0.99); Line of sight: 5 (7).',
+    ],
+    dontBelongTo: [
+      'Ethiopians','Huns','Khamer','Malay','Mayans','Persians',
     ],
   },
   {
@@ -306,6 +340,9 @@ const techData = [
       'Creation time 22s (Goth ally 18.3s); Strong against Cavalry, weak against other units. Halberdier upgrade 300F, 600G (Barracks).',
       'Hit Pts: 35 Food; Attack: 4 (+22 vs. Cavalry, +25 extra vs. Elephants, +18 vs. Camels, +16 vs. Ships, +1 vs. Eagles, +1 (+3) vs. Buildings); Reload time: 3; Melee/Pierce Armor: 0/0; Range: 0; Classes: Infantry, Spearmen; Speed: 1 (1.1); Line of sight: 4 (6).',
     ],
+    dontBelongTo: [
+      'Turks',
+    ],
   },
   {
     name: 'halberdier',
@@ -317,6 +354,9 @@ const techData = [
       '(35 Food, 25 Wood)',
       'Creation time 22s (Goth ally 18.3s); Strong against Cavalry, weak against other units.',
       'Hit Pts: 60; Attack: 6 (+32 vs. Cavalry, +28 extra vs. Elephants, +26 vs. Camels, +17 vs. Ships, +1 vs. Eagles, +1 (+3) vs. Buildings); Reload time: 3; Melee/Pierce Armor: 0/0; Range: 0; Classes: Infantry, Spearmen; Speed: 1 (1.1); Line of sight: 4 (6).',
+    ],
+    dontBelongTo: [
+      'Aztecs','Italians','Malians','Mongols','Saracens','Turks','Vikings'
     ],
   },
   {
@@ -341,6 +381,9 @@ const techData = [
       'Creation time 1:00 (Goth ally 50s, Castle Age 35s); Fast Infantry with good Pierce Armor and LoS.',
       'Hit Pts: 50 ; Attack: 4 (+8 vs. Monks, +3 vs. Siege Weapons) Castle Age: +3 Attack, +2 vs. Cavalry, +1 vs. Camels,Ships; Reload time: 2; Melee/Pierce Armor: 0/2; Range: 0 Classes: Infantry, Eagle Warriors; Speed: 1.1 (1.21); Line of sight: 6 (8).',
     ],
+    dontBelongTo: [
+      'Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
+    ],
   },
   {
     name: 'eagle-warrior',
@@ -352,6 +395,9 @@ const techData = [
       'Creation time 35s (Goth ally 26.7s); Fast Infantry with good Pierce Armor and LoS.',
       'Hit Pts: 55; Attack: 7 (+8 vs. Monks, +3 vs. Siege Weapons, +3 vs. Cavalry, +2 vs. Camels, +1 vs. Ships); Reload time: 2; Melee/Pierce Armor: 0/3; Range: 0; Classes: Infantry, Eagle Warriors; Speed: 1.15 (1.27); Line of sight: 6 (8); Resistant to conversion (~5% chance of conversion/s).',
     ],
+    dontBelongTo: [
+      'Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
+    ],
   },
   {
     name: 'elite-eagle-warrior',
@@ -362,6 +408,9 @@ const techData = [
       '(20 Food, 50 Gold)',
       'Creation time 20s (Goth ally 16.7s); Fast Infantry with good Pierce Armor and LoS.',
       'Hit Pts: 60; Attack: 9 (+10 vs. Monks, +5 vs. Siege Weapons, +4 vs. Cavalry, +3 vs. Camels, +2 vs. Ships); Reload time: 2; Melee/Pierce Armor: 0/4; Range: 0; Classes: Infantry, Eagle Warriors; Speed: 1.3 (1.43); Line of sight: 6 (8); Resistant to conversion (~5% chance of conversion/s).',
+    ],
+    dontBelongTo: [
+      'Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -382,6 +431,9 @@ const techData = [
       '(100 Food)',
       'Research time 40s (Goth ally 33s)Infantry move 10% faster.',
     ],
+    dontBelongTo: [
+      'Celts','Khamer','Magyars','Portuguese',
+    ],
   },
   {
     name: 'condottiero',
@@ -391,6 +443,9 @@ const techData = [
       '(50 Food, 35 Gold)',
       'Creation time 18s (Goth ally 9.2s); Italian mercenary unit, available when teamed with an Italian player. Fast Infantry with bonus against Gunpowder.',
       'Hit Pts: 80; Attack: 9 (+10 vs. Gunpowder, +2 (+4) vs. Buildings); Reload time: 1.9; Melee/Pierce Armor: 1/0; (+10 Armor against Hand Cannoneer damage); Range: 0; Classes: Infantry, Unique Units; Speed: 1.2; Line of sight: 6 (8).',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -415,6 +470,9 @@ const techData = [
       '(150 Food, 100 Gold)',
       'Research time 50s (Hun ally 42s)Mounted units have +20 hit points.',
     ],
+    dontBelongTo: [
+      'Aztecs','Britons','Byzantines','Celts','Ethiopians','Franks','Incas','Koreans','Malay','Mayans','Vikings'
+    ],
   },
   {
     name: 'camel',
@@ -425,6 +483,9 @@ const techData = [
       '(55 Food, 60 Gold)',
       'Creation time 22s (Hun ally 18.3s); Weaker than the knight, but excels against Cavalry. Heavy Camel upgrade 325F, 360G (Stable).',
       'Hit Pts: 100; Attack: 6 (+9 vs. Cavalry, +5 vs. Camels,Ships, Indian ally: +6 vs. Buildings); Reload time: 2; Melee/Pierce Armor: 0/0; Range: 0; Class: Camels; Speed: 1.45 (1.6); Line of sight: 4.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Britons','Burmese','Celts','Franks','Goths','Huns','Incas','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Mayans','Portuguese','Slavs','Spanish','Teutons','Vietnamese','Vikings'
     ],
   },
   {
@@ -437,6 +498,9 @@ const techData = [
       'Creation time 22s (Hun ally 18.3s); Weaker than the cavalier, but excels against Cavalry.',
       'Hit Pts: 120; Attack: 7 (+18 vs. Cavalry, +9 vs. Camels,Ships, Indian ally: +6 vs. Buildings); Reload time: 2; Melee/Pierce Armor: 0/0; Range: 0; Class: Camels; Speed: 1.45 (1.6); Line of sight: 5.',
     ],
+    dontBelongTo: [
+      'Aztecs','Britons','Burmese','Celts','Franks','Goths','Huns','Incas','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Mayans','Portuguese','Slavs','Spanish','Teutons','Vietnamese','Vikings'
+    ],
   },
   {
     name: 'imperial-camel',
@@ -447,6 +511,9 @@ const techData = [
       '(55 Food, 60 Gold)',
       'Creation time 20s (Hun ally 16.7s); Weaker than the Paladin, but excels against Cavalry.',
       'Hit Pts: 140; Attack: 9 (+18 vs. Cavalry, +9 vs. Camels,Ships, +6 Attack vs. Buildings); Reload time: 2; Melee/Pierce Armor: 1/1; Range: 0; Class: Camels; Speed: 1.45 (1.6); Line of sight: 5.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -459,6 +526,9 @@ const techData = [
       'Creation time 30s (Hun ally 25s); Fast and heavy Cavalry, costly but powerful. Cavalier upgrade 300F, 300G (Stable).',
       'Hit Pts: 100; Attack: 10 (Persian ally: +2 vs. Archers); Reload time: 1.8; Melee/Pierce Armor: 2/2; Range: 0; Class: Cavalry; Speed: 1.35 (1.49); Line of sight: 4 (Frank ally 6).',
     ],
+    dontBelongTo: [
+      'Aztecs','Incas','Indians','Mayans',
+    ],
   },
   {
     name: 'cavalier',
@@ -470,6 +540,9 @@ const techData = [
       'Creation time 30s (Hun ally 25s); Fast and heavy Cavalry, costly but powerful. Paladin upgrade 1300F, 750G (Stable).',
       'Hit Pts: 120; Attack: 12 (Persian ally: +2 vs. Archers); Reload time: 1.8; Melee/Pierce Armor: 2/2; Range: 0; Class: Cavalry; Speed: 1.35 (1.49); Line of sight: 4 (Frank ally 6).',
     ],
+    dontBelongTo: [
+      'Aztecs','Incas','Indians','Mayans','Saracens',
+    ],
   },
   {
     name: 'paladin',
@@ -480,6 +553,9 @@ const techData = [
       '(60 Food, 75 Gold)',
       'Creation time 30s (Hun ally 25s); Fast and heavy Cavalry, costly but powerful.',
       'Hit Pts: 160; Attack: 14 (Persian ally: +2 vs. Archers); Reload time: 1.9; Melee/Pierce Armor: 2/3; Range: 0; Class: Cavalry; Speed: 1.35 (1.49); Line of sight: 5 (Frank ally 7).',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Chinese','Ethiopians','Goths','Incas','Indians','Italians','Japanese','Khamer','Koreans','Malay','Malians','Mayans','Mongols','Portuguese','Saracens','Slavs','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -494,6 +570,9 @@ const techData = [
       'Construction time 50s; Used to create and improve Cavalry. Upgrades: production speed (Castle); Line of sight (Town Center); hit points, Armor (University); more resistant to Monks (Monastery).',
       'Hit Pts: 1500; Armor: 1; Pierce Armor: 8; Garrison: 10; Line of sight: 6 (Town Watch/Patrol +4 each).',
     ],
+    dontBelongTo: [
+      'Aztecs','Incas','Mayans'
+    ],
   },
   {
     name: 'scout-cavalry',
@@ -504,6 +583,9 @@ const techData = [
       '(80 Food)',
       'Creation time 30s (Hun ally 25s); Fast, cheap Cavalry with extensive LoS. Light Cavalry upgrade 150F, 50G (Stable).',
       'Hit Pts: 45; Attack: 3+2 (+6 vs. Monks); Reload time: 2; Melee/Pierce Armor: 0/2; Range: 0; Class: Cavalry; Speed: 1.55 (1.71); Line of sight: 6 (Mongol ally 8) Resistant to conversion (~5% chance of conversion/s).',
+    ],
+    dontBelongTo: [
+      'Aztecs','Incas','Mayans'
     ],
   },
   {
@@ -516,6 +598,9 @@ const techData = [
       'Creation time 30s (Hun ally 25s); Fast, cheap Cavalry with extensive LoS. Hussar upgrade 500F, 600G (Stable).',
       'Hit Pts: 60; Attack: 7 (+10 vs. Monks); Reload time: 2; Melee/Pierce Armor: 0/2; Range: 0; Class: Cavalry; Speed: 1.5 (1.65); Line of sight: 8 (Mongol ally 10) Resistant to conversion (~5% chance of conversion/s).',
     ],
+    dontBelongTo: [
+      'Aztecs','Incas',,'Mayans','Teutons'
+    ],
   },
   {
     name: 'hussar',
@@ -526,6 +611,9 @@ const techData = [
       '(80 Food)',
       'Creation time 30s (Hun ally 25s); Fast, cheap Cavalry with extensive LoS.',
       'Hit Pts: 75; Attack: 7 (+12 vs. Monks); Reload time: 1.9; Melee/Pierce Armor: 0/2; Range: 0; Class: Cavalry; Speed: 1.5 (1.65); Line of sight: 10 (Mongol ally 12 )Resistant to conversion (~5% chance of conversion/s).',
+    ],
+    dontBelongTo: [
+      'Aztecs','Incas','Japanese','Khamer','Malay','Malians','Mayans','Portuguese','Teutons','Vietnamese','Vikings'
     ],
   },
   {
@@ -538,6 +626,9 @@ const techData = [
       'Creation time 28s; Slow and heavy cavalry, weak to Halbs and Monks.',
       'Hit Pts: 250; Attack: 12 (+7 vs. Buildings, +7 extra vs. Stone Defense), Blast damage: Attack/2, Blast Radius: 0.4; Reload time: 2; Melee/Pierce Armor: 1/2; Range: 0; Classes: Cavalry, Elephants; Speed: 0.85 (0.94); Line of sight: 4.',
     ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Koreans','Magyars','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vikings'
+    ],
   },
   {
     name: 'elite-battle-elephant',
@@ -549,6 +640,9 @@ const techData = [
       'Creation time 28s; Slow and heavy cavalry, weak to Halbs and Monks.',
       'Hit Pts: 300; Attack: 16 (+10 vs. Buildings, +10 extra vs. Stone Defense), Blast damage: Attack/2, Blast Radius: 0.4; Reload time: 2; Melee/Pierce Armor: 1/3; Range: 0; Classes: Cavalry, Elephants; Speed: 0.85 (0.94); Line of sight: 5.',
     ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Koreans','Magyars','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vikings'
+    ],
   },
   {
     name: 'husbandry',
@@ -559,7 +653,10 @@ const techData = [
     desc: [
       'Research Husbandry',
       '(150 Food)',
-      'Research time 40s (Hun ally 33s)Cavalry (except Missionaries) move 10% faster.',
+      'Research time 40s (Hun ally 33s) Cavalry (except Missionaries) move 10% faster.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Incas','Mayans','Teutons','Vietnamese','Vikings'
     ],
   },
   //#endregion
@@ -618,6 +715,9 @@ const techData = [
       '(600 Food, 400 Gold)',
       'Research time 1:00; Ships move 15% faster. Transport Ships carry +10 units. Trade Cog gold generation rate remains the same as they get less gold per trip.',
     ],
+    dontBelongTo: [
+      'Goths','Mongols','Teutons'
+    ],
   },
   {
     name: 'transport-ship',
@@ -639,6 +739,9 @@ const techData = [
       'Creation time 1:00; Powerful against other ships, but small range. Fire Ship/ War Galley upgrade 230F, 100G (Dock).',
       'Hit Pts: 100; Attack: 1 Pierce (+3 vs. Ships, +1 extra vs. Turtle Ships, +1 vs. Buildings); Reload time: 0.25; Melee/Pierce Armor: 0/4; (+6 vs. anti-Ship dmg); Range: 2.5; Class: Ships; Speed: 1.3; Line of sight: 5.',
     ],
+    dontBelongTo: [
+      'Vikings'
+    ],
   },
   {
     name: 'fire-ship',
@@ -650,6 +753,9 @@ const techData = [
       'Creation time 36s; Powerful against other ships, but small range.',
       'Hit Pts: 120; Attack: 2 Pierce + 1 Melee  (+3 vs. Ships, +2 extra vs. Turtle Ships, +2 vs. Buildings); Reload time: 0.25; Melee/Pierce Armor: 0/6; (+6 vs. anti-Ship dmg); Range: 2.5; Class: Ships; Speed: 1.35 (1.55); Line of sight: 5.',
     ],
+    dontBelongTo: [
+      'Vikings'
+    ],
   },
   {
     name: 'fast-fire-ship',
@@ -660,6 +766,9 @@ const techData = [
       '(75 Wood, 45 Gold)',
       'Creation time 36s; Powerful against other ships, but small range.',
       'Hit Pts: 140; Attack: 3 Pierce + 1 Melee  (+4 vs. Ships, +3 extra vs. Turtle Ships, +3 vs. Buildings); Reload time: 0.25; Melee/Pierce Armor: 0/8; (+9 vs. anti-Ship dmg); Range: 2.5; Class: Ships; Speed: 1.43 (1.64); Line of sight: 6.',
+    ],
+    dontBelongTo: [
+      'Burmese','Celts','Chinese','Ethiopians','Huns','Indians','Malians','Portuguese','Saracens','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -695,6 +804,9 @@ const techData = [
       'Creation time 36s; Basic Ship with ranged attack.',
       'Hit Pts: 165; Attack: 8 (+11 vs. Ships, +8 vs. Buildings, +4 vs. Rams); Reload time: 3 Melee/Pierce Armor: 0/8; Range: 7; Class: Ships; Speed: 1.43 (1.64); Line of sight: 9 (Japanese ally 13).',
     ],
+    dontBelongTo: [
+      'Aztecs'
+    ],
   },
   {
     name: 'dock',
@@ -719,6 +831,9 @@ const techData = [
       'Creation time 45s; Detonates to damage massed enemy ships or land units crossing shallows. Demolition Ship/ War Galley upgrade 230F, 100G (Dock).',
       'Hit Pts: 45; Attack: 90 Melee (+180 vs. Buildings), Blast Radius: 2.5; Melee/Pierce Armor: 0/2; (+1 vs. anti-Ship dmg); Range: 0; Class: Ships; Speed: 1.5; Line of sight: 6.',
     ],
+    dontBelongTo: [
+      'Koreans'
+    ],
   },
   {
     name: 'demolition-ship',
@@ -730,6 +845,9 @@ const techData = [
       'Creation time 31s; Detonates to damage massed enemy ships or land units crossing shallows. Heavy Demolition Ship upgrade 200W, 300G (Dock).',
       'Hit Pts: 60; Attack: 110 Melee (+220 vs. Buildings), Blast Radius: 2.5; Melee/Pierce Armor: 0/3; (+3 vs. anti-Ship dmg); Range: 0; Accuracy: 100%; Class: Ships; Speed: 1.6 (1.84); Line of sight: 6.',
     ],
+    dontBelongTo: [
+      'Koreans'
+    ],
   },
   {
     name: 'heavy-demo-ship',
@@ -740,6 +858,9 @@ const techData = [
       '(70 Wood, 50 Gold)',
       'Creation time 31s; Detonates to damage massed enemy ships or land units crossing shallows.',
       'Hit Pts: 70; Attack: 140 Melee (+280 vs. Buildings), Blast Radius: 3.5; Melee/Pierce Armor: 0/5; (+5 vs. anti-Ship dmg); Range: 0; Class: Ships; Speed: 1.6 (1.84); Line of sight: 6.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Burmese','Ethiopians','Incas','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Slavs',
     ],
   },
   {
@@ -761,6 +882,9 @@ const techData = [
       'Creation time 46s (Turk ally: 36.8s); Warship with long range but low fire rate. Powerful against Buildings on the shore, but weak to other ships.',
       'Hit Pts: 120; Attack: 35 (+200 vs. Buildings, +40 vs. Siege Weapons, +15 vs. Archers, Cavalry and Infantry); Reload time: 10; Melee/Pierce Armor: 0/6; Range: 13; Classes: Ships, Gunpowder; Speed: 1.1 (1.27); Line of sight: 15.',
     ],
+    dontBelongTo: [
+      'Aztecs','Huns','Incas','Mayans'
+    ],
   },
   {
     name: 'elite-cannon-galleon',
@@ -772,6 +896,9 @@ const techData = [
       'Creation time 46s (Turk ally: 36.8s); Warship with long range but low fire rate. Powerful against Buildings on the shore, but weak to other ships.',
       'Hit Pts: 150; Attack: 45 (+275 vs. Buildings, +40 vs. Siege Weapons, +15 vs. Archers, Cavalry and Infantry); Reload time: 10; Melee/Pierce Armor: 0/8; Range: 15; Classes: Ships, Gunpowder; Speed: 1.1 (1.27); Line of sight: 17.',
     ],
+    dontBelongTo: [
+      'Aztecs','Britons','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Koreans','Magyars','Malians','Mayans','Mongols','Slavs','Teutons',
+    ],
   },
   {
     name: 'shipwright',
@@ -781,6 +908,9 @@ const techData = [
       'Research Shipwright',
       '(1000 Food, 300 Gold)',
       'Research time 1:00; Ships cost 20% less wood; are created ~54% faster.',
+    ],
+    dontBelongTo: [
+      'Berbers','Burmese','Franks','Huns','Indians','Malians','Persians','Portuguese','Saracens','Slavs','Teutons','Vietnamese','Vikings'
     ],
   },
   {
@@ -881,6 +1011,9 @@ const techData = [
       'Hit Pts: 1500; Attack: 7 (+9 vs. Ships, +1 vs. Camels, +2 vs. Spear-line. Additional arrows +5 vs. Stone Defense); Armor: 2; Pierce Armor: 8; Range: 8 (min: 1); Classes: Buildings, Stone Defense; Garrison: 5; LoS: 10 (Town Watch/Patrol +4) (Ethiopian ally +3).',
       'Requires: Guard Tower (University).',
     ],
+    dontBelongTo: [
+      'Goths','Huns',
+    ],
   },
   {
     name: 'keep-building',
@@ -893,6 +1026,9 @@ const techData = [
       'Hit Pts: ; Attack: (+10 vs. Ships, +1 vs. Camels, +2 vs. Spear-line. Additional arrows +5 against Stone Defense); Armor: 3; Pierce Armor: 9; Range: 8 (min: 1); Classes: Buildings, Stone Defense; Garrison: 5; LoS: 10 (Town Watch/Patrol +4) (Ethiopian ally +3).',
       'Requires: Keep (University).',
     ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Franks','Goths','Huns','Indians','Magyars','Mongols','Persians','Slavs','Vikings'
+    ],
   },
   {
     name: 'bombard-tower-building',
@@ -904,6 +1040,9 @@ const techData = [
       'Construction time 1:20; Tower with powerful attack but slow rate of fire.',
       'Hit Pts: 2220; Attack: 120 Pierce, (+40 vs. Ships, +1 vs. Camels); Armor: 9; Pierce Armor: 9; Range: 8 (min: 1) Affected by range upgrades, Ballistics; Classes: Buildings, Stone Defense, Gunpowder; Garrison: 5; Line of sight: 10 (Town Watch/Patrol +4) (Ethiopian ally +3).',
       'Requires: Bombard Tower (University).',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Celts','Ethiopians','Franks','Goths','Huns','Incas','Indians','Japanese','Khamer','Magyars','Malians','Mayans','Mongols','Persians','Saracens','Slavs','Vikings'
     ],
   },
   {
@@ -935,6 +1074,9 @@ const techData = [
       'Construction time 1:10; Can be built into existing walls (Without getting those resources back). You or your allies can manually open and close this Gate. 2x HP in Castle Age.',
       'Hit Pts: 1375; Armor: 10; Pierce Armor: 10; (+20 against Building bonus dmg from Siege Weapons); Line of sight: 6 (Town Watch/Patrol +4 each); Classes: Buildings, Walls+Gates, Stone Defense.',
     ],
+    dontBelongTo: [
+      'Goths'
+    ],
   },
   {
     name: 'stone-wall',
@@ -944,6 +1086,9 @@ const techData = [
       '(5 Stone)',
       'Construction time 10s; Stronger than Palisade Wall but more expensive. Slows down your enemies so you have a chance to fend them off. 2x HP in Castle Age.',
       'Hit Pts: 900; Armor: 8; Pierce Armor: 10 (+16 against Building bonus dmg from Siege Weapons); Line of sight: 2 (Town Watch/Patrol +4 each); Classes: Buildings, Walls+Gates, Stone Defense.',
+    ],
+    dontBelongTo: [
+      'Goths'
     ],
   },
   {
@@ -955,6 +1100,9 @@ const techData = [
       '(5 Stone)',
       'Construction time 10s; Stronger than Stone Wall. Difficult to breach without Siege Weapons. Upgrading Fortified Walls also increases the hit points of your Gates.',
       'Hit Pts: 3000; Armor: 12; Pierce Armor: 12; (+24 against Building bonus dmg from Siege Weapons); Line of sight: 2 (Town Watch/Patrol +4 each); Classes: Walls+Gates, Stone Defense',
+    ],
+    dontBelongTo: [
+      'Goths','Huns','Magyars','Malay','Persians'
     ],
   },
   //#endregion
@@ -968,6 +1116,9 @@ const techData = [
       '(475 Gold)',
       'Research time 50s; Monks can convert enemy Buildings (except Town Centers, Castles, Monasteries, Farms, Fish Traps, Walls, Gates, and Wonders) and Siege Weapons. Monks can convert most enemy units from a distance, but they must stand adjacent to Buildings, Rams, and Trebuchets to convert them.',
     ],
+    dontBelongTo: [
+      'Britons','Celts','Ethiopians','Franks','Goths','Huns','Koreans','Magyars','Mayans','Mongols','Persians','Vietnamese','Vikings'
+    ],
   },
   {
     name: 'block-printing',
@@ -976,6 +1127,9 @@ const techData = [
       'Research Block Printing',
       '(200 Gold)',
       'Research time 55s; Monks have +3 conversion range.',
+    ],
+    dontBelongTo: [
+      'Berbers','Celts','Chinese','Ethiopians','Goths','Huns','Khamer','Mongols','Turks'
     ],
   },
   {
@@ -987,6 +1141,9 @@ const techData = [
       '(140 Gold)',
       'Research time 50s; Monks move 15% faster.',
     ],
+    dontBelongTo: [
+      'Incas','Malay','Vietnamese'
+    ],
   },
   {
     name: 'illumination',
@@ -995,6 +1152,9 @@ const techData = [
       'Research Illumination',
       '(120 Gold)',
       'Research time 1:05; Monks regain their faith 87.5% faster after a successful conversion (3%/s instead of 1.6%/s). This means they can convert again after 34s instead of 63s.',
+    ],
+    dontBelongTo: [
+      'Celts','Koreans','Malians','Mayans','Mongols','Persians','Portuguese','Turks','Vikings'
     ],
   },
   {
@@ -1006,6 +1166,9 @@ const techData = [
       '(120 Gold)',
       'Research time 1:00; Monks get +15 hit points so they are harder to kill.',
     ],
+    dontBelongTo: [
+      'Berbers','Mongols','Vikings'
+    ],
   },
   {
     name: 'faith',
@@ -1014,6 +1177,9 @@ const techData = [
       'Research Faith',
       '(750 Food, 1000 Gold)',
       'Research time 1:00; units/buildings resist conversion: min. conversion time +2s, max. conversion time +5s, conversion chance reduced by 66%.',
+    ],
+    dontBelongTo: [
+      'Khamer','Magyars','Slavs'
     ],
   },
   {
@@ -1037,6 +1203,9 @@ const techData = [
       '(325 Gold)',
       'Research time 40s; Monks can convert enemy Monks.',
     ],
+    dontBelongTo: [
+      'Britons','Celts','Franks','Goths','Incas','Indians','Khamer','Koreans','Magyars','Persians'
+    ],
   },
   {
     name: 'theocracy',
@@ -1045,6 +1214,9 @@ const techData = [
       'Research Theocracy',
       '(200 Gold)',
       'Research time 1:15; If a group of Monks converts an enemy unit, only one of the Monks loses faith, all others can immediately convert again.',
+    ],
+    dontBelongTo: [
+      'Celts','Huns','Malay','Mongols','Vikings'
     ],
   },
   {
@@ -1067,6 +1239,9 @@ const techData = [
       '(350 Gold)',
       'Research time 35s; Units garrisoned in Buildings heal 4x faster. (0.4 HP/s instead of 0.1 HP/s).',
     ],
+    dontBelongTo: [
+      'Byzantines','Huns','Teutons','Turks','Vikings'
+    ],
   },
   {
     name: 'heresy',
@@ -1077,6 +1252,9 @@ const techData = [
       'Research Heresy',
       '(1000 Gold)',
       "Research time 1:00; Units converted by an enemy Monk (or Missionary) die instead of changing to the enemy's color.",
+    ],
+    dontBelongTo: [
+      'Britons','Burmese','Chinese','Goths','Indians','Italians','Japanese','Khamer','Koreans','Slavs','Vietnamese'
     ],
   },
   //#endregion
@@ -2513,6 +2691,9 @@ const techData = [
       '(400 Food, 400 Wood)',
       'Research time 1:15 (Conscription 56s)Strengthens Castles by providing +1000 (or +21%) HP.Stacks with Masonry/Architecture/Byzantine bonus.',
     ],
+    dontBelongTo: [
+      'Aztecs','Burmese','Chinese','Ethiopians','Goths','Huns','Japanese','Koreans','Malay','Portuguese'
+    ],
   },
   {
     name: 'sappers',
@@ -2522,6 +2703,9 @@ const techData = [
       'Research Sappers',
       '(400 Food, 200 Gold)',
       'Research time 10s; Villagers have +15 Attack vs. Buildings (+15 extra vs. Stone Defense).',
+    ],
+    dontBelongTo: [
+      'Berbers','Burmese','Byzantines','Franks','Indians','Italians','Japanese','Koreans','Saracens'
     ],
   },
   {
@@ -2589,6 +2773,9 @@ const techData = [
       'Research Town Patrol',
       '(300 Food, 100 Gold)',
       'Research time 40s; Increases the line of sight of all Buildings by +4 so they see enemies from a longer distance.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -2696,6 +2883,9 @@ const techData = [
       '(160 Wood, 135 Gold)',
       'Creation time 46s (Celt ally 38.3s); Powerful against massed units, especially Archers.',
       'Hit Pts: 60; Attack: 50 Melee, Blast Radius: 1.25 (+12 vs. Siege Weapons, +45 vs. Buildings (+54 Siege Eng.); Reload time: 6; Melee/Pierce Armor: 0/7; Range: 8 (SE 9) (min: 3)(Korean ally 1); Class: Siege Weapons; Speed: 0.6; Line of sight: 10 (11); Can cut trees.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -2810,6 +3000,9 @@ const techData = [
       'Research Padded Archer Armor',
       '(100 Food)',
       'Research time 40s; Archers, Cavalry Archers and Hand Cannoneers have +1 Melee Armor/+1 Pierce Armor.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -2976,6 +3169,9 @@ const techData = [
       '(150 Food, 175 Wood)',
       "Research time 50s (Malian ally 28s); Strengthens all Buildings (except Walls + Gates) by providing +10% hit points, +1 Melee Armor/+1 Pierce Armor, and +3 Building Armor (doesn't protect against Infantry anti-Building dmg).",
     ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
+    ],
   },
   {
     name: 'architecture',
@@ -3138,6 +3334,9 @@ const techData = [
       '(200 Food, 150 Wood)',
       'Research time 1:15; Villagers mine stone 15% faster.',
     ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
+    ],
   },
   {
     name: 'gold-mining',
@@ -3231,6 +3430,9 @@ const techData = [
       'Research Guilds',
       '(300 Food, 200 Gold)',
       'Research time 50s; Reduces the trading fee to 15% from 30%, making buying/selling resources more efficient.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
     ],
   },
   {
