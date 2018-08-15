@@ -440,8 +440,8 @@ const techData = [
   },
   {
     name: 'imperial-camel',
-    positionColumn: positionColumnChildAge2,
-    svgSize: svgSizeChildAge2,
+    positionColumn: positionColumnChild,
+    svgSize: svgSizeChild,
     desc: [
       'Create Imperial Camel',
       '(55 Food, 60 Gold)',
@@ -1763,7 +1763,7 @@ const techData = [
       'Creation time 16.8s; Stronger hand cannoneer, no bonus against Infantry.',
       'Hit Pts: 35; Attack: 17 (+2 vs. Rams); Reload time: 3.45; Melee/Pierce Armor: 1/0; Range: 8; Accuracy: 50%  not affected by Ballistics, TR, range/attack upgrades; Classes: Archers, Gunpowder, Unique Units; Attack delay: 0.35s; Speed: 0.96; Line of sight: 10.',
     ],
-    uniqueUnitOf: 'Turk',
+    uniqueUnitOf: 'Turks',
   },
   {
     name: 'turk-elite-janissary',
@@ -1775,7 +1775,7 @@ const techData = [
       'Creation time 16.8s; Stronger hand cannoneer, no bonus against Infantry.',
       'Hit Pts: 40; Attack: 22 (+2 vs. Rams); Reload time: 3.45; Melee/Pierce Armor: 2/0; Range: 8; Accuracy: 50% not affected by Ballistics, TR, range/attack upgrades; Classes: Archers, Gunpowder, Unique Units; Attack delay: none; Speed: 0.96; Line of sight: 10.',
     ],
-    uniqueUnitOf: 'Turk',
+    uniqueUnitOf: 'Turks',
   },
   {
     name: 'vietnamese-rattan-archer',
@@ -2443,7 +2443,7 @@ const techData = [
       '(350 Food, 150 Gold)',
       'Research time 40s (Conscription 30s) Cavalry Archers have +20 hit points.',
     ],
-    uniqueUnitOf: 'Turk',
+    uniqueUnitOf: 'Turks',
   },
   {
     name: 'turk-artillery',
@@ -2453,7 +2453,7 @@ const techData = [
       '(450 Stone, 500 Gold)',
       'Research time 40s (Conscription 30s) Bombard Towers, Bombard Cannons, and Cannon Galleons have +2 range.',
     ],
-    uniqueUnitOf: 'Turk',
+    uniqueUnitOf: 'Turks',
   },
   {
     name: 'vietnamese-chatras',
