@@ -2680,7 +2680,12 @@ const techData = [
     positionColumn: positionColumn5,
     svgTechParentSize: '427',
     svgParentPosition: '-181.5px',
-    desc: ['', '', '', ''],
+    desc: [
+      'Build Castle',
+      '(650 Stone)',
+      'Construction time 3:20; Used to create your unique unit, build Trebuchets, and improve Villagers and Buildings. Cannot be converted by enemy Monks.',
+      'Hit Pts: 4800; Attack: 11 (+11 vs. Ships, +1 vs. Camels, +11 vs. Stone Defense); Armor: 8; Pierce Armor: 11 (+8 against Building bonus dmg from Siege Weapons); Range: 8 Garrison: 20; Line of sight: 10 (Town Watch/Patrol +4 each).'
+    ],
   },
   {
     name: 'hoardings',
@@ -2742,6 +2747,9 @@ const techData = [
       '(25 Wood)',
       'Construction time 25s; Each House supports 5 units. Your current/supportable population is shown at the top of the game screen. Upgrades: Line of sight (Town Center); hit points, Armor (University); more resistant to Monks (Monastery).',
       'Hit Pts: 550; Armor: 0; Pierce Armor: 7; Line of sight: 2 (Town Watch/Patrol +4 each).',
+    ],
+    dontBelongTo: [
+      'Huns'
     ],
   },
   {
@@ -2885,7 +2893,7 @@ const techData = [
       'Hit Pts: 60; Attack: 50 Melee, Blast Radius: 1.25 (+12 vs. Siege Weapons, +45 vs. Buildings (+54 Siege Eng.); Reload time: 6; Melee/Pierce Armor: 0/7; Range: 8 (SE 9) (min: 3)(Korean ally 1); Class: Siege Weapons; Speed: 0.6; Line of sight: 10 (11); Can cut trees.',
     ],
     dontBelongTo: [
-      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
+      'Huns','Turks'
     ],
   },
   {
@@ -2897,6 +2905,9 @@ const techData = [
       '(160 Wood, 135 Gold)',
       'Creation time 46s (Celt ally 38.3s); Powerful against massed units, especially Archers.',
       'Hit Pts: 70; Attack: 75 Melee, Blast Radius: 1.5  (+12 vs. Siege Weapons, +60 vs. Buildings (Siege Eng. +72). Reload time: 6; Melee/Pierce Armor: 0/8; Range: 8 (SE 9) (min: 3)(Korean ally 1); Class: Siege Weapons; Speed: 0.6; Line of sight: 10 (11); Can cut trees.',
+    ],
+    dontBelongTo: [
+      'Berbers','Britons','Burmese','Byzantines','Chinese','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Magyars','Malay','Mayans','Persians','Portuguese','Spanish','Turks','Vietnamese','Vikings'
     ],
   },
   {
@@ -2945,6 +2956,9 @@ const techData = [
       'Creation time 36s; Powerful vs. Buildings, strong vs. Pierce attacks, weak to Melee.',
       'Hit Pts: 270; Attack: 4 (+200 vs. Buildings (240) (+10/garrisoned inf. unit), +65 vs. Siege Weapons), Blast Radius: 2; Reload time: 5; Melee/Pierce Armor: -3/195; Range: 0; Garrison: 6; Classes: Siege Weapons, Rams; Speed: 0.6 +0.05/garrisoned inf. unit; Line of sight: 3.',
     ],
+    dontBelongTo: [
+      'Berbers','Britons','Burmese','Franks','Goths','Indians','Italians','Japanese','Koreans','Magyars','Malay','Malians','Portuguese','Teutons','Vietnamese'
+    ],
   },
   {
     name: 'scorpion',
@@ -2966,6 +2980,9 @@ const techData = [
       '(75 Wood, 75 Gold)',
       'Creation time 30s (Celt ally 25s); Damages all units in the path of its projectile.',
       'Hit Pts: 50; Attack: 16 Pierce (+2 vs. Rams, +8 vs. Elephants, +4 vs. Buildings), Pass-through dmg: 1/2 atk; Melee/Pierce Armor: 0/7; Range: 7 (Siege Eng. 8) (min: 2); Class: Siege Weapons; Speed: 0.65; Reload time: 3.6; Line of sight: 9 (SE 10).',
+    ],
+    dontBelongTo: [
+      'Aztecs','Byzantines','Huns','Indians','Italians','Koreans','Malians','Portuguese','Saracens','Spanish','Vietnamese'
     ],
   },
   {
@@ -2989,6 +3006,9 @@ const techData = [
       'Creation time 56s (Celt ally 46.7s, Turk ally 44.8s); Powerful anti-Building siege weapon with long range.',
       'Hit Pts: 80; Attack: 40 Melee (+20 vs. Siege Weapons, +200 vs. Buildings (Siege Eng. 240), +40 extra vs. Stone Defense, +40 vs. Ships), Blast Radius: 0.5; Reload time: 6.5; Melee/Pierce Armor: 2/5; Range: 12 (13) (min: 5); Classes: Siege Weapons, Gunpowder; Speed: 0.7; Reload time: 6.5; Line of sight: 14 (SE 15).',
     ],
+    dontBelongTo: [
+      'Aztecs','Britons','Celts','Chinese','Huns','Incas','Japanese','Magyars','Mayans','Mongols','Slavs','Vikings'
+    ],
   },
   //#endregion
   //#region Blacksmith
@@ -3001,9 +3021,6 @@ const techData = [
       '(100 Food)',
       'Research time 40s; Archers, Cavalry Archers and Hand Cannoneers have +1 Melee Armor/+1 Pierce Armor.',
     ],
-    dontBelongTo: [
-      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
-    ],
   },
   {
     name: 'leather-archer-armor',
@@ -3014,6 +3031,9 @@ const techData = [
       '(150 Food, 150 Gold)',
       'Research time 55s; Archers, Cavalry Archers and Hand Cannoneers have +1 Melee Armor/+1 Pierce Armor.',
     ],
+    dontBelongTo: [
+      'Burmese'
+    ],
   },
   {
     name: 'ring-archer-armor',
@@ -3023,6 +3043,9 @@ const techData = [
       'Research Ring Archer Armor',
       '(250 Food, 250 Gold)',
       'Research time 1:10; Archers, Cavalry Archers and Hand Cannoneers have +1 Melee Armor/+2 Pierce Armor.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Burmese','Celts','Franks','Huns','Mongols'
     ],
   },
   {
@@ -3053,6 +3076,9 @@ const techData = [
       'Research Bracer',
       '(300 Food, 200 Gold)',
       'Research time 40s; All arrow/bolt-firing units/buildings and Bombard Towers have +1 Attack, +1 range and +1 LoS (no range/LoS increase for Town Centers). Does not affect Siege.',
+    ],
+    dontBelongTo: [
+      'Celts','Franks','Malians','Persians','Slavs','Teutons'
     ],
   },
   {
@@ -3096,6 +3122,9 @@ const techData = [
       '(275 Food, 225 Gold)',
       'Research time 1:40; Infantry and Cavalry have +2 Attack.',
     ],
+    dontBelongTo: [
+      'Byzantines','Koreans','Malians','Vietnamese'
+    ],
   },
   {
     name: 'scale-barding-armor',
@@ -3105,6 +3134,9 @@ const techData = [
       'Research Scale Barding Armor',
       '(150 Food)',
       'Research time 45s; Cavalry have +1 Melee Armor/+1 Pierce Armor.',
+    ],
+    dontBelongTo: [
+      'Berbers','Incas','Mayans'
     ],
   },
   {
@@ -3116,6 +3148,9 @@ const techData = [
       '(250 Food, 150 Gold)',
       'Research time 1:00; Cavalry have +1 Melee Armor/+1 Pierce Armor.',
     ],
+    dontBelongTo: [
+      'Berbers','Incas','Mayans'
+    ],
   },
   {
     name: 'plate-barding-armor',
@@ -3125,6 +3160,9 @@ const techData = [
       'Research Plate Barding Armor',
       '(350 Food, 200 Gold)',
       'Research time 1:15; Cavalry have +1 Melee Armor/+2 Pierce Armor.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Celts','Ethiopians','Goths','Incas','Japanese','Koreans','Malay','Mayans','Mongols','Vikings'
     ],
   },
   {
@@ -3157,6 +3195,9 @@ const techData = [
       '(300 Food, 150 Gold)',
       'Research time 1:10; Infantry have +1 Melee Armor/+2 Pierce Armor.',
     ],
+    dontBelongTo: [
+      'Goths','Huns','Indians','Khamer','Magyars'
+    ],
   },
   //#endregion
   //#region University
@@ -3170,7 +3211,7 @@ const techData = [
       "Research time 50s (Malian ally 28s); Strengthens all Buildings (except Walls + Gates) by providing +10% hit points, +1 Melee Armor/+1 Pierce Armor, and +3 Building Armor (doesn't protect against Infantry anti-Building dmg).",
     ],
     dontBelongTo: [
-      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
+      'Aztecs','Byzantines','Vietnamese'
     ],
   },
   {
@@ -3182,6 +3223,9 @@ const techData = [
       '(300 Food, 200 Wood)',
       "Research time 1:10 (Malian ally 39s); Strengthens all Buildings (except Walls + Gates) by providing +10% hit points, +1 Melee Armor/+1 Pierce Armor, and +3 Building Armor (doesn't protect against Infantry anti-Building dmg).",
     ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Byzantines','Celts','Huns','Incas','Indians','Magyars','Malay','Mongols','Saracens','Slavs','Teutons','Vietnamese'
+    ],
   },
   {
     name: 'fortified-wall',
@@ -3191,6 +3235,9 @@ const techData = [
       'Upgrade to Fortified Wall',
       '(200 Food, 100 Wood)',
       "Research time 50s (Malian ally 28s); Upgrades your Stone Walls and lets you build Fortified Walls, which are stronger (+1200 HP, +4/+2 Armor, +8 against anti-Building dmg (doesn't protect against Infantry anti-Building dmg)). Also increases the hit points of your Gates (+1250 HP), which makes them harder to destroy.",
+    ],
+    dontBelongTo: [
+      'Goths','Huns','Magyars','Malay','Persians'
     ],
   },
   {
@@ -3211,6 +3258,9 @@ const techData = [
       '(800 Food, 400 Wood)',
       'Research time 1:00 (Malian ally 33s); Lets you build Bombard Towers, which have an extremely powerful attack, but slow rate of fire.',
     ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Britons','Burmese','Celts','Ethiopians','Franks','Goths','Huns','Incas','Indians','Japanese','Khamer','Magyars','Malians','Mayans','Mongols','Persians','Saracens','Slavs','Vikings'
+    ],
   },
   {
     name: 'ballistics',
@@ -3230,13 +3280,21 @@ const techData = [
       '(500 Food, 600 Wood)',
       'Research time 45s (Malian ally 25s); Siege Weapons have +1 range (except Rams) and 20% more attack bonus vs. Buildings (+200 Attack for Petards).',
     ],
+    dontBelongTo: [
+      'Byzantines','Chinese','Goths','Huns','Italians','Malians','Mayans','Persians','Spanish','Turks'
+    ],
   },
   {
     name: 'university',
     positionColumn: positionColumn5,
     svgTechParentSize: '428',
     svgParentPosition: '-182px',
-    desc: ['', '', '', ''],
+    desc: [
+      'Build University',
+      '(200 Wood)',
+      'Construction time 1:00; Used to improve Buildings and missile units. Upgrades: Line of sight (Town Center); hit points, Armor (University); more resistant to Monks (Monastery).',
+      'Hit Pts: 2100; Armor: 2; Pierce Armor: 9; Line of sight: 6 (Town Watch/Patrol +4 each).'
+    ],
   },
   {
     name: 'guard-tower',
@@ -3246,6 +3304,9 @@ const techData = [
       'Upgrade to Guard Tower',
       '(100 Food, 250 Wood)',
       'Research time 30s (Malian ally 17s); Upgrades your Watch Towers and lets you build Guard Towers, which are stronger (+2 Attack, +2 against Ships) and better armored (+1/+1 Armor, +480 HP).',
+    ],
+    dontBelongTo: [
+      'Goths','Huns',
     ],
   },
   {
@@ -3257,6 +3318,9 @@ const techData = [
       '(500 Food, 350 Wood)',
       'Research time 1:40 (Malian ally 56s); Upgrades your Guard Towers and lets you build Keeps, which are stronger (+1 Attack, +1 against Ships) and better armored (+1/+1 Armor, +750HP).',
     ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Franks','Goths','Huns','Indians','Magyars','Mongols','Persians','Slavs','Vikings'
+    ],
   },
   {
     name: 'heated-shot',
@@ -3267,6 +3331,9 @@ const techData = [
       '(350 Food, 100 Gold)',
       'Research time 30s (Malian ally 17s); Towers/Castles have increased bonus damage against Ships: Castles +4, Watch Towers +9, Guard Towers +11, Keeps +13, Bombard Towers +50. Only affects the first arrow.',
     ],
+    dontBelongTo: [
+      'Byzantines','Franks','Huns','Japanese','Mongols','Saracens','Slavs','Spanish'
+    ],
   },
   {
     name: 'arrowslits',
@@ -3275,6 +3342,9 @@ const techData = [
       'Research Arrowslits',
       '(250 Food, 250 Wood)',
       'Research time 25s (Malian ally 14s); Watch Towers/Guard Towers/Keeps +1/+2/+3 Attack (For all arrows).',
+    ],
+    dontBelongTo: [
+      'Burmese','Ethiopians','Goths','Huns','Indians','Khamer','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Slavs'
     ],
   },
   {
@@ -3297,6 +3367,9 @@ const techData = [
       'Research Treadmill Crane',
       '(300 Food, 200 Wood)',
       'Research time 50s (Malian ally 28s); Villagers construct Buildings 20% faster.',
+    ],
+    dontBelongTo: [
+      'Britons','Byzantines','Chinese','Ethiopians','Goths','Huns','Indians','Malay','Mongols','Persians','Spanish'
     ],
   },
   //#endregion
@@ -3335,7 +3408,7 @@ const techData = [
       'Research time 1:15; Villagers mine stone 15% faster.',
     ],
     dontBelongTo: [
-      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
+      'Britons','Burmese','Franks','Huns','Japanese','Magyars','Saracens','Slavs','Turks','Vikings'
     ],
   },
   {
@@ -3358,6 +3431,9 @@ const techData = [
       'Research Gold Shaft Mining',
       '(200 Food, 150 Wood)',
       'Research time 1:15; Villagers mine gold 15% faster.',
+    ],
+    dontBelongTo: [
+      'Goths','Italians','Mayans','Portuguese','Spanish','Teutons','Vietnamese'
     ],
   },
   {
@@ -3400,6 +3476,9 @@ const techData = [
       '(300 Food, 200 Wood)',
       'Research time 1:40; Villagers chop wood 10% faster.',
     ],
+    dontBelongTo: [
+      'Aztecs','Berbers','Celts','Franks','Incas','Khamer','Malay','Malians','Mongols'
+    ],
   },
   //#endregion
   //#region Mill
@@ -3432,7 +3511,7 @@ const techData = [
       'Research time 50s; Reduces the trading fee to 15% from 30%, making buying/selling resources more efficient.',
     ],
     dontBelongTo: [
-      'Aztecs','Berbers','Britons','Burmese','Byzantines','Celts','Chinese','Ethiopians','Franks','Goths','Huns','Incas','Indians','Italians','Japanese','Khamer','Koreans','Magyars','Malay','Malians','Mayans','Mongols','Persians','Portuguese','Saracens','Slavs','Spanish','Teutons','Turks','Vietnamese','Vikings'
+      'Aztecs','Chinese','Franks','Japanese','Khamer','Magyars','Mongols','Saracens','Slavs','Vikings'
     ],
   },
   {
@@ -3521,6 +3600,9 @@ const techData = [
       'Research Crop Rotation',
       '(250 Food, 250 Wood)',
       'Research time 1:10; Farms produce +175 food so they last longer before you must rebuild them.',
+    ],
+    dontBelongTo: [
+      'Aztecs','Celts','Chinese','Ethiopians','Huns','Indians','Japanese','Koreans','Mongols','Saracens','Spanish','Turks'
     ],
   },
   {
