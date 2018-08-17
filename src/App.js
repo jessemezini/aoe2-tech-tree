@@ -12,13 +12,9 @@ import bg from './bg.jpg';
 const AppContainer = styled.div`
   background-image: url(${bg});
   background-repeat: repeat-x;
-  min-width: 6050px;
-  min-height: 1008px;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
+  width: 6050px;
+  padding: 15px;
   display: flex;
-  flex-direction: row;
 `;
 
 class App extends Component {
