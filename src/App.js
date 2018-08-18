@@ -13,6 +13,7 @@ const AppContainer = styled.div`
   background-image: url(${bg});
   background-repeat: repeat-x;
   width: 6050px;
+  height: 993px;
   padding: 15px;
   display: flex;
 `;
