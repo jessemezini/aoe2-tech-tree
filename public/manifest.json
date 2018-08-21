@@ -1,15 +1,25 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "AoE2 Tech Tree",
+  "name": "Age of Empires 2 - Tech Tree (WololoKingdoms)",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "icon512.png",
+      "sizes": "512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon192.png",
+      "sizes": "192",
+      "type": "image/png"
     }
   ],
   "start_url": "./index.html",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#70583a",
+  "background_color": "#70583a"
 }
