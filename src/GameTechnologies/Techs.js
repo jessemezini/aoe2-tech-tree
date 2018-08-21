@@ -7,7 +7,6 @@ import techSprite from './techs.png';
 //#region Styles
 const TechsWrapper = styled.div`
   width: 100%;
-  /* height: 993px; */
   display: flex;
   flex-flow: column wrap;
   align-content: center;
