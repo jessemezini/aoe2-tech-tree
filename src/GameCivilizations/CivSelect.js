@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SelectContainer = styled.nav`
-  p {
+  label {
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: bold;
@@ -18,8 +18,12 @@ const SelectContainer = styled.nav`
 
 const CivSelect = props => (
   <SelectContainer>
-    <p>Game Civilizations</p>
-    <select value={props.selectedCiv} onChange={props.handleSelectedOption}>
+    <label htmlFor="selectCivs">Game Civilizations</label>
+    <select
+      name="selectCivs"
+      value={props.selectedCiv}
+      onChange={props.handleSelectedOption}
+    >
       {props.wololo.map(civ => {
         return (
           <option key={civ.name} value={civ.name}>
