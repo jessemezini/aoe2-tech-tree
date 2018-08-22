@@ -20,7 +20,7 @@ const CivSelect = props => (
   <SelectContainer>
     <label htmlFor="selectCivs">Game Civilizations</label>
     <select
-      name="selectCivs"
+      id="selectCivs"
       value={props.selectedCiv}
       onChange={props.handleSelectedOption}
     >
