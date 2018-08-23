@@ -12,7 +12,5 @@ pipelines:
         deployment: test   # can be test, staging or production
         # trigger: manual  # uncomment to make manual deployment
         script:
-          - npm install -g yarn
-          - yarn install
           - yarn build
 
