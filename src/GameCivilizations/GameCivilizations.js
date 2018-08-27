@@ -22,7 +22,7 @@ const CivsContainer = styled.header`
 const GameCivilizations = props => (
   <CivsContainer>
     <CivSelect
-      wololo={props.wololo}
+      civNames={props.wololo.map(civ => civ.name)}
       selectedCiv={props.selectedCiv}
       handleSelectedOption={props.handleSelectedOption}
     />

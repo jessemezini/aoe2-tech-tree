@@ -24,10 +24,10 @@ const CivSelect = props => (
       value={props.selectedCiv}
       onChange={props.handleSelectedOption}
     >
-      {props.wololo.map(civ => {
+      {props.civNames.map(civName => {
         return (
-          <option key={civ.name} value={civ.name}>
-            {civ.name}
+          <option key={civName} value={civName}>
+            {civName}
           </option>
         );
       })}
