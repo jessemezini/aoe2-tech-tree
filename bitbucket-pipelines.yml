@@ -6,12 +6,13 @@
 image: node:9.7.1
 
 pipelines:
-  default:
-    - step:
-        name: Deploy to test
-        deployment: test # can be test, staging or production
-        # trigger: manual  # uncomment to make manual deployment
-        script:
-          - npm install -g yarn
-          - yarn install
-          - yarn build
+  branches:
+    master:
+      - step:
+          name: Deploy to test
+          deployment: test # can be test, staging or production
+          # trigger: manual  # uncomment to make manual deployment
+          script:
+            - npm install -g yarn
+            - yarn install
+            - yarn build
