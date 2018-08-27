@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-// Instead of importing here, i'm importing in setState to code split
-// import wololoData from './data/wololo';
-// import techData from './data/techs';
-
 import GameCivilizations from './GameCivilizations/GameCivilizations';
 import GameTechnologies from './GameTechnologies/GameTechnologies';
 
@@ -27,13 +23,15 @@ class App extends Component {
   };
 
   componentDidMount() {
-    // this.setState({ wololo: wololoData, techs: techData });
-    import('./data/wololo' /* webpackChunkName: 'wololo' */).then(wololoData => {
-      this.setState({ wololo: wololoData.default });
-    });
-
-    import('./data/techs' /* webpackChunkName: 'techs' */).then(techData => {
-      this.setState({ techs: techData.default });
+    Promise.all([
+      import('./data/wololo' /* webpackChunkName: 'wololo' */),
+      import('./data/techs' /* webpackChunkName: 'techs' */),
+    ]).then(imports => {
+      const [wololoData, techData] = imports;
+      this.setState({
+        wololo: wololoData.default,
+        techs: techData.default,
+      });
     });
   }
 
