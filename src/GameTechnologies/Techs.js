@@ -1,11 +1,14 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import ReactTooltip from 'react-tooltip';
+
+import Svg from './Svg';
+import Tooltip from './Tooltip';
+
 import './spritesheet.css';
+
 import techSprite from './techs.png';
 
-//#region Styles
 const TechsWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -32,52 +35,6 @@ const TechItem = styled.div`
     border-color: #ffffff;
   }
 `;
-
-const SVGItem = styled.svg`
-  position: absolute;
-  top: -${props => props.height}px;
-  left: 0;
-  pointer-events: none;
-
-  line {
-    stroke: #333;
-    stroke-width: 2;
-  }
-`;
-
-const SVGItemOfParent = styled.svg`
-  position: absolute;
-  top: 68px;
-  left: ${props => props.svgParentPosition};
-  pointer-events: none;
-
-  line {
-    stroke: #333;
-    stroke-width: 3;
-  }
-`;
-
-const StyledReactTooltip = styled(ReactTooltip)`
-  width: 300px;
-
-  &.show {
-    opacity: 1;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  li {
-    margin-bottom: 5px;
-  }
-
-  li:first-child {
-    font-weight: bold;
-  }
-`;
-//#endregion
 
 const Techs = props => (
   <TechsWrapper>
@@ -108,33 +65,13 @@ const Techs = props => (
               data-for={tech.name}
               data-place="right"
             >
-              <SVGItem width="64" height={tech.svgSize}>
-                <line x1="32" y1="0" x2="32" y2={tech.svgSize} />
-              </SVGItem>
-              {tech.svgTechParentSize && (
-                <SVGItemOfParent
-                  width={tech.svgTechParentSize}
-                  height="3"
-                  svgParentPosition={tech.svgParentPosition}
-                >
-                  <line x1="0" y1="0" x2={tech.svgTechParentSize} y2="0" />
-                </SVGItemOfParent>
-              )}
+              <Svg
+                svgSize={tech.svgSize}
+                svgTechParentSize={tech.svgTechParentSize}
+                svgParentPosition={tech.svgParentPosition}
+              />
             </TechItem>
-            <StyledReactTooltip
-              key={`${tech.name}-tooltip`}
-              id={tech.name}
-              type="light"
-              effect="solid"
-            >
-              <ul>
-                {tech.desc !== undefined
-                  ? tech.desc.map((civDesc, i) => {
-                      return <li key={i}>{civDesc}</li>;
-                    })
-                  : tech.name}
-              </ul>
-            </StyledReactTooltip>
+            <Tooltip name={tech.name} desc={tech.desc} />
           </Fragment>
         );
       }
