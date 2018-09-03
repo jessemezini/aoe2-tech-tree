@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 const CivInfo = props => (
   <Fragment>
@@ -31,5 +32,14 @@ const CivInfo = props => (
     })}
   </Fragment>
 );
+
+CivInfo.propTypes = {
+  selectedCiv: PropTypes.string,
+  wololo: PropTypes.array.isRequired,
+};
+
+CivInfo.defaultProps = {
+  selectedCiv: 'Aztecs',
+};
 
 export default CivInfo;

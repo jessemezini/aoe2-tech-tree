@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const SelectContainer = styled.nav`
@@ -34,4 +35,15 @@ const CivSelect = props => (
     </select>
   </SelectContainer>
 );
+
+CivSelect.propTypes = {
+  selectedCiv: PropTypes.string,
+  civNames: PropTypes.array.isRequired,
+  handleSelectedOption: PropTypes.func.isRequired,
+};
+
+CivSelect.defaultProps = {
+  selectedCiv: 'Aztecs',
+};
+
 export default CivSelect;

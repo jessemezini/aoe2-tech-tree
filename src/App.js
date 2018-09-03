@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import GameCivilizations from './GameCivilizations/GameCivilizations';
@@ -55,5 +56,13 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  selectedCiv: PropTypes.string,
+};
+
+App.defaultProps = {
+  selectedCiv: 'Aztecs',
+};
 
 export default App;

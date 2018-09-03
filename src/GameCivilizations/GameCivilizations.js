@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import civsContainer from './civs-container.png';
 
 import CivSelect from './CivSelect';
 import CivInfo from './CivInfo';
 import CivColorInfo from './CivColorInfo';
+
+import civsContainer from './civs-container.png';
 
 const CivsContainer = styled.header`
   width: 290px;
@@ -30,5 +32,15 @@ const GameCivilizations = props => (
     <CivColorInfo />
   </CivsContainer>
 );
+
+GameCivilizations.propTypes = {
+  selectedCiv: PropTypes.string,
+  handleSelectedOption: PropTypes.func.isRequired,
+  wololo: PropTypes.array.isRequired,
+};
+
+GameCivilizations.defaultProps = {
+  selectedCiv: 'Aztecs',
+};
 
 export default GameCivilizations;

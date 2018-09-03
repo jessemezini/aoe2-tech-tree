@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ReactTooltip from 'react-tooltip';
 import './spritesheet.css';
@@ -142,5 +143,14 @@ const Techs = props => (
     })}
   </TechsWrapper>
 );
+
+Techs.propTypes = {
+  selectedCiv: PropTypes.string,
+  techs: PropTypes.array.isRequired,
+};
+
+Techs.defaultProps = {
+  selectedCiv: 'Aztecs',
+};
 
 export default Techs;

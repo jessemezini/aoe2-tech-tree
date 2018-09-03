@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Ages from './Ages';
@@ -17,5 +18,14 @@ const GameTechnologies = props => (
     <Ages />
   </GameTechsContainer>
 );
+
+GameTechnologies.propTypes = {
+  selectedCiv: PropTypes.string,
+  techs: PropTypes.array.isRequired,
+};
+
+GameTechnologies.defaultProps = {
+  selectedCiv: 'Aztecs',
+};
 
 export default GameTechnologies;
