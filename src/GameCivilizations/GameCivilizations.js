@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import CivSelect from './CivSelect';
 import CivInfo from './CivInfo';
 import CivColorInfo from './CivColorInfo';
+import Footer from './Footer';
 
 import civsContainer from './civs-container.png';
 
@@ -30,6 +31,7 @@ const GameCivilizations = props => (
     />
     <CivInfo wololo={props.wololo} selectedCiv={props.selectedCiv} />
     <CivColorInfo />
+    <Footer />
   </CivsContainer>
 );
 
