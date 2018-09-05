@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// #region Styles
 const CivColorWrapper = styled.div`
   text-transform: uppercase;
   font-size: 12px;
@@ -28,6 +29,7 @@ const CivColor = styled.div`
   margin-bottom: 10px;
   width: 135px;
 `;
+// #endregion
 
 const CivColorInfo = () => (
   <CivColorWrapper>

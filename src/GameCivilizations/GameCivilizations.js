@@ -9,6 +9,7 @@ import Footer from './Footer';
 
 import civsContainer from './civs-container.png';
 
+// #region Styles
 const CivsContainer = styled.header`
   width: 290px;
   height: 915px;
@@ -21,6 +22,7 @@ const CivsContainer = styled.header`
   justify-content: flex-start;
   flex-direction: column;
 `;
+// #endregion
 
 type Props = {
   selectedCiv: string,

@@ -2,6 +2,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// #region Styles
 const SelectContainer = styled.nav`
   label {
     margin-top: 0;
@@ -16,6 +17,7 @@ const SelectContainer = styled.nav`
     border: 3px inset #b7a56e;
   }
 `;
+// #endregion
 
 type Props = {
   selectedCiv: string,

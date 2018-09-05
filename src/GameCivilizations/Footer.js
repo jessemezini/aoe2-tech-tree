@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// #region Styles
 const FooterContainer = styled.div`
   display: flex;
   margin-top: auto;
@@ -13,6 +14,7 @@ const FooterContainer = styled.div`
     color: #111111;
   }
 `;
+// #endregion
 
 const Footer = () => (
   <FooterContainer>

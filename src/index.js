@@ -8,6 +8,7 @@ import 'normalize.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+// #region Styles
 injectGlobal`
   body {
     font-family: -apple-system, BlinkMacSystemFont,
@@ -28,6 +29,7 @@ injectGlobal`
     padding-left: 20px;
   }
 `;
+// #endregion
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
