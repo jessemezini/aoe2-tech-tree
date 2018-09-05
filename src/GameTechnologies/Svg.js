@@ -1,6 +1,8 @@
+// @flow
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
+// #region Styles
 const SVGItem = styled.svg`
   position: absolute;
   top: -${props => props.height}px;
@@ -24,8 +26,15 @@ const SVGItemOfParent = styled.svg`
     stroke-width: 3;
   }
 `;
+// #endregion
 
-const Svg = props => (
+type Props = {
+  svgSize: string,
+  svgTechParentSize: string,
+  svgParentPosition: string,
+};
+
+const Svg = (props: Props) => (
   <Fragment>
     <SVGItem width="64" height={props.svgSize}>
       <line x1="32" y1="0" x2="32" y2={props.svgSize} />

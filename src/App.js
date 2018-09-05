@@ -1,5 +1,5 @@
+// @flow
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import GameCivilizations from './GameCivilizations/GameCivilizations';
@@ -7,6 +7,7 @@ import GameTechnologies from './GameTechnologies/GameTechnologies';
 
 import bg from './bg.jpg';
 
+// #region Styles
 const AppContainer = styled.div`
   background-image: url(${bg});
   background-repeat: repeat-x;
@@ -15,8 +16,34 @@ const AppContainer = styled.div`
   padding: 15px;
   display: flex;
 `;
+// #endregion
 
-class App extends Component {
+type State = {
+  wololo: Array<{
+    name: string,
+    bonus: Array<string>,
+    uniqueUnit: string,
+    castleAgeTech: string,
+    imperialAgeTech: string,
+    teamBonus: string,
+  }>,
+  techs: Array<{
+    name: string,
+    positionColumn: string,
+    svgSize: string,
+    svgTechParentSize: string,
+    svgParentPosition: string,
+    desc: Array<string>,
+    dontBelongTo?: Array<string>,
+    uniqueUnitOf: string,
+    isLast: string,
+    isLastOfTech: string,
+    isAlignCenter: string,
+  }>,
+  selectedCiv: string,
+};
+
+class App extends Component<{}, State> {
   state = {
     wololo: [],
     techs: [],
@@ -36,7 +63,7 @@ class App extends Component {
     });
   }
 
-  handleSelectedOption = e => {
+  handleSelectedOption = (e: SyntheticInputEvent<HTMLSelectElement>) => {
     this.setState({ selectedCiv: e.target.value });
   };
 
@@ -56,13 +83,5 @@ class App extends Component {
     );
   }
 }
-
-App.propTypes = {
-  selectedCiv: PropTypes.string,
-};
-
-App.defaultProps = {
-  selectedCiv: 'Aztecs',
-};
 
 export default App;

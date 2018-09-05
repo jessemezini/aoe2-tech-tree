@@ -1,5 +1,5 @@
+// @flow
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Svg from './Svg';
@@ -9,6 +9,7 @@ import './spritesheet.css';
 
 import techSprite from './techs.png';
 
+// #region Styles
 const TechsWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -35,8 +36,26 @@ const TechItem = styled.div`
     border-color: #ffffff;
   }
 `;
+// #endregion
 
-const Techs = props => (
+type Props = {
+  selectedCiv: string,
+  techs: Array<{
+    name: string,
+    positionColumn: string,
+    svgSize: string,
+    svgTechParentSize: string,
+    svgParentPosition: string,
+    desc: Array<string>,
+    dontBelongTo?: Array<string>,
+    uniqueUnitOf: string,
+    isLast: string,
+    isLastOfTech: string,
+    isAlignCenter: string,
+  }>,
+};
+
+const Techs = (props: Props) => (
   <TechsWrapper>
     {props.techs.map(tech => {
       let dontBelong = '';
@@ -80,11 +99,6 @@ const Techs = props => (
     })}
   </TechsWrapper>
 );
-
-Techs.propTypes = {
-  selectedCiv: PropTypes.string,
-  techs: PropTypes.array.isRequired,
-};
 
 Techs.defaultProps = {
   selectedCiv: 'Aztecs',

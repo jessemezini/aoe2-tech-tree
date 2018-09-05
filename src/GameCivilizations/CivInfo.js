@@ -1,7 +1,19 @@
+// @flow
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
 
-const CivInfo = props => (
+type Props = {
+  selectedCiv: string,
+  wololo: Array<{
+    name: string,
+    bonus: Array<string>,
+    uniqueUnit: string,
+    castleAgeTech: string,
+    imperialAgeTech: string,
+    teamBonus: string,
+  }>,
+};
+
+const CivInfo = (props: Props) => (
   <Fragment>
     {props.wololo.filter(civ => civ.name === props.selectedCiv).map(civ => {
       return (
@@ -32,11 +44,6 @@ const CivInfo = props => (
     })}
   </Fragment>
 );
-
-CivInfo.propTypes = {
-  selectedCiv: PropTypes.string,
-  wololo: PropTypes.array.isRequired,
-};
 
 CivInfo.defaultProps = {
   selectedCiv: 'Aztecs',

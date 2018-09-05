@@ -1,8 +1,9 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ReactTooltip from 'react-tooltip';
 
+// #region Styles
 const StyledReactTooltip = styled(ReactTooltip)`
   width: 300px;
 
@@ -23,8 +24,14 @@ const StyledReactTooltip = styled(ReactTooltip)`
     font-weight: bold;
   }
 `;
+// #endregion
 
-const Tooltip = props => (
+type Props = {
+  name: string,
+  desc: Array<string>,
+};
+
+const Tooltip = (props: Props) => (
   <StyledReactTooltip
     key={`${props.name}-tooltip`}
     id={props.name}
@@ -40,10 +47,5 @@ const Tooltip = props => (
     </ul>
   </StyledReactTooltip>
 );
-
-Tooltip.propTypes = {
-  name: PropTypes.string.isRequired,
-  desc: PropTypes.array,
-};
 
 export default Tooltip;

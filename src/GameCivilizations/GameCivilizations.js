@@ -1,5 +1,5 @@
+// @flow
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import CivSelect from './CivSelect';
@@ -22,7 +22,20 @@ const CivsContainer = styled.header`
   flex-direction: column;
 `;
 
-const GameCivilizations = props => (
+type Props = {
+  selectedCiv: string,
+  handleSelectedOption: (e: SyntheticInputEvent<HTMLSelectElement>) => void,
+  wololo: Array<{
+    name: string,
+    bonus: Array<string>,
+    uniqueUnit: string,
+    castleAgeTech: string,
+    imperialAgeTech: string,
+    teamBonus: string,
+  }>,
+};
+
+const GameCivilizations = (props: Props) => (
   <CivsContainer>
     <CivSelect
       civNames={props.wololo.map(civ => civ.name)}
@@ -34,12 +47,6 @@ const GameCivilizations = props => (
     <Footer />
   </CivsContainer>
 );
-
-GameCivilizations.propTypes = {
-  selectedCiv: PropTypes.string,
-  handleSelectedOption: PropTypes.func.isRequired,
-  wololo: PropTypes.array.isRequired,
-};
 
 GameCivilizations.defaultProps = {
   selectedCiv: 'Aztecs',
