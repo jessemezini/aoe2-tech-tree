@@ -3724,7 +3724,7 @@ const techData = [
       '(250 Food, 150 Gold)',
       'Research time 1:00; Cavalry have +1 Melee Armor/+1 Pierce Armor.',
     ],
-    dontBelongTo: ['Aztecs', 'Incas', 'Malay' 'Mayans'],
+    dontBelongTo: ['Aztecs', 'Incas', 'Malay', 'Mayans'],
   },
   {
     name: 'plate-barding-armor',
