@@ -164,7 +164,7 @@ const civs = [
     bonus: [
       'Villagers cost -10/15/20/25% in Dark/Feudal/Castle/Imperial Age',
       'Fisherman work 15% faster and carry +15',
-      'Camels +1/+1 Armor',
+      'Camels +0/+1 Armor',
     ],
     uniqueUnit:
       'Elephant Archer (High HP, slow Cavalry Archer), Imperial Camel (Camel upgrade)',
@@ -177,7 +177,7 @@ const civs = [
     bonus: [
       'Advancing to the next Age costs -15%',
       'Dock techs cost -50%',
-      'Fishing Ships cost -20%',
+      'Fishing Ships cost -15%',
       'Gunpowder units cost -20%',
     ],
     uniqueUnit:
@@ -216,7 +216,7 @@ const civs = [
     bonus: [
       'Villagers +3 line of sight',
       'Stone miners work 20% faster',
-      'Walls, Towers, Castles build 33% faster',
+      'Walls and Castles build 33% faster, Towers built 5% faster',
       'Tower upgrades free (Bombard Tower requires Chemistry)',
       'Tower +1/+2 range in Castle/Imperial Age',
     ],
@@ -268,7 +268,7 @@ const civs = [
     name: 'Mayans',
     bonus: [
       'Start with +1 villager, but -50 food',
-      'Resources last 15% longer, but farmers work 8% slower',
+      'Resources last 15% longer, but farmers work 3% slower',
       'Archers cost -10/20/30% in Feudal/Castle/Imperial Age',
     ],
     uniqueUnit: 'Plumed Archer (fast-moving Archer)',
@@ -388,7 +388,7 @@ const civs = [
     name: 'Vietnamese',
     bonus: [
       'Reveal enemy positions at game start',
-      'Archery Range units +10/15/20% HP in Feudal/Castle/Imperial Age',
+      'Archery Range units +20% HP',
       'Conscription free',
     ],
     uniqueUnit: 'Rattan Archer (Archer with high pierce armor)',

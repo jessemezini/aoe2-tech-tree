@@ -15,7 +15,6 @@ const positionColumn7 = '782px';
 const last135 = '135px';
 const last255 = '255px';
 const last385 = '385px';
-const last530 = '530px';
 const last650 = '650px';
 const last900 = '900px';
 const isLastOfTech = '24px';
@@ -70,7 +69,6 @@ const techData = [
       'Goths',
       'Huns',
       'Indians',
-      'Khamer',
       'Persians',
       'Slavs',
       'Spanish',
@@ -1235,8 +1233,8 @@ const techData = [
     name: 'dock',
     positionColumn: positionColumn1,
     isAlignCenter,
-    svgTechParentSize: '499.5',
-    svgParentPosition: '-217.75px',
+    svgTechParentSize: '499',
+    svgParentPosition: '-217px',
     desc: [
       'Build Dock',
       '(150 Wood)',
@@ -1449,7 +1447,7 @@ const techData = [
     positionColumn: positionColumnChildAge2,
     desc: [
       'Build Watch Tower',
-      '(25 Wood, 125 Stone)',
+      '(50 Wood, 125 Stone)',
       'Construction time 1:20 Units can garrison inside for protection and additional arrows. Guard Tower upgrade 100F, 250W (University).',
       'Hit Pts: 1020; Attack: 5 (+7 vs. Ships, +1 vs. Camels, +2 vs. Spear-line. Additional arrows +5 vs. Stone Defense); Armor: 1; Pierce Armor: 7; Range: 8 (min: 1); Classes: Buildings, Stone Defense; Garrison: 5; LoS: 10 (Town Watch/Patrol +4) (Ethiopian ally +3).',
     ],
@@ -1460,7 +1458,7 @@ const techData = [
     svgSize: svgSizeChildAge2,
     desc: [
       'Build Guard Tower',
-      '(25 Wood, 125 Stone)',
+      '(50 Wood, 125 Stone)',
       'Construction time 1:20; Units can garrison inside for protection and additional arrows. Keep upgrade 500F, 350W (University).',
       'Hit Pts: 1500; Attack: 7 (+9 vs. Ships, +1 vs. Camels, +2 vs. Spear-line. Additional arrows +5 vs. Stone Defense); Armor: 2; Pierce Armor: 8; Range: 8 (min: 1); Classes: Buildings, Stone Defense; Garrison: 5; LoS: 10 (Town Watch/Patrol +4) (Ethiopian ally +3).',
       'Requires: Guard Tower (University).',
@@ -1473,7 +1471,7 @@ const techData = [
     svgSize: svgSizeChildAge2,
     desc: [
       'Build Keep',
-      '(25 Wood, 125 Stone)',
+      '(50 Wood, 125 Stone)',
       'Construction time 1:20; Units can garrison inside for protection and additional arrows.',
       'Hit Pts: ; Attack: (+10 vs. Ships, +1 vs. Camels, +2 vs. Spear-line. Additional arrows +5 against Stone Defense); Armor: 3; Pierce Armor: 9; Range: 8 (min: 1); Classes: Buildings, Stone Defense; Garrison: 5; LoS: 10 (Town Watch/Patrol +4) (Ethiopian ally +3).',
       'Requires: Keep (University).',
@@ -1803,7 +1801,7 @@ const techData = [
     desc: [
       'Create Camel Archer',
       '(50 Wood, 60 Gold)',
-      'Creation time 21s; Cavalry Archer with a bonus vs. Cav. Archers.',
+      'Creation time 25s; Cavalry Archer with a bonus vs. Cav. Archers.',
       'Hit Pts: 55; Attack: 7 (+4 vs. Cavalry Archers, Indian ally: +5 vs. Buildings); Reload time: 2 (TR 1.7); Melee/Pierce Armor: 0/1; Range: 4; Accuracy: 95% (TR 100%); Classes: Camels, Archers, Cavalry Archers, Unique Units; Attack delay: 0.35s; Speed: 1.4 (1.54); Line of sight: 5.',
     ],
     uniqueUnitOf: 'Berbers',
@@ -1815,7 +1813,7 @@ const techData = [
     desc: [
       'Create Elite Camel Archer',
       '(50 Wood, 60 Gold)',
-      'Creation time 21s; Cavalry Archer with a bonus vs. Cav. Archers.',
+      'Creation time 25s; Cavalry Archer with a bonus vs. Cav. Archers.',
       'Hit Pts: 60; Attack: 8 (+6 vs. Cavalry Archers, Indian ally: +5 vs. Buildings); Reload time: 2 (TR 1.7); Melee/Pierce Armor: 0/2; Range: 4; Accuracy: 95% (TR 100%); Classes: Camels, Archers, Cavalry Archers, Unique Units; Attack delay: 0.35s; Speed: 1.4 (1.54); Line of sight: 5.',
     ],
     uniqueUnitOf: 'Berbers',
@@ -1850,7 +1848,7 @@ const techData = [
     svgSize: svgSizeChildBelowParent,
     desc: [
       'Create Arambai',
-      '(50 Wood, 60 Gold)',
+      '(80 Wood, 60 Gold)',
       'Creation time 21s (Conscription: 15.8s); Powerful, but inaccurate mounted dart thrower. Not affected by range/attack upgrades or Parthian Tactics.',
       'Hit Pts: 60; Attack: 17 (+2 vs. Rams); Reload time: 2; Melee/Pierce Armor: 0/2; Range: 5; Accuracy: 20%; Classes: Cavalry, Archers, Cavalry Archers, Unique Units; Speed: 1.30; Attack delay: 0.7s; Line of sight: 7.',
     ],
@@ -1862,7 +1860,7 @@ const techData = [
     svgSize: svgSizeChildAge,
     desc: [
       'Create Elite Arambai',
-      '(50 Wood, 60 Gold)',
+      '(80 Wood, 60 Gold)',
       'Creation time 21s (Conscription: 15.8s); Powerful, but inaccurate mounted dart thrower. Not affected by range/attack upgrades or Parthian Tactics.',
       'Hit Pts: 65; Attack: 19 (+2 vs. Rams); Reload time: 2; Melee/Pierce Armor: 1/3; Range: 5; Accuracy: 30%; Classes: Cavalry, Archers, Cavalry Archers, Unique Units; Speed: 1.30; Attack delay: 0.7s; Line of sight: 7.',
     ],
@@ -2068,7 +2066,7 @@ const techData = [
       'Create Elephant Archer',
       '(100 Food, 80 Gold)',
       'Creation time 25s (Conscription 18.8s); High HP, slow Cavalry Archer.',
-      'Hit Pts: 280; Attack: 6 (+3 vs. Buildings, +3 extra vs. Stone Defense); Reload time: 2.5 (TR 2.13); Melee/Pierce Armor: 0/3; (-2 Armor (2 extra dmg) against anti-Archer dmg); Range: 4; Classes: Elephants, Archers, Cavalry, Cavalry Archers, Unique Units; Attack delay: 0.28s; Speed: 0.8 (0.88); Line of sight: 7.',
+      'Hit Pts: 280; Attack: 6 (+3 vs. Buildings, +3 extra vs. Stone Defense); Reload time: 2.5 (TR 2.13); Melee/Pierce Armor: 0/3; (-2 Armor (2 extra dmg) against anti-Cavalry Archer dmg); Range: 4; Classes: Elephants, Archers, Cavalry, Cavalry Archers, Unique Units; Attack delay: 0.28s; Speed: 0.8 (0.88); Line of sight: 7.',
     ],
     uniqueUnitOf: 'Indians',
   },
@@ -2080,7 +2078,7 @@ const techData = [
       'Create Elite Elephant Archer',
       '(100 Food, 80 Gold)',
       'Creation time 25s (Conscription 18.8s); High HP, slow Cavalry Archer.',
-      'Hit Pts: 330; Attack: 7 (+4 vs. Buildings, +4 extra vs. Stone Defense); Reload time: 2.5 (TR 2.13); Melee/Pierce Armor: 0/3; (-2 Armor (2 extra dmg) against anti-Archer dmg); Range: 4; Accuracy: 100%; Classes: Elephants, Archers, Cavalry, Cavalry Archers, Unique Units; Attack delay: 0.28s; Speed: 0.8 (0.88); Line of sight: 7.',
+      'Hit Pts: 330; Attack: 7 (+4 vs. Buildings, +4 extra vs. Stone Defense); Reload time: 2.5 (TR 2.13); Melee/Pierce Armor: 0/3; (-2 Armor (2 extra dmg) against anti-Cavalry Archer dmg); Range: 4; Accuracy: 100%; Classes: Elephants, Archers, Cavalry, Cavalry Archers, Unique Units; Attack delay: 0.28s; Speed: 0.8 (0.88); Line of sight: 7.',
     ],
     uniqueUnitOf: 'Indians',
   },
@@ -2210,7 +2208,7 @@ const techData = [
     svgSize: svgSizeChildBelowParent,
     desc: [
       'Create Karambit Warrior',
-      '(25 Food, 10 Gold)',
+      '(30 Food, 15 Gold)',
       'Creation time 6s (Conscription: 4.5s); Cheap and weak infantry unit that only takes half a population slot.',
       'Hit Pts: 30; Attack: 6 (+2 vs. Eagles, (Arson: +2 vs. Buildings)); Reload time: 2; Melee/Pierce Armor: 0/1; Range: 0; Classes: Infantry, Unique Units; Speed: 1.2; Line of sight: 3.',
     ],
@@ -2222,7 +2220,7 @@ const techData = [
     svgSize: svgSizeChildAge,
     desc: [
       'Create Elite Karambit Warrior',
-      '(25 Food, 10 Gold)',
+      '(30 Food, 15 Gold)',
       'Creation time 6s (Conscription: 4.5s); Cheap and weak infantry unit that only takes half a population slot.',
       'Hit Pts: 40; Attack: 7 (+2 vs. Eagles, +1 (+3) vs. Buildings); Reload time: 2; Melee/Pierce Armor: 1/1; Range: 0; Classes: Infantry, Unique Units; Speed: 1.2; Line of sight: 3.',
     ],
@@ -2476,7 +2474,7 @@ const techData = [
       'Create Rattan Archer',
       '(50 Wood, 45 Gold)',
       'Creation time 16s (Conscription: 12s); Archer with high pierce armor.',
-      'Hit Pts: 35; Attack: 6 (+2 vs. Spearmen, Saracen ally: +2 vs. Buildings); Reload time: 2 (TR 1.7); Melee/Pierce Armor: 0/4; Range: 4; Accuracy: 80%; Classes: Archers, Unique Units; Speed: 1.1; Attack delay: 0.35s; Line of sight: 6 (Magyar ally 8).',
+      'Hit Pts: 40; Attack: 6 (+2 vs. Spearmen, Saracen ally: +2 vs. Buildings); Reload time: 2 (TR 1.7); Melee/Pierce Armor: 0/4; Range: 4; Accuracy: 80%; Classes: Archers, Unique Units; Speed: 1.1; Attack delay: 0.35s; Line of sight: 6 (Magyar ally 8).',
     ],
     uniqueUnitOf: 'Vietnamese',
   },
@@ -2488,7 +2486,7 @@ const techData = [
       'Create Elite Rattan Archer',
       '(50 Wood, 45 Gold)',
       'Creation time 16s (Conscription: 12s); Archer with high pierce armor.',
-      'Hit Pts: 40; Attack: 7 (+2 vs. Spearmen, Saracen ally: +2 vs. Buildings); Reload time: 2 (TR 1.7); Melee/Pierce Armor: 0/6; Range: 5; Accuracy: 90%; Classes: Archers, Unique Units; Speed: 1.1; Attack delay: 0.35s; Line of sight: 6 (Magyar ally 8).',
+      'Hit Pts: 45; Attack: 7 (+2 vs. Spearmen, Saracen ally: +2 vs. Buildings); Reload time: 2 (TR 1.7); Melee/Pierce Armor: 0/6; Range: 5; Accuracy: 90%; Classes: Archers, Unique Units; Speed: 1.1; Attack delay: 0.35s; Line of sight: 6 (Magyar ally 8).',
     ],
     uniqueUnitOf: 'Vietnamese',
   },
@@ -2784,7 +2782,7 @@ const techData = [
     positionColumn: positionColumnChildAge,
     desc: [
       'Research Couriers',
-      '(400 Food, 200 Gold)',
+      '(600 Food, 600 Gold)',
       'Research time 40s (Conscription 30s) Kamayuks, Slingers, Eagles have +1/+2 Armor.',
     ],
     uniqueUnitOf: 'Incas',
@@ -2869,7 +2867,7 @@ const techData = [
     desc: [
       'Research Double Crossbow',
       '(700 Food, 400 Gold)',
-      'Research time 40s (Conscription 30s) Ballista Elephants and Scorpions shoot two projectiles.Scorpions: Second bolt has 50% of the strength of the first bolt.Ballista Elephants: Second bolt 6 Pierce Attack, +3 vs. Elephants, +1 vs. Buildings.',
+      'Research time 40s (Conscription 30s) Ballista Elephants and Scorpions shoot two projectiles. Scorpions: Second bolt has 50% of the strength of the first bolt. Ballista Elephants: Second bolt 6 Pierce Attack, +3 vs. Elephants, +1 vs. Buildings.',
     ],
     uniqueUnitOf: 'Khamer',
   },
@@ -4035,8 +4033,8 @@ const techData = [
   {
     name: 'mining-camp',
     positionColumn: positionColumn1,
-    svgTechParentSize: '72.5',
-    svgParentPosition: '-4.25px',
+    svgTechParentSize: '73',
+    svgParentPosition: '-4.5px',
     isAlignCenter,
     desc: [
       'Build Mining Camp',
@@ -4164,19 +4162,33 @@ const techData = [
   //#endregion
   //#region Mill
   {
-    name: 'cartography',
-    positionColumn: positionColumn4,
+    name: 'market',
+    positionColumn: positionColumn3,
+    svgSize: svgSizeChildAge2BelowParent,
+    svgTechParentSize: '73',
+    svgParentPosition: '-4.5px',
+    isAlignCenter,
+    desc: [
+      'Build Market',
+      '(175 Wood)',
+      'Construction time 1:00; Used to buy and sell resources, trade with other players by land, and research trade improvements. The further apart two markets are, the more efficient a tradeline is.',
+      'Hit Pts: 1800; Armor: 1; Pierce Armor: 8; Line of sight: 6 (Town Watch/Patrol +4 each).',
+    ],
+  },
+  {
+    name: 'trade-cart',
+    positionColumn: positionColumnChild,
     svgSize: svgSizeChildBelowParent,
     desc: [
-      'Research Cartography',
-      '(free)',
-      'Instant research; You and your allies share the same line of sight (you see what they see).',
+      'Build Trade Cart',
+      '(100 Wood, 50 Gold)',
+      'Creation time 51s; Should usually be chosen over Trade Cogs when possible, as extra docks for military production can mess up the water tradeline; Class: None; Speed: 1 (1.5) Line of sight: 7.',
+      'Hit Pts: 70; Melee/Pierce Armor: 0/0; Range: 0.',
     ],
   },
   {
     name: 'caravan',
     positionColumn: positionColumnChildAge,
-    svgSize: svgSizeChildAge,
     desc: [
       'Research Caravan',
       '(200 Food, 200 Gold)',
@@ -4205,22 +4217,9 @@ const techData = [
     ],
   },
   {
-    name: 'market',
-    positionColumn: positionColumn3,
-    svgSize: svgSizeChildAge2BelowParent,
-    svgTechParentSize: '144.5',
-    svgParentPosition: '-40.25px',
-    desc: [
-      'Build Market',
-      '(175 Wood)',
-      'Construction time 1:00; Used to buy and sell resources, trade with other players by land, and research trade improvements. The further apart two markets are, the more efficient a tradeline is.',
-      'Hit Pts: 1800; Armor: 1; Pierce Armor: 8; Line of sight: 6 (Town Watch/Patrol +4 each).',
-    ],
-  },
-  {
     name: 'coinage',
-    positionColumn: positionColumnChild,
-    svgSize: svgSizeChildBelowParent,
+    positionColumn: positionColumn5,
+    svgSize: svgSizeChildAge2BelowParent,
     desc: [
       'Research Coinage',
       '(200 Food, 100 Gold)',
@@ -4229,8 +4228,10 @@ const techData = [
   },
   {
     name: 'banking',
-    positionColumn: positionColumnChildAge,
-    svgSize: svgSizeChildAge,
+    positionColumn: positionColumnChildAge2,
+    svgSize: svgSizeChildAge2,
+    isLast: last135,
+    isLastOfTech,
     desc: [
       'Research Banking',
       '(300 Food, 200 Gold)',
@@ -4238,23 +4239,10 @@ const techData = [
     ],
   },
   {
-    name: 'trade-cart',
-    positionColumn: positionColumn4,
-    svgSize: svgSizeChildBelowParent,
-    isLast: last530,
-    isLastOfTech,
-    desc: [
-      'Build Trade Cart',
-      '(100 Wood, 50 Gold)',
-      'Creation time 51s; Should usually be chosen over Trade Cogs when possible, as extra docks for military production can mess up the water tradeline; Class: None; Speed: 1 (1.5) Line of sight: 7.',
-      'Hit Pts: 70; Melee/Pierce Armor: 0/0; Range: 0.',
-    ],
-  },
-  {
     name: 'mill',
     positionColumn: positionColumn1,
-    svgTechParentSize: '239',
-    svgParentPosition: '-135px',
+    svgTechParentSize: '204',
+    svgParentPosition: '-100px',
     desc: [
       'Build Mill',
       '(100 Wood)',
