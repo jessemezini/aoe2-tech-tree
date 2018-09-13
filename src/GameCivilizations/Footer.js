@@ -19,12 +19,10 @@ const FooterContainer = styled.div`
 const Footer = () => (
   <FooterContainer>
     <p>
-      Developed by{' '}
-      <a href="https://www.voobly.com/profile/view/55725">[EoK]_OrO_</a> If you
-      find anything wrong, please let me know. I will be updating to match the
-      current version of WololoKingdoms. <br />
-      <a href="http://twitter.com/jessemezini">Twitter (DM open)</a> -{' '}
-      <a href="http://facebook.com/jessemezini">Facebook</a>
+      Developed by [EoK]_OrO_ (
+      <a href="http://twitter.com/jessemezini">Twitter</a> or{' '}
+      <a href="http://facebook.com/jessemezini">Facebook</a>) <br />
+      Current version: WololoKingdoms 5.8.1.
     </p>
   </FooterContainer>
 );
