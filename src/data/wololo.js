@@ -302,7 +302,7 @@ const civs = [
     teamBonus: 'Knights +2 Attack vs. Archers',
   },
   {
-    name: 'Portugueses',
+    name: 'Portuguese',
     bonus: [
       'All units cost -15% gold',
       'Ships +10% HP',

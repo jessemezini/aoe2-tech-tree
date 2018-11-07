@@ -2332,7 +2332,7 @@ const techData = [
       'Creation time 21s; Siege weapon firing bullets, effective against groups of units.',
       'Hit Pts: 60; Attack: 16 + 4x 2 dmg; Reload time: 3.45; Melee/Pierce Armor: 2/4; Range: 7  (min: 1)(Siege Eng. 8); Accuracy: 50%; Classes: Siege Weapons, Gunpowder, Unique Units; Speed: 0.85; Line of sight: 9 (SE 10).',
     ],
-    uniqueUnitOf: 'Portugueses',
+    uniqueUnitOf: 'Portuguese',
   },
   {
     name: 'portugueses-elite-organ-gun',
@@ -2344,7 +2344,7 @@ const techData = [
       'Creation time 21s; Siege weapon firing bullets, effective against groups of units.',
       'Hit Pts: 70; Attack: 20 + 4x 2 dmg; Reload time: 3.45; Melee/Pierce Armor: 2/6; Range: 7 (min: 1)(Siege Eng. 8); Classes: Siege Weapons, Gunpowder, Unique Units; Speed: 0.85; Line of sight: 9 (SE 10).',
     ],
-    uniqueUnitOf: 'Portugueses',
+    uniqueUnitOf: 'Portuguese',
   },
   {
     name: 'saracens-mameluke',
@@ -3027,7 +3027,7 @@ const techData = [
       '(200 Wood, 300 Gold)',
       'Research time 40s (Conscription 30s) Ships get +1/+1 Armor.',
     ],
-    uniqueUnitOf: 'Portugueses',
+    uniqueUnitOf: 'Portuguese',
   },
   {
     name: 'portugueses-arquebus',
@@ -3037,7 +3037,7 @@ const techData = [
       '(700 Food, 400 Gold)',
       'Research time 40s (Conscription 30s) Ballistics for Gunpowder units.',
     ],
-    uniqueUnitOf: 'Portugueses',
+    uniqueUnitOf: 'Portuguese',
   },
   {
     name: 'saracens-madrasah',
